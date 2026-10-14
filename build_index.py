@@ -32,8 +32,26 @@ DEAL_FIELDS = [
     ("$/SF", {3, 4}),
     ("$/unit or key", {5}),
     ("Cap rate", {6}),
-    ("Financing", {9}),
 ]
+
+# Financing columns, filled from claims tagged with a "fin" field.
+FIN_COLUMNS = [("Total loan", "loan"), ("Interest rate", "rate"), ("LTV", "ltv"),
+               ("Appraised value", "appraised"), ("DSCR", "dscr")]
+
+
+def fin_value(c):
+    """Display text for one financing claim, with its qualifier (senior, mezzanine...)."""
+    v, u = c["value"], c["unit"]
+    if c["fin"] == "rate":
+        dec = v.partition(".")[2]
+        text = f"{float(v):.3f}%" if len(dec) > 4 else f"{v}%"
+    elif c["fin"] == "ltv":
+        text = f"{v}%"
+    elif c["fin"] == "dscr":
+        text = f"{v}x"
+    else:
+        text = money(v, u)
+    return text + (f" ({c['fin_note']})" if c.get("fin_note") else "")
 
 
 def load(name):
@@ -136,14 +154,6 @@ def party_info(cs):
     return info
 
 
-def fin_label(unit):
-    """Short label for a financing figure, from its unit."""
-    u = unit.lower()
-    for key, label in (("interest rate", "Rate"), ("ltv", "LTV"), ("dscr", "DSCR"), ("appraised", "Appraised"),
-                       ("mezzanine", "Mezz loan"), ("whole loan", "Whole loan"), ("loan", "Loan")):
-        if key in u:
-            return label + " "
-    return ""
 
 
 def found_in_sources(name, cs, sources):
@@ -240,6 +250,7 @@ def main():
 
     deals = dict(sorted(deals.items(), key=lambda kv: deal_date(kv[1]), reverse=True))
     types_present = []
+    ncols = 7 + len(DEAL_FIELDS) + len(FIN_COLUMNS) + 1
     rows, deal_blocks, last_q = [], [], None
     for name, cs in deals.items():
         info = party_info(cs)
@@ -252,30 +263,59 @@ def main():
         d = deal_date(cs)
         q = quarter(d)
         if q != last_q:
-            rows.append(f'<tr class="period-row" data-period="{esc(q)}"><th colspan="10" scope="rowgroup">{esc(q)}</th></tr>')
+            rows.append(f'<tr class="period-row" data-period="{esc(q)}"><th colspan="{ncols}" scope="rowgroup"><span>{esc(q)}</span></th></tr>')
             last_q = q
+        short = name.split(" (")[0]
+        size = next((c["size"] for c in cs if c.get("size")), None)
+        size_match = next((c.get("size_match") for c in cs if c.get("size")), None)
+        if size:
+            ok = found_in_sources(size_match or size, cs, sources)
+            size_html = f'{esc(size)} ' + ('<span class="mark ok" title="Appears in the source text">✓</span>' if ok
+                                            else '<span class="mark warn" title="Not found in the source text">?</span>')
+        else:
+            size_html = ""
+        tenants = next((c["tenants"] for c in cs if "tenants" in c), None)
+        occ = [f"{c['value']}% " + c["unit"].replace("percent", "").strip() for c in cs if 1 in c["questions"]]
+        if ptype == "Office":
+            if tenants:
+                t_html = names_html(tenants, cs, sources)
+            elif occ:
+                t_html = '<span class="muted">Not named</span>'
+            else:
+                t_html = '<span class="muted">Not in free text</span>'
+            if occ:
+                t_html += "<br>" + "<br>".join(esc(o) for o in occ)
+        else:
+            t_html = ""
         cells = [
+            f"<th scope=\"row\" class=\"deal-cell\">{esc(short)}"
+            + (f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else "") + "</th>",
             f"<td class=\"date-cell\">{date_html(info['date'] or cs[0]['period'], d)}</td>",
             f"<td class=\"type-cell\">{chip}</td>",
-            f"<th scope=\"row\">{esc(name)}"
-            + (f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else "") + "</th>",
+            f"<td class=\"num\">{size_html}</td>" if size_html else '<td class="gap">—</td>',
             f"<td>{names_html(info['buyer'], cs, sources, info['missing'])}</td>",
             f"<td>{names_html(info['seller'], cs, sources, info['missing'])}</td>",
+            f"<td class=\"tenants\">{t_html}</td>" if t_html else '<td class="gap">—</td>',
         ]
         for label, qs in DEAL_FIELDS:
-            hits = [(fin_label(c["unit"]) if label == "Financing" else "") + money(c["value"], c["unit"])
-                    for c in cs if qs & set(c["questions"])]
-            cell = ("<br>" if label == "Financing" else "; ").join(esc(h) for h in hits)
-            if label == "Financing" and info["lender"]:
-                cell += ("<br>" if cell else "") + "Lender: " + names_html(info["lender"], cs, sources)
-            cells.append(f"<td>{cell}</td>" if cell else '<td class="gap">—</td>')
+            hits = [money(c["value"], c["unit"]) for c in cs if qs & set(c["questions"]) and not c.get("fin")]
+            cell = "<br>".join(esc(h) for h in hits)
+            cells.append(f"<td class=\"num\">{cell}</td>" if cell else '<td class="gap">—</td>')
+        for label, key in FIN_COLUMNS:
+            hits = [fin_value(c) for c in cs if c.get("fin") == key]
+            cell = "<br>".join(esc(h) for h in hits)
+            cells.append(f"<td class=\"num fin\">{cell}</td>" if cell else '<td class="gap fin">—</td>')
+        lender = names_html(info["lender"], cs, sources) if info["lender"] else ""
+        cells.append(f"<td class=\"fin\">{lender}</td>" if lender else '<td class="gap fin">—</td>')
         rows.append(f'<tr data-type="{esc(ptype)}" data-period="{esc(q)}">{"".join(cells)}</tr>')
         facts = [("Date", esc(info["date"] or cs[0]["period"])),
-                 ("Type", chip),
+                 ("Type", chip)] + ([("Size", size_html)] if size_html else []) + [
                  ("Buyer", names_html(info["buyer"], cs, sources, info["missing"])),
                  ("Seller", names_html(info["seller"], cs, sources, info["missing"]))]
         if info["lender"]:
             facts.append(("Lender", names_html(info["lender"], cs, sources)))
+        if ptype == "Office":
+            facts.append(("Tenants", t_html))
         dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
         deal_blocks.append(
             f'<section class="deal" data-type="{esc(ptype)}"><h3>{esc(name)}</h3><dl class="facts">{dl}</dl>'
@@ -292,7 +332,16 @@ def main():
     per_deal = next((s for s in sections if s[1] and s[1][0][0] == 1), None)
     if per_deal:
         qlist = "".join(f"<li value=\"{n}\">{esc_md(q)}</li>" for n, q in per_deal[1])
-        head = "".join(f"<th scope=\"col\">{esc(f)}</th>" for f in ["Date", "Type", "Deal", "Buyer", "Seller"] + [f for f, _ in DEAL_FIELDS])
+        fin_heads = [x for x, _ in FIN_COLUMNS] + ["Lender"]
+        group = (f'<tr class="col-groups"><th colspan="7" scope="colgroup" class="grp-deal">Deal</th>'
+                 f'<th colspan="{len(DEAL_FIELDS)}" scope="colgroup">Pricing</th>'
+                 f'<th colspan="{len(fin_heads)}" scope="colgroup" class="fin">Financing</th></tr>')
+
+        def th(f):
+            cls = "deal-cell" if f == "Deal" else ("fin" if f in fin_heads else "")
+            return f'<th scope="col" class="{cls}">{esc(f)}</th>'
+        head = group + "<tr>" + "".join(th(f) for f in ["Deal", "Date", "Type", "Size", "Buyer", "Seller", "Tenants (office)"]
+                                       + [f for f, _ in DEAL_FIELDS] + fin_heads) + "</tr>"
         parts.append(f"""
 <section class="question-group" id="deals">
   <h2>{esc(per_deal[0])} <span class="qnums">Q1–Q{per_deal[1][-1][0]}</span></h2>
@@ -305,8 +354,8 @@ def main():
   "Not in free text" means the free part of the article doesn't name the party.</p>
   <div class="filters" role="group" aria-label="Filter deals by product type">{filters}</div>
   <div class="table-wrap"><table class="deals">
-    <thead><tr>{head}</tr></thead>
-    <tbody>{''.join(rows) or '<tr><td colspan="10">No verified deal claims yet.</td></tr>'}</tbody>
+    <thead>{head}</thead>
+    <tbody>{''.join(rows) or f'<tr><td colspan="{ncols}">No verified deal claims yet.</td></tr>'}</tbody>
   </table></div>
   {deal_blocks}
 </section>""")
@@ -360,6 +409,7 @@ def main():
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 :root {{
+  --fin-bg: #f3f6f9;
   --office-fg: #1f4e79; --office-bg: #e6eef6; --office-line: #c3d4e6;
   --multi-fg: #6b3f00; --multi-bg: #f8ecd9; --multi-line: #e8d2ad;
   --ind-fg: #3f5d2a; --ind-bg: #e9f0e1; --ind-line: #cbdab8;
@@ -370,7 +420,7 @@ def main():
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
-    --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
+    --fin-bg: #1c2024; --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
     --multi-fg: #f0c88a; --multi-bg: #33281a; --multi-line: #4d3c24;
     --ind-fg: #b9d79c; --ind-bg: #232d1c; --ind-line: #374629;
     --hotel-fg: #eab3d1; --hotel-bg: #351f2b; --hotel-line: #503040;
@@ -380,7 +430,7 @@ def main():
   }}
 }}
 :root[data-theme="dark"] {{
-  --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
+  --fin-bg: #1c2024; --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
     --multi-fg: #f0c88a; --multi-bg: #33281a; --multi-line: #4d3c24;
     --ind-fg: #b9d79c; --ind-bg: #232d1c; --ind-line: #374629;
     --hotel-fg: #eab3d1; --hotel-bg: #351f2b; --hotel-line: #503040;
@@ -443,7 +493,17 @@ td.date-cell {{ min-width: 104px; }} td.date-cell .d {{ white-space: nowrap; fon
 td.type-cell {{ min-width: 110px; }}
 tr.period-row th {{ background: var(--quote); font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase;
   color: var(--muted); padding: 6px 10px; }}
-table.deals tbody th[scope="row"] {{ min-width: 190px; }}
+table.deals .deal-cell {{ position: sticky; left: 0; z-index: 1; min-width: 170px; max-width: 220px;
+  background: var(--surface); box-shadow: 1px 0 0 var(--line); }}
+table.deals thead .deal-cell {{ z-index: 2; }}
+table.deals tr.period-row th span {{ position: sticky; left: 10px; }}
+table.deals td.num {{ white-space: nowrap; }}
+table.deals td.tenants {{ min-width: 130px; }}
+table.deals .fin {{ background: var(--fin-bg); }}
+tr.col-groups th {{ font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+  padding-top: 6px; padding-bottom: 4px; }}
+tr.col-groups th.grp-deal {{ position: sticky; left: 0; background: var(--surface); z-index: 2; }}
+@media (max-width: 600px) {{ table.deals .deal-cell {{ min-width: 130px; max-width: 150px; }} }}
 .filters {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }}
 .filter {{ font: inherit; font-size: 13.5px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
   background: var(--surface); color: var(--text); border: 1px solid var(--line); }}

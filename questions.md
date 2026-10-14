@@ -56,8 +56,10 @@ make sure the quoted sentence names them so a person can confirm by reading.
 
 ## By transaction (answer for every deal found)
 
-1. What property traded, what product type is it, and when did the sale close
-   (or when was it announced, if the close date isn't given)?
+1. What property traded, what product type is it, how large is it (square
+   feet, units or keys), and when did the sale close (or when was it announced,
+   if the close date isn't given)? For office, who are the tenants and how
+   occupied was the building?
 2. What was the total transaction price?
 3. What was the price per gross square foot?
 4. What was the price per rentable square foot?
