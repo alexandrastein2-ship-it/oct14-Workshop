@@ -86,5 +86,148 @@
     "sha256": "e6249ddba9e4d303a047f317bbb41ed7b2a46c6dc0f1b58e8e9f4c8654fb72ac",
     "capture_sha256": "31acba45e84e8cd75137c192e1e661702ff3775e7169757f75fbeeb549be6ce9",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma",
+    "title": "The Registry (Apr 9, 2026): Meridian Group & Fenway Capital Close $200MM Acquisition of 667,000 SQFT Office Tower at 415 Natoma in San Francisco's SoMa",
+    "url": "https://news.theregistrysf.com/meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma/",
+    "original": "sources/meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma.html",
+    "capture": "captures/meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma.txt",
+    "extractor": "html tags removed",
+    "sha256": "4d86099a4e27d0ec64ea140fc2c7ad19f4d4862963db2c3072e4018f2c871765",
+    "capture_sha256": "ba6ee190e790e37ab88910f2bdbf29116b305b4b5a9e11e36046fbb647d8cefa",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower",
+    "title": "The Registry (Apr 9, 2026): Madison Capital & PGIM Close $95MM Acquisition of 360,000 SQFT 123 Mission in San Francisco, Completing Turnaround of Former Juul Tower",
+    "url": "https://news.theregistrysf.com/madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower/",
+    "original": "sources/madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower.html",
+    "capture": "captures/madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower.txt",
+    "extractor": "html tags removed",
+    "sha256": "30eb670f967ee13d4645242c60e0ef6c103c28f4718f09bf93a91f1614f19e68",
+    "capture_sha256": "af10ced35c2481ff3cb49d1691612f858a01364cd30bcaa4fcbcfecebe26cb5b",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "zurich-alternative-asset-management-buys-78000-sqft-410-townsend-for-47-4mm-in-san-francisco",
+    "title": "The Registry (Sep 24, 2026): Zurich Alternative Asset Management Buys 78,000 SQFT 410 Townsend for $47.4MM in San Francisco",
+    "url": "https://news.theregistrysf.com/zurich-alternative-asset-management-buys-78000-sqft-410-townsend-for-47-4mm-in-san-francisco/",
+    "original": "sources/zurich-alternative-asset-management-buys-78000-sqft-410-townsend-for-47-4mm-in-san-francisco.html",
+    "capture": "captures/zurich-alternative-asset-management-buys-78000-sqft-410-townsend-for-47-4mm-in-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "2e29da19be918c3684b5798cdfb49004e3b25f72feb9139f2e72fdfb4839c682",
+    "capture_sha256": "ef81dce9c32c3fd9ed19a0b9588fe3491f22d83569149b494b2b0f9411e5cfaf",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure",
+    "title": "The Registry (Feb 7, 2026): Presidio Bay Ventures Acquires 55,700 SQFT Office at 333 Valencia in San Francisco for $27.5MM via Deed in Lieu of Foreclosure",
+    "url": "https://news.theregistrysf.com/presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure/",
+    "original": "sources/presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure.html",
+    "capture": "captures/presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure.txt",
+    "extractor": "html tags removed",
+    "sha256": "95130141e8fea9da5fe43ff51e1cc394a539026534e932ab3283bd34dbf904fb",
+    "capture_sha256": "4a5a665747450f6ac38fd617fef738241d25154e5837651685d9c36c74017026",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm",
+    "title": "The Registry (Jan 2, 2026): Sutter Bay Medical Foundation Acquires San Francisco\u2019s One Daniel Burnham Court Medical Office Building for $47MM",
+    "url": "https://news.theregistrysf.com/sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm/",
+    "original": "sources/sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm.html",
+    "capture": "captures/sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "8139da43d9b8bd5f6f287b18980f3b6f14365f7de6fe477e4da80016c58911cb",
+    "capture_sha256": "8a5659e0cc263aef56b2a7f630fd57646df7decd26129082f38057d157e65acc",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm",
+    "title": "The Registry (Nov 20, 2024): Redco Development Buys 86,500 SQFT Building in San Francisco for $25.75MM",
+    "url": "https://news.theregistrysf.com/redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm/",
+    "original": "sources/redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm.html",
+    "capture": "captures/redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "378d8a8b09976d840ef2860ed869b42792dfa40d9604675c1d61d442f58b8e00",
+    "capture_sha256": "4285cc90e2d2bd3882dadc59513cbed802d3deed82695f2463d96c5f12e78fc2",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco",
+    "title": "The Registry (Oct 12, 2026): Presidio Bay Takes Title to 209,000 SQFT 301 Battery From RFR via Deed in Lieu, Lands $85.6MM Bluerock Loan in San Francisco",
+    "url": "https://news.theregistrysf.com/presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco/",
+    "original": "sources/presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco.html",
+    "capture": "captures/presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "e6c1ec1c9f026608f985fd7e74567e786cde57ad23dd8bc64e63b7770017bcf9",
+    "capture_sha256": "75a2541c543a0c7ec9b39e7d6610d76e3cfce75ffa6f2db6d7f5405aacdd43ed",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "swig-company-lands-96mm-invesco-refinancing-on-491000-sqft-mills-building-in-san-francisco",
+    "title": "The Registry (Jul 21, 2026): Swig Company Lands $96MM Invesco Refinancing on 491,000 SQFT Mills Building in San Francisco",
+    "url": "https://news.theregistrysf.com/swig-company-lands-96mm-invesco-refinancing-on-491000-sqft-mills-building-in-san-francisco/",
+    "original": "sources/swig-company-lands-96mm-invesco-refinancing-on-491000-sqft-mills-building-in-san-francisco.html",
+    "capture": "captures/swig-company-lands-96mm-invesco-refinancing-on-491000-sqft-mills-building-in-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "88960c972574f3a8a73a0168ee0dcd1ea0d02aa77514458b40a9dc15a4741849",
+    "capture_sha256": "c92ae6d321e5b1c13b348c590fd52fa15264b737a76b77366e3c123ffa004a83",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price",
+    "title": "The Registry (Aug 14, 2026): Fortress-Tied Owner Sells 91-Unit 520 Geary Apartments in San Francisco for $18.475MM, Roughly Half Its 2018 Price",
+    "url": "https://news.theregistrysf.com/fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price/",
+    "original": "sources/fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price.html",
+    "capture": "captures/fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price.txt",
+    "extractor": "html tags removed",
+    "sha256": "8c9fb6d134e0b10c9c8f664ec0ecae382756a6611542dae192103c8cc88d9686",
+    "capture_sha256": "008bf98572f5a3fb06c1f7c2236b450818054a6b94223fc375cb6997e7d4dfb0",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm",
+    "title": "The Registry (Jun 10, 2026): 28-Unit Multifamily Property in San Francisco Trades for $6.65MM",
+    "url": "https://news.theregistrysf.com/28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm/",
+    "original": "sources/28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm.html",
+    "capture": "captures/28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "3ffe1f29b6f342a8abdc44f1fef289fc057a75878cf02fd3d082d20f755d02ee",
+    "capture_sha256": "7e07920d172c0b1ccc45f07485a125cddce4693d02a0583b91e36ea319603903",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm",
+    "title": "The Registry (Jan 6, 2026): Fortress Acquires $348MM Loan Backed by 890 San Francisco Apartments for $220MM",
+    "url": "https://news.theregistrysf.com/fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm/",
+    "original": "sources/fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm.html",
+    "capture": "captures/fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "8097791af3a4f618e77e9e64b7d15b7dd6800e00d1966278a94c7654ae532f43",
+    "capture_sha256": "85b65249496a4f6e3bc6d31a876d33e3a917fcd86e573d5187086aaa7c14e5d5",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "terreno-realty-acquires-65000-sqft-mendell-street-industrial-property-in-san-francisco-for-25-9mm",
+    "title": "The Registry (Aug 24, 2026): Terreno Realty Acquires 65,000 SQFT Mendell Street Industrial Property in San Francisco for $25.9MM",
+    "url": "https://news.theregistrysf.com/terreno-realty-acquires-65000-sqft-mendell-street-industrial-property-in-san-francisco-for-25-9mm/",
+    "original": "sources/terreno-realty-acquires-65000-sqft-mendell-street-industrial-property-in-san-francisco-for-25-9mm.html",
+    "capture": "captures/terreno-realty-acquires-65000-sqft-mendell-street-industrial-property-in-san-francisco-for-25-9mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "16a8adaad914b3eba2a0f987842f7efbbf186d8a5331fc5264674abc75b3cfc3",
+    "capture_sha256": "af1858412e92693b46c119ac808d9a807db3db53ba4b91751429c6b1a8ac783c",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco",
+    "title": "The Registry (Jun 9, 2025): Redco Pays $15.1MM for $25MM Loan Tied to 79,600 SQFT Office Building in San Francisco",
+    "url": "https://news.theregistrysf.com/redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco/",
+    "original": "sources/redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco.html",
+    "capture": "captures/redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "9f7d11aa8d20b724a5e99839dc7d1ba7d594bdbbe15105aec2a8f8b494f6357b",
+    "capture_sha256": "e480aca9443a3f212707fd3bdaa5c3bfc928d02249b6b6617d987afebe7f5712",
+    "added_on": "2026-10-14"
   }
 ]

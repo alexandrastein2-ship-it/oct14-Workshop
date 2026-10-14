@@ -313,5 +313,322 @@
     "period": "2026-2027 roll close (period of appeals not stated)",
     "quote": "The Office achieved this while managing a sustained, unprecedented rise in assessment appeals with no meaningful decreases in other assessment work: resolving over 7,600 assessment appeals and 13,150 assessment items , such as valuing property during new construction and changes in ownership.",
     "questions": []
+  },
+  {
+    "claim_id": "c29",
+    "source_id": "meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma",
+    "subject": "415 Natoma St, SoMa (office, 667,000 SF) - total price (from headline); buyers Meridian Group & Fenway Capital; debt-to-deed transfer",
+    "value": "200",
+    "unit": "million dollars",
+    "period": "closing reported April 9, 2026",
+    "quote": "Meridian Group & Fenway Capital Close $200MM Acquisition of 667,000 SQFT Office Tower at 415 Natoma in San Francisco's SoMa",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c30",
+    "source_id": "meridian-group-fenway-capital-close-200mm-acquisition-of-667000-sqft-office-tower-at-415-natoma-in-san-franciscos-soma",
+    "subject": "415 Natoma St, SoMa (office, 667,000 SF) - price per SF; buyers Meridian Group & Fenway Capital",
+    "value": "300",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "closing reported April 9, 2026",
+    "quote": "The deal, priced at roughly $300 per square foot, caps a debt-to-deed transfer for one of the city's newest and most vacant office towers as the new owners prepare to court AI tenants amid record-high absorption",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c31",
+    "source_id": "madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower",
+    "subject": "123 Mission St, South Financial District (office, 360,000 SF) - total price (from headline); buyers Madison Capital & PGIM; seller not in free text (former Juul tower)",
+    "value": "95",
+    "unit": "million dollars",
+    "period": "closing reported April 9, 2026",
+    "quote": "Madison Capital & PGIM Close $95MM Acquisition of 360,000 SQFT 123 Mission in San Francisco, Completing Turnaround of Former Juul Tower",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c32",
+    "source_id": "madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower",
+    "subject": "123 Mission St, South Financial District (office, 360,000 SF) - price per SF; buyers Madison Capital & PGIM",
+    "value": "264",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "closing reported April 9, 2026",
+    "quote": "The deal prices the 29-story South Financial District office tower at roughly $264 per square foot — a 76 percent discount from Juul Labs' $397 million purchase in 2019 — as the new owners prepare a hospitality-driven repositioning amid record AI-fueled leasing",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c33",
+    "source_id": "madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower",
+    "subject": "123 Mission St, South Financial District (office, 360,000 SF) - discount from Juul Labs' 2019 purchase price",
+    "value": "76",
+    "unit": "percent discount",
+    "period": "2026 sale vs 2019 purchase",
+    "quote": "The deal prices the 29-story South Financial District office tower at roughly $264 per square foot — a 76 percent discount from Juul Labs' $397 million purchase in 2019 — as the new owners prepare a hospitality-driven repositioning amid record AI-fueled leasing",
+    "questions": [
+      11
+    ]
+  },
+  {
+    "claim_id": "c34",
+    "source_id": "zurich-alternative-asset-management-buys-78000-sqft-410-townsend-for-47-4mm-in-san-francisco",
+    "subject": "410 Townsend St, SoMa (office, 78,000 SF) - total price; buyer Zurich Alternative Asset Management; seller not in free text",
+    "value": "47.4",
+    "unit": "million dollars",
+    "period": "sale reported September 24, 2026",
+    "quote": "Zurich Alternative Asset Management pays $47.4 million for 410 Townsend, more than double its 2024 sale price.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c35",
+    "source_id": "presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure",
+    "subject": "333 Valencia St, Mission District (office, 55,700 SF) - total price (from headline); buyer Presidio Bay Ventures via deed in lieu of foreclosure",
+    "value": "27.5",
+    "unit": "million dollars",
+    "period": "reported February 7, 2026",
+    "quote": "Presidio Bay Ventures Acquires 55,700 SQFT Office at 333 Valencia in San Francisco for $27.5MM via Deed in Lieu of Foreclosure",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c36",
+    "source_id": "presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure",
+    "subject": "333 Valencia St, Mission District (office, 55,700 SF) - price per SF; buyer Presidio Bay Ventures",
+    "value": "494",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "reported February 7, 2026",
+    "quote": "The Mission District office property traded at approximately $494 per square foot, representing a 54 percent discount from its 2021 asking price of $60 million as San Francisco's office market continues to reset amid growing investor interest.",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c37",
+    "source_id": "presidio-bay-ventures-acquires-55700-sqft-office-at-333-valencia-in-san-francisco-for-27-5mm-via-deed-in-lieu-of-foreclosure",
+    "subject": "333 Valencia St, Mission District (office, 55,700 SF) - discount from 2021 asking price of $60 million",
+    "value": "54",
+    "unit": "percent discount",
+    "period": "2026 trade vs 2021 asking price",
+    "quote": "The Mission District office property traded at approximately $494 per square foot, representing a 54 percent discount from its 2021 asking price of $60 million as San Francisco's office market continues to reset amid growing investor interest.",
+    "questions": [
+      11
+    ]
+  },
+  {
+    "claim_id": "c38",
+    "source_id": "sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm",
+    "subject": "One Daniel Burnham Court, Cathedral Hill (medical office, 108,362 SF) - total price; buyer Sutter Bay Medical Foundation; seller not in free text",
+    "value": "47",
+    "unit": "million dollars",
+    "period": "closed December 16, 2025",
+    "quote": "One Daniel Burnham Court, a 108,362-square-foot medical office building in San Francisco's Cathedral Hill neighborhood, has sold to Sutter Bay Medical Foundation for $47 million, closing on December 16, 2025, according to public documents reviewed by The Registry.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c39",
+    "source_id": "sutter-bay-medical-foundation-acquires-san-franciscos-one-daniel-burnham-court-medical-office-building-for-47mm",
+    "subject": "One Daniel Burnham Court, Cathedral Hill (medical office, 108,362 SF) - price per SF; buyer Sutter Bay Medical Foundation",
+    "value": "434",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "closed December 16, 2025",
+    "quote": "Property sale closes at $434 per square foot in major healthcare real estate transaction",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c40",
+    "source_id": "redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm",
+    "subject": "400 Montgomery St, Financial District (office) - total price; buyer Redco (per SF Business Times)",
+    "value": "25.75",
+    "unit": "million dollars",
+    "period": "reported November 20, 2024",
+    "quote": "San Francisco-based real estate investment firm Redco has acquired 400 Montgomery St., a historic office building, for $25.75 million, or roughly $300 per square foot, according to a report from the San Francisco Business Times.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c41",
+    "source_id": "redco-development-eyes-purchase-of-86500-sqft-building-in-san-francisco-for-26mm",
+    "subject": "400 Montgomery St, Financial District (office) - price per SF; buyer Redco (per SF Business Times)",
+    "value": "300",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "reported November 20, 2024",
+    "quote": "San Francisco-based real estate investment firm Redco has acquired 400 Montgomery St., a historic office building, for $25.75 million, or roughly $300 per square foot, according to a report from the San Francisco Business Times.",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c42",
+    "source_id": "presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco",
+    "subject": "301 Battery St, Financial District (office, 209,000 SF) - acquisition loan size (up to); lender Bluerock Private Real Estate Fund affiliate; borrower Presidio Bay Ventures",
+    "value": "85.6",
+    "unit": "million dollars (maximum loan amount)",
+    "period": "October 1, 2026 (deed in lieu)",
+    "quote": "Recorded documents show RFR Holding surrendered the former Federal Reserve Bank building at 301 Battery Street to a Presidio Bay Ventures entity on Oct. 1 to settle $130.2 million in debt, and the new owner immediately financed the landmark with a loan of up to $85.6 million from an affiliate of the Bluerock Private Real Estate Fund.",
+    "questions": [
+      9,
+      16
+    ]
+  },
+  {
+    "claim_id": "c43",
+    "source_id": "presidio-bay-takes-title-to-209000-sqft-301-battery-from-rfr-via-deed-in-lieu-lands-85-6mm-bluerock-loan-in-san-francisco",
+    "subject": "301 Battery St, Financial District (office, 209,000 SF) - debt settled by deed in lieu; seller RFR Holding, new owner Presidio Bay Ventures",
+    "value": "130.2",
+    "unit": "million dollars",
+    "period": "October 1, 2026 (deed in lieu)",
+    "quote": "Recorded documents show RFR Holding surrendered the former Federal Reserve Bank building at 301 Battery Street to a Presidio Bay Ventures entity on Oct. 1 to settle $130.2 million in debt, and the new owner immediately financed the landmark with a loan of up to $85.6 million from an affiliate of the Bluerock Private Real Estate Fund.",
+    "questions": [
+      8
+    ]
+  },
+  {
+    "claim_id": "c44",
+    "source_id": "swig-company-lands-96mm-invesco-refinancing-on-491000-sqft-mills-building-in-san-francisco",
+    "subject": "Mills Building, Financial District (office, 491,000 SF) - refinance loan size; lender Invesco Real Estate; owner The Swig Company",
+    "value": "96",
+    "unit": "million dollars",
+    "period": "refinance reported July 21, 2026",
+    "quote": "The Swig Company has refinanced its historic Mills Building in San Francisco's Financial District with a $96 million loan from Invesco Real Estate, a vote of confidence in a downtown office market that is finally clawing back demand after years of contraction.",
+    "questions": [
+      9,
+      16
+    ]
+  },
+  {
+    "claim_id": "c45",
+    "source_id": "fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price",
+    "subject": "520 Geary St, Union Square (multifamily, 91 units) - total price; seller Fortress Investment Group-tied entity, buyer a Burlingame investor",
+    "value": "18.475",
+    "unit": "million dollars",
+    "period": "sale reported August 14, 2026",
+    "quote": "An entity tied to Fortress Investment Group has sold the 91-unit apartment building at 520 Geary Street near San Francisco's Union Square to a Burlingame investor for $18.475 million, marking a roughly 50 percent markdown from what the property fetched at the market's 2018 peak.",
+    "questions": [
+      2,
+      10
+    ]
+  },
+  {
+    "claim_id": "c46",
+    "source_id": "fortress-tied-owner-sells-91-unit-520-geary-apartments-in-san-francisco-for-18-475mm-roughly-half-its-2018-price",
+    "subject": "520 Geary St, Union Square (multifamily, 91 units) - markdown from 2018 peak price",
+    "value": "50",
+    "unit": "percent (roughly) below 2018 price",
+    "period": "2026 sale vs 2018 sale",
+    "quote": "An entity tied to Fortress Investment Group has sold the 91-unit apartment building at 520 Geary Street near San Francisco's Union Square to a Burlingame investor for $18.475 million, marking a roughly 50 percent markdown from what the property fetched at the market's 2018 peak.",
+    "questions": [
+      10
+    ]
+  },
+  {
+    "claim_id": "c47",
+    "source_id": "28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm",
+    "subject": "1275-1281 8th Ave (multifamily, 28 units) - total price; broker Marcus & Millichap; buyer/seller not in free text",
+    "value": "6.65",
+    "unit": "million dollars",
+    "period": "June 9, 2026 (announcement date)",
+    "quote": "The property sold for $6.65 million, or $237,500 per unit.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c48",
+    "source_id": "28-unit-multifamily-property-in-san-francisco-trades-for-6-65mm",
+    "subject": "1275-1281 8th Ave (multifamily, 28 units) - price per unit; broker Marcus & Millichap",
+    "value": "237,500",
+    "unit": "dollars per unit",
+    "period": "June 9, 2026 (announcement date)",
+    "quote": "The property sold for $6.65 million, or $237,500 per unit.",
+    "questions": [
+      5,
+      10
+    ]
+  },
+  {
+    "claim_id": "c49",
+    "source_id": "fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm",
+    "subject": "23-building SF apartment portfolio, ~890 units (multifamily loan sale) - price paid for the loan (from headline); buyer Fortress Investment Group",
+    "value": "220",
+    "unit": "million dollars",
+    "period": "reported January 6, 2026",
+    "quote": "Fortress Acquires $348MM Loan Backed by 890 San Francisco Apartments for $220MM",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c50",
+    "source_id": "fortress-acquires-348mm-loan-backed-by-890-san-francisco-apartments-for-220mm",
+    "subject": "23-building SF apartment portfolio, ~890 units (multifamily loan sale) - face amount of the loan bought (from headline)",
+    "value": "348",
+    "unit": "million dollars",
+    "period": "reported January 6, 2026",
+    "quote": "Fortress Acquires $348MM Loan Backed by 890 San Francisco Apartments for $220MM",
+    "questions": [
+      9
+    ]
+  },
+  {
+    "claim_id": "c51",
+    "source_id": "terreno-realty-acquires-65000-sqft-mendell-street-industrial-property-in-san-francisco-for-25-9mm",
+    "subject": "Mendell Street industrial complex, India Basin (industrial, 64,782 SF) - total price; buyer Terreno Realty, seller Lowenberg Corporation",
+    "value": "25.9",
+    "unit": "million dollars",
+    "period": "sale reported August 24, 2026",
+    "quote": "Terreno Realty Corporation has purchased a fully leased ±64,782-square-foot industrial complex on 3.8 acres in San Francisco's India Basin from the Lowenberg Corporation for $25.9 million, deepening the REIT's bet on scarce infill industrial space in the supply-starved Bay Area.",
+    "questions": [
+      2,
+      12
+    ]
+  },
+  {
+    "claim_id": "c52",
+    "source_id": "redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco",
+    "subject": "Showplace Square office building, ex-Shorenstein (office, 79,600 SF) - price paid for $25 million loan, taken via deed in lieu; buyer Redco (per SF Business Times)",
+    "value": "15.1",
+    "unit": "million dollars",
+    "period": "reported June 9, 2025",
+    "quote": "According to a report from the San Francisco Business Times, Redco has purchased a $25 million loan tied to an office building previously owned by Shorenstein for $15.1 million, or approximately $190 per square foot, through a deed-in-lieu-of-foreclosure.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c53",
+    "source_id": "redco-pays-15-1mm-for-25mm-loan-tied-to-79600-sqft-office-building-in-san-francisco",
+    "subject": "Showplace Square office building, ex-Shorenstein (office, 79,600 SF) - price per SF; buyer Redco (per SF Business Times)",
+    "value": "190",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "reported June 9, 2025",
+    "quote": "According to a report from the San Francisco Business Times, Redco has purchased a $25 million loan tied to an office building previously owned by Shorenstein for $15.1 million, or approximately $190 per square foot, through a deed-in-lieu-of-foreclosure.",
+    "questions": [
+      3,
+      4,
+      11
+    ]
   }
 ]
