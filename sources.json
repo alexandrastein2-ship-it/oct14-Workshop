@@ -75,5 +75,16 @@
     "sha256": "f61ee6685fe5d01f77ff66589f7fc90a6148f17203168f4eb21902c7b08b4ef0",
     "capture_sha256": "b5fed55fdf77ee5d3618e89a8749ca590d010673170c9c110417c1e5b2f1d914",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "title": "SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaqu\u00edn Torres Releases 2026-2027 Assessment Roll",
+    "url": "https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/",
+    "original": "sources/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll.html",
+    "capture": "captures/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll.txt",
+    "extractor": "html tags removed",
+    "sha256": "e6249ddba9e4d303a047f317bbb41ed7b2a46c6dc0f1b58e8e9f4c8654fb72ac",
+    "capture_sha256": "31acba45e84e8cd75137c192e1e661702ff3775e7169757f75fbeeb549be6ce9",
+    "added_on": "2026-10-14"
   }
 ]

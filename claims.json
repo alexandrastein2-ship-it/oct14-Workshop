@@ -178,5 +178,59 @@
     "unit": "percent decline",
     "period": "H1 2026 vs H1 2025",
     "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento."
+  },
+  {
+    "claim_id": "c21",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "San Francisco total local assessment roll, after exemptions (all property types, assessed not market value)",
+    "value": "361.1",
+    "unit": "billion dollars",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%."
+  },
+  {
+    "claim_id": "c22",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Year-over-year growth of San Francisco assessment roll",
+    "value": "2.14",
+    "unit": "percent",
+    "period": "2026-2027 roll (lien date January 1, 2026) vs 2025-2026",
+    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%."
+  },
+  {
+    "claim_id": "c23",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Assessed value added to SF secured roll by changes in ownership (sales & transfers), before exemptions",
+    "value": "1.85",
+    "unit": "billion dollars",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions."
+  },
+  {
+    "claim_id": "c24",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Assessed value added to SF secured roll by new construction, before exemptions",
+    "value": "1.75",
+    "unit": "billion dollars",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "Processed new construction accounts for an estimated 23% of secured roll growth, adding approximately $1.75 billion in assessed value before exemptions."
+  },
+  {
+    "claim_id": "c25",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Number of SF properties with a Proposition 8 decline-in-value reduction (market value below assessed value)",
+    "value": "8,600",
+    "unit": "properties (more than)",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion."
+  },
+  {
+    "claim_id": "c26",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Total temporary reduction in SF assessed value from Proposition 8 decline-in-value reductions",
+    "value": "5.5",
+    "unit": "billion dollars",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion."
   }
 ]
