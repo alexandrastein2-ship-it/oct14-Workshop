@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "title": "JLL Office Market Dynamics Q3 2026: San Francisco",
+    "url": "https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf",
+    "original": "sources/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf",
+    "capture": "captures/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.txt",
+    "extractor": "pdftotext -layout",
+    "sha256": "172d9502e01ad6c0c84278363d05f538c4fd6a93a0393f8c66458188d7554562",
+    "capture_sha256": "4d51c3f2e151064afa703bd3c8399e4112b024e649bea695e56e691149077440",
+    "added_on": "2026-10-14"
+  }
+]
