@@ -7,6 +7,9 @@ first. Claims missing from REPORT.md are shown as held ("not checked yet").
 
 Usage:
   python3 verify.py && python3 build_index.py
+  python3 build_index.py --fragment <path>
+      Also write the page without the <html>/<head>/<body> wrapper, for
+      publishing as a claude.ai Artifact (which adds its own wrapper).
 
 Python standard library only. Nothing in this file calls an AI model.
 """
@@ -15,6 +18,7 @@ import datetime
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -232,12 +236,8 @@ def main():
     checked = (datetime.datetime.fromtimestamp(report_path.stat().st_mtime).strftime("%B %-d, %Y %H:%M")
                if report_path.exists() else "never")
 
-    OUT.write_text(f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SF Deal Claims</title>
+    page = f"""<title>SF Deal Claims</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <style>
 :root {{
   --bg: #f7f6f3; --surface: #ffffff; --text: #1d1d1b; --muted: #66645e;
@@ -248,18 +248,20 @@ def main():
   :root:not([data-theme="light"]) {{
     --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
     --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
-    --quote: #262623;
+    --quote: #262623; color-scheme: dark;
   }}
 }}
 :root[data-theme="dark"] {{
   --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
   --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
-  --quote: #262623;
+  --quote: #262623; color-scheme: dark;
 }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; background: var(--bg); color: var(--text);
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }}
-main {{ max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }}
+main {{ max-width: 1100px; margin: 0 auto; padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
+.grid > * {{ min-width: 0; }}
 header h1 {{ margin: 0 0 4px; font-size: 26px; }}
 header p {{ margin: 4px 0; color: var(--muted); }}
 .stats {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }}
@@ -297,8 +299,6 @@ details {{ margin: 0 0 10px; font-size: 14px; }}
 summary {{ cursor: pointer; color: var(--accent); }}
 footer {{ margin-top: 48px; color: var(--muted); font-size: 13px; }}
 </style>
-</head>
-<body>
 <main>
 <header>
   <h1>San Francisco CRE Deal Claims</h1>
@@ -317,9 +317,13 @@ footer {{ margin-top: 48px; color: var(--muted); font-size: 13px; }}
 <footer>Built by build_index.py from claims.json, sources.json, questions.md and REPORT.md (checked {esc(checked)}).
 Do not edit by hand.</footer>
 </main>
-</body>
-</html>
-""", encoding="utf-8")
+"""
+    OUT.write_text('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+                   '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+                   + page.replace("</style>\n<main>", "</style>\n</head>\n<body>\n<main>", 1)
+                   + "</body>\n</html>\n", encoding="utf-8")
+    if "--fragment" in sys.argv:
+        Path(sys.argv[sys.argv.index("--fragment") + 1]).write_text(page, encoding="utf-8")
     print(f"Wrote index.html: {len(verified)} verified, {len(held)} held, {len(deals)} deals.")
 
 
