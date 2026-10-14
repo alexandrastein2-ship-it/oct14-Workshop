@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "claim_id": "c1",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "San Francisco office total vacancy rate (citywide)",
+    "value": "30.8",
+    "unit": "percent",
+    "period": "Q3 2026",
+    "quote": "Citywide, positive absorption is nearing 3 million s.f. year to date, bringing vacancy down to 30.8%."
+  },
+  {
+    "claim_id": "c2",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "San Francisco office net absorption, year to date (stats table row)",
+    "value": "2.94",
+    "unit": "million square feet",
+    "period": "YTD 2026 (through Q3 2026)",
+    "quote": "YTD net absorption             2.94 million s.f."
+  },
+  {
+    "claim_id": "c3",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "San Francisco Class A office direct asking rent (stats table row)",
+    "value": "79.05",
+    "unit": "dollars per square foot (per year, basis per JLL)",
+    "period": "Q3 2026",
+    "quote": "Class A direct asking rent     $79.05 p.s.f."
+  },
+  {
+    "claim_id": "c4",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "San Francisco overall office direct asking rent (stats table row)",
+    "value": "74.20",
+    "unit": "dollars per square foot (per year, basis per JLL)",
+    "period": "Q3 2026",
+    "quote": "Overall direct asking rent     $74.20 p.s.f."
+  },
+  {
+    "claim_id": "c5",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "Office space leased by AI firms in San Francisco, year to date",
+    "value": "3.3",
+    "unit": "million square feet",
+    "period": "YTD 2026",
+    "quote": "Year to date, AI firms have continued have leased 3.3 million s.f., exceeding last year's total of 2.3 million s.f."
+  },
+  {
+    "claim_id": "c6",
+    "source_id": "26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco",
+    "subject": "JLL forecast: San Francisco office vacancy at year-end (forecast ceiling)",
+    "value": "30",
+    "unit": "percent (forecast: under this level)",
+    "period": "year-end 2026 (forecast)",
+    "quote": "Citywide vacancy should decrease to under 30% by year-end, a 5.4-percentage-point drop from a year ago, supported by strong demand fundamentals and continued absorption across both CBD and non-CBD submarkets."
+  },
+  {
+    "claim_id": "c7",
+    "source_id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "subject": "San Francisco office sales volume, Q3 2026 (Colliers data via The Registry)",
+    "value": "959",
+    "unit": "million dollars",
+    "period": "Q3 2026",
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+  },
+  {
+    "claim_id": "c8",
+    "source_id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "subject": "San Francisco office sales volume, year to date (Colliers data via The Registry)",
+    "value": "2.6",
+    "unit": "billion dollars",
+    "period": "YTD 2026 (through Q3)",
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+  },
+  {
+    "claim_id": "c9",
+    "source_id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "subject": "Number of San Francisco office sale transactions, Q3 2026",
+    "value": "16",
+    "unit": "transactions",
+    "period": "Q3 2026",
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+  },
+  {
+    "claim_id": "c10",
+    "source_id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "subject": "Lowest price per SF among the six largest SF office deals, Q3 2026 (basis not stated)",
+    "value": "232",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "Q3 2026",
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+  },
+  {
+    "claim_id": "c11",
+    "source_id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "subject": "Highest price per SF among the six largest SF office deals, Q3 2026 (basis not stated)",
+    "value": "750",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "Q3 2026",
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+  },
+  {
+    "claim_id": "c12",
+    "source_id": "19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price",
+    "subject": "924 Sansome St, Jackson Square (office, ~19,000 SF) - sale price per SF; buyer/seller not in free text",
+    "value": "273",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "sale reported May 31, 2026",
+    "quote": "The 924 Sansome Street sale closes at $273 per square foot, signaling that distressed pricing persists for smaller San Francisco office assets even as leasing rebounds."
+  },
+  {
+    "claim_id": "c13",
+    "source_id": "19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price",
+    "subject": "924 Sansome St, Jackson Square (office) - total sale price (from headline)",
+    "value": "5.24",
+    "unit": "million dollars",
+    "period": "sale reported May 31, 2026",
+    "quote": "19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price"
+  },
+  {
+    "claim_id": "c14",
+    "source_id": "ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco",
+    "subject": "1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - price per unit; buyer Ballast",
+    "value": "441,250",
+    "unit": "dollars per unit",
+    "period": "sale reported May 8, 2026",
+    "quote": "The San Francisco multifamily operator paid roughly $441,250 per unit for 1690 Broadway, its latest play in a neighborhood where it has spent more than $80 million in barely a week as median one-bedroom rents climb nearly 20 percent year-over-year."
+  },
+  {
+    "claim_id": "c15",
+    "source_id": "ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco",
+    "subject": "1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - total sale price (from headline); buyer Ballast",
+    "value": "35.3",
+    "unit": "million dollars",
+    "period": "sale reported May 8, 2026",
+    "quote": "Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM, Doubling Down on San Francisco"
+  },
+  {
+    "claim_id": "c16",
+    "source_id": "tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm",
+    "subject": "Arc Light Apartments (multifamily, 94 units) - total sale price; buyer Tidewater Capital, seller not in free text",
+    "value": "37.8",
+    "unit": "million dollars",
+    "period": "sale reported July 29, 2025",
+    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times."
+  },
+  {
+    "claim_id": "c17",
+    "source_id": "tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm",
+    "subject": "Arc Light Apartments (multifamily, 94 units) - price per unit; buyer Tidewater Capital",
+    "value": "402,127",
+    "unit": "dollars per unit",
+    "period": "sale reported July 29, 2025",
+    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times."
+  },
+  {
+    "claim_id": "c18",
+    "source_id": "neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm",
+    "subject": "Sutter Mansion, 1409 Sutter St (hotel, 12 rooms) - total sale price; seller Neighbourgood, buyer confidential, broker CBRE",
+    "value": "7.3",
+    "unit": "million dollars",
+    "period": "June 3, 2026 (announcement date)",
+    "quote": "San Francisco – June 3, 2026 – CBRE has arranged the $7.3 million sale of Sutter Mansion, a 12‑room boutique hotel at 1409 Sutter Street in San Francisco’s Japantown/Pacific Heights area, to a confidential buyer."
+  },
+  {
+    "claim_id": "c19",
+    "source_id": "northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble",
+    "subject": "Northern California hotel sales dollar volume (region-wide, not SF only; Atlas Hospitality per tags)",
+    "value": "641.8",
+    "unit": "million dollars",
+    "period": "H1 2026",
+    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento."
+  },
+  {
+    "claim_id": "c20",
+    "source_id": "northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble",
+    "subject": "Year-over-year decline in Northern California hotel sales dollar volume (region-wide)",
+    "value": "15.7",
+    "unit": "percent decline",
+    "period": "H1 2026 vs H1 2025",
+    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento."
+  }
+]

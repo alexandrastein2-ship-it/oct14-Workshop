@@ -9,5 +9,71 @@
     "sha256": "172d9502e01ad6c0c84278363d05f538c4fd6a93a0393f8c66458188d7554562",
     "capture_sha256": "4d51c3f2e151064afa703bd3c8399e4112b024e649bea695e56e691149077440",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft",
+    "title": "The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT",
+    "url": "https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/",
+    "original": "sources/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft.html",
+    "capture": "captures/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft.txt",
+    "extractor": "html tags removed",
+    "sha256": "f422c232b5204d31db35e87a740b5301266aa906673d12c2a95459db3890f2e8",
+    "capture_sha256": "1e8e73e44ca672ee7520d74f7ec162a4aebb541f3016a01d342cabe63876f46b",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price",
+    "title": "The Registry (May 31, 2026): 19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price",
+    "url": "https://news.theregistrysf.com/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price/",
+    "original": "sources/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price.html",
+    "capture": "captures/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price.txt",
+    "extractor": "html tags removed",
+    "sha256": "5573fb6eec1776b69710e1e21d95816456fb311428d9be2c3d1e618bb9757004",
+    "capture_sha256": "deb682762dd3bd8013382f78f762c5da4bda70dcb0083265dbd346dfdf426f26",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco",
+    "title": "The Registry (May 8, 2026): Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM",
+    "url": "https://news.theregistrysf.com/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco/",
+    "original": "sources/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco.html",
+    "capture": "captures/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "ae9362421515b95a46a0db278c8878ec8e147fa7b95275b39352da524cf23cf0",
+    "capture_sha256": "20e9f98dab0ad83ef1ff071a3655711aaa0089a60d2e78f8d3586338a7af0377",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm",
+    "title": "The Registry (Jul 29, 2025): Tidewater Capital Buys 94-Unit Arc Light Apartments in San Francisco for $37.8MM",
+    "url": "https://news.theregistrysf.com/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm/",
+    "original": "sources/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm.html",
+    "capture": "captures/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "3879c36946c868f0d06b2d6495431f52eaab3c0f9abc5895d784b79797288152",
+    "capture_sha256": "b50383579757011c961e3ce16f8a62156b77ca63e1f2e7f4ab03bbf388efe2df",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm",
+    "title": "The Registry (Jun 5, 2026): Neighbourgood Sells 12-Room Sutter Mansion Boutique Hotel in San Francisco for $7.3MM",
+    "url": "https://news.theregistrysf.com/neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm/",
+    "original": "sources/neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm.html",
+    "capture": "captures/neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm.txt",
+    "extractor": "html tags removed",
+    "sha256": "eab35b4540488e225237890cbe1b5c50b2879cfd2d628eeacbcc54f86a73f391",
+    "capture_sha256": "0e58e689fcee40c0cc0221a281af04f75be800908dff810dcb39e2e186cadd18",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble",
+    "title": "The Registry (Aug 5, 2026): Northern California Hotel Sales Slide 16% to $642MM as San Francisco and Alameda Volumes Tumble",
+    "url": "https://news.theregistrysf.com/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble/",
+    "original": "sources/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble.html",
+    "capture": "captures/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble.txt",
+    "extractor": "html tags removed",
+    "sha256": "f61ee6685fe5d01f77ff66589f7fc90a6148f17203168f4eb21902c7b08b4ef0",
+    "capture_sha256": "b5fed55fdf77ee5d3618e89a8749ca590d010673170c9c110417c1e5b2f1d914",
+    "added_on": "2026-10-14"
   }
 ]
