@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SF Deal Claims</title>
+<style>
+:root {
+  --bg: #f7f6f3; --surface: #ffffff; --text: #1d1d1b; --muted: #66645e;
+  --line: #e2dfd8; --accent: #1f5f8b; --ok: #2e7d4f; --warn: #a15c07; --warn-bg: #fdf3e3;
+  --quote: #f1efe9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
+    --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
+    --quote: #262623;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
+  --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
+  --quote: #262623;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+header h1 { margin: 0 0 4px; font-size: 26px; }
+header p { margin: 4px 0; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; }
+.stat b { font-size: 20px; display: block; }
+.stat.ok b { color: var(--ok); } .stat.held b { color: var(--warn); }
+nav { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 12px 0 0; font-size: 14px; }
+a { color: var(--accent); }
+h2 { font-size: 20px; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--line); }
+h3 { font-size: 16px; margin: 24px 0 10px; }
+.qnums { font-size: 13px; font-weight: 500; color: var(--muted); margin-left: 6px; }
+.qn { display: inline-block; min-width: 34px; color: var(--accent); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.claim { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.claim-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.value { font-size: 20px; font-weight: 650; }
+.id { font-size: 12px; color: var(--ok); border: 1px solid var(--ok); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+.id::before { content: "✓ "; }
+.subject { margin: 6px 0 2px; font-weight: 500; }
+.period { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+blockquote { margin: 0 0 8px; padding: 8px 10px; background: var(--quote); border-left: 3px solid var(--line);
+  font-size: 13.5px; overflow-wrap: anywhere; }
+.source { margin: 0; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.flags { margin: 8px 0 0; padding: 6px 10px 6px 26px; background: var(--warn-bg); color: var(--warn);
+  border-radius: 6px; font-size: 12.5px; }
+.note, .empty { color: var(--muted); font-size: 14px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { font-size: 12.5px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+.when { display: block; font-weight: 400; font-size: 12.5px; color: var(--muted); }
+td.gap { color: var(--muted); }
+details { margin: 0 0 10px; font-size: 14px; }
+summary { cursor: pointer; color: var(--accent); }
+footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>San Francisco CRE Deal Claims</h1>
+  <p>San Francisco commercial real estate market dynamics across four product types (multifamily, office, industrial, hospitality), told through recent individual transactions: what traded, who bought and sold, at what price and yield, and how it was financed.</p>
+  <div class="stats">
+    <div class="stat ok"><b>28</b>verified claims</div>
+    <div class="stat held"><b>0</b>held claims</div>
+    <div class="stat"><b>8</b>sources</div>
+    <div class="stat"><b>4</b>deals</div>
+  </div>
+  <p>Verified means the source hasn't changed, the quote is word for word in it, and the number is in the quote.
+  It does not mean the claim is the right fact. Orange notes mark claims a person should still check.</p>
+  <nav><a href="#deals">Deals</a><a href="#q10">Q10</a><a href="#q11">Q11</a><a href="#q12">Q12</a><a href="#q13">Q13</a><a href="#q14">Q14</a><a href="#q15">Q15</a><a href="#q16">Q16</a><a href="#background">Background</a><a href="#held">Held</a></nav>
+</header>
+
+<section class="question-group" id="deals">
+  <h2>By transaction (answer for every deal found) <span class="qnums">Q1–Q9</span></h2>
+  <details><summary>The questions</summary><ol><li value="1">What property traded, what product type is it, and when did the sale close (or when was it announced, if the close date isn&#x27;t given)?</li><li value="2">What was the total transaction price?</li><li value="3">What was the price per gross square foot?</li><li value="4">What was the price per rentable square foot?</li><li value="5">What was the price per unit (multifamily) or per key (hotel)?</li><li value="6">What was the cap rate, and is it going-in or pro forma?</li><li value="7">Who was the seller, and who was the buyer?</li><li value="8">Was the sale distressed (foreclosure, note sale, lender-owned, receiver sale, deed in lieu)?</li><li value="9">How was it financed: loan size, lender, loan-to-value, loan-to-cost, and interest rate (fixed rate or spread over index)?</li></ol></details>
+  <p class="note">Buyer, seller, lender and dates are not numbers, so verify.py cannot check them.
+  Where known they appear in each claim's description and its quote; read the quote to confirm.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">Deal</th><th scope="col">Total price</th><th scope="col">$/SF</th><th scope="col">$/unit or key</th><th scope="col">Cap rate</th><th scope="col">Financing</th></tr></thead>
+    <tbody><tr><th scope="row">924 Sansome St, Jackson Square (office)<span class="when">sale reported May 31, 2026</span></th><td>$5.24 million</td><td>$273 / SF</td><td class="gap">—</td><td class="gap">—</td><td class="gap">—</td></tr><tr><th scope="row">1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units)<span class="when">sale reported May 8, 2026</span></th><td>$35.3 million</td><td class="gap">—</td><td>$441,250 / unit</td><td class="gap">—</td><td class="gap">—</td></tr><tr><th scope="row">Arc Light Apartments (multifamily, 94 units)<span class="when">sale reported July 29, 2025</span></th><td>$37.8 million</td><td class="gap">—</td><td>$402,127 / unit</td><td class="gap">—</td><td class="gap">—</td></tr><tr><th scope="row">Sutter Mansion, 1409 Sutter St (hotel, 12 rooms)<span class="when">June 3, 2026 (announcement date)</span></th><td>$7.3 million</td><td class="gap">—</td><td class="gap">—</td><td class="gap">—</td><td class="gap">—</td></tr></tbody>
+  </table></div>
+  <section class="deal"><h3>924 Sansome St, Jackson Square (office)</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$273 / SF</span>
+    <span class="id">c12</span>
+  </div>
+  <p class="subject">924 Sansome St, Jackson Square (office) - sale price per SF (~19,000 SF building; buyer/seller not in free text)</p>
+  <p class="period">sale reported May 31, 2026</p>
+  <blockquote>The 924 Sansome Street sale closes at $273 per square foot, signaling that distressed pricing persists for smaller San Francisco office assets even as leasing rebounds.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price/">The Registry (May 31, 2026): 19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li><li>per-SF basis (gross or rentable) not stated</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$5.24 million</span>
+    <span class="id">c13</span>
+  </div>
+  <p class="subject">924 Sansome St, Jackson Square (office) - total sale price (from headline)</p>
+  <p class="period">sale reported May 31, 2026</p>
+  <blockquote>19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price/">The Registry (May 31, 2026): 19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price</a></p>
+  <ul class="flags"><li>quote has 3 numbers; confirm the right one was taken</li></ul>
+</article></div></section><section class="deal"><h3>1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units)</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$441,250 / unit</span>
+    <span class="id">c14</span>
+  </div>
+  <p class="subject">1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - price per unit; buyer Ballast</p>
+  <p class="period">sale reported May 8, 2026</p>
+  <blockquote>The San Francisco multifamily operator paid roughly $441,250 per unit for 1690 Broadway, its latest play in a neighborhood where it has spent more than $80 million in barely a week as median one-bedroom rents climb nearly 20 percent year-over-year.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco/">The Registry (May 8, 2026): Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$35.3 million</span>
+    <span class="id">c15</span>
+  </div>
+  <p class="subject">1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - total sale price (from headline); buyer Ballast</p>
+  <p class="period">sale reported May 8, 2026</p>
+  <blockquote>Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM, Doubling Down on San Francisco</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco/">The Registry (May 8, 2026): Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article></div></section><section class="deal"><h3>Arc Light Apartments (multifamily, 94 units)</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$37.8 million</span>
+    <span class="id">c16</span>
+  </div>
+  <p class="subject">Arc Light Apartments (multifamily, 94 units) - total sale price; buyer Tidewater Capital, seller not in free text</p>
+  <p class="period">sale reported July 29, 2025</p>
+  <blockquote>The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm/">The Registry (Jul 29, 2025): Tidewater Capital Buys 94-Unit Arc Light Apartments in San Francisco for $37.8MM</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$402,127 / unit</span>
+    <span class="id">c17</span>
+  </div>
+  <p class="subject">Arc Light Apartments (multifamily, 94 units) - price per unit; buyer Tidewater Capital</p>
+  <p class="period">sale reported July 29, 2025</p>
+  <blockquote>The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm/">The Registry (Jul 29, 2025): Tidewater Capital Buys 94-Unit Arc Light Apartments in San Francisco for $37.8MM</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article></div></section><section class="deal"><h3>Sutter Mansion, 1409 Sutter St (hotel, 12 rooms)</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$7.3 million</span>
+    <span class="id">c18</span>
+  </div>
+  <p class="subject">Sutter Mansion, 1409 Sutter St (hotel, 12 rooms) - total sale price; seller Neighbourgood, buyer confidential, broker CBRE</p>
+  <p class="period">June 3, 2026 (announcement date)</p>
+  <blockquote>San Francisco – June 3, 2026 – CBRE has arranged the $7.3 million sale of Sutter Mansion, a 12‑room boutique hotel at 1409 Sutter Street in San Francisco’s Japantown/Pacific Heights area, to a confidential buyer.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm/">The Registry (Jun 5, 2026): Neighbourgood Sells 12-Room Sutter Mansion Boutique Hotel in San Francisco for $7.3MM</a></p>
+  <ul class="flags"><li>quote has 5 numbers; confirm the right one was taken</li></ul>
+</article></div></section>
+</section><section class="question-group"><h2>By product type (market context)</h2><section class="question" id="q10"><h3><span class="qn">Q10</span> <strong>Multifamily:</strong> what are recent San Francisco apartment sale prices per unit and per square foot, and what cap rates are deals trading at?</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$441,250 / unit</span>
+    <span class="id">c14</span>
+  </div>
+  <p class="subject">1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - price per unit; buyer Ballast</p>
+  <p class="period">sale reported May 8, 2026</p>
+  <blockquote>The San Francisco multifamily operator paid roughly $441,250 per unit for 1690 Broadway, its latest play in a neighborhood where it has spent more than $80 million in barely a week as median one-bedroom rents climb nearly 20 percent year-over-year.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/ballast-lands-80-unit-grosvenor-atrium-in-pacific-heights-for-35-3mm-doubling-down-on-san-francisco/">The Registry (May 8, 2026): Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$402,127 / unit</span>
+    <span class="id">c17</span>
+  </div>
+  <p class="subject">Arc Light Apartments (multifamily, 94 units) - price per unit; buyer Tidewater Capital</p>
+  <p class="period">sale reported July 29, 2025</p>
+  <blockquote>The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/tidewater-capital-buys-94-unit-arc-light-apartments-in-san-francisco-for-37-8mm/">The Registry (Jul 29, 2025): Tidewater Capital Buys 94-Unit Arc Light Apartments in San Francisco for $37.8MM</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article></div></section><section class="question" id="q11"><h3><span class="qn">Q11</span> <strong>Office:</strong> what are recent office sale prices per square foot, how far below prior sale prices or peak valuations are they, and what share of recent sales were distressed?</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$232 / SF</span>
+    <span class="id">c10</span>
+  </div>
+  <p class="subject">Lowest price per SF among the six largest SF office deals, Q3 2026 (basis not stated)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/">The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT</a></p>
+  <ul class="flags"><li>quote has 6 numbers; confirm the right one was taken</li><li>per-SF basis (gross or rentable) not stated</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$750 / SF</span>
+    <span class="id">c11</span>
+  </div>
+  <p class="subject">Highest price per SF among the six largest SF office deals, Q3 2026 (basis not stated)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/">The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT</a></p>
+  <ul class="flags"><li>quote has 6 numbers; confirm the right one was taken</li><li>per-SF basis (gross or rentable) not stated</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$273 / SF</span>
+    <span class="id">c12</span>
+  </div>
+  <p class="subject">924 Sansome St, Jackson Square (office) - sale price per SF (~19,000 SF building; buyer/seller not in free text)</p>
+  <p class="period">sale reported May 31, 2026</p>
+  <blockquote>The 924 Sansome Street sale closes at $273 per square foot, signaling that distressed pricing persists for smaller San Francisco office assets even as leasing rebounds.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price/">The Registry (May 31, 2026): 19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li><li>per-SF basis (gross or rentable) not stated</li></ul>
+</article></div></section><section class="question" id="q12"><h3><span class="qn">Q12</span> <strong>Industrial:</strong> what are recent industrial / PDR sale prices per square foot and cap rates?</h3><p class="empty">No verified claims yet.</p></section><section class="question" id="q13"><h3><span class="qn">Q13</span> <strong>Hospitality:</strong> what are recent hotel sale prices per key, and what cap rates or revenue-per-available-room (RevPAR) figures accompany them?</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$7.3 million</span>
+    <span class="id">c18</span>
+  </div>
+  <p class="subject">Sutter Mansion, 1409 Sutter St (hotel, 12 rooms) - total sale price; seller Neighbourgood, buyer confidential, broker CBRE</p>
+  <p class="period">June 3, 2026 (announcement date)</p>
+  <blockquote>San Francisco – June 3, 2026 – CBRE has arranged the $7.3 million sale of Sutter Mansion, a 12‑room boutique hotel at 1409 Sutter Street in San Francisco’s Japantown/Pacific Heights area, to a confidential buyer.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/neighbourgood-sells-12-room-sutter-mansion-boutique-hotel-in-san-francisco-for-7-3mm/">The Registry (Jun 5, 2026): Neighbourgood Sells 12-Room Sutter Mansion Boutique Hotel in San Francisco for $7.3MM</a></p>
+  <ul class="flags"><li>quote has 5 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$641.8 million</span>
+    <span class="id">c19</span>
+  </div>
+  <p class="subject">Northern California hotel sales dollar volume (region-wide, not SF only; Atlas Hospitality per tags)</p>
+  <p class="period">H1 2026</p>
+  <blockquote>Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble/">The Registry (Aug 5, 2026): Northern California Hotel Sales Slide 16% to $642MM as San Francisco and Alameda Volumes Tumble</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li><li>covers a wider region than San Francisco</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">15.7%</span>
+    <span class="id">c20</span>
+  </div>
+  <p class="subject">Year-over-year decline in Northern California hotel sales dollar volume (region-wide)</p>
+  <p class="period">H1 2026 vs H1 2025</p>
+  <blockquote>Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble/">The Registry (Aug 5, 2026): Northern California Hotel Sales Slide 16% to $642MM as San Francisco and Alameda Volumes Tumble</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li><li>covers a wider region than San Francisco</li></ul>
+</article></div></section><section class="question" id="q14"><h3><span class="qn">Q14</span> Across all four, what was total San Francisco investment sales volume in the most recent quarters, and how did it change from a year earlier?</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$959 million</span>
+    <span class="id">c7</span>
+  </div>
+  <p class="subject">San Francisco office sales volume, Q3 2026 (Colliers data via The Registry)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/">The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT</a></p>
+  <ul class="flags"><li>quote has 6 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$2.6 billion</span>
+    <span class="id">c8</span>
+  </div>
+  <p class="subject">San Francisco office sales volume, year to date (Colliers data via The Registry)</p>
+  <p class="period">YTD 2026 (through Q3)</p>
+  <blockquote>San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/">The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT</a></p>
+  <ul class="flags"><li>quote has 6 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">16 transactions</span>
+    <span class="id">c9</span>
+  </div>
+  <p class="subject">Number of San Francisco office sale transactions, Q3 2026</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/san-francisco-office-sales-hit-2-6b-year-to-date-as-q3-prices-split-from-232-to-750-per-sqft/">The Registry (Oct 9, 2026): San Francisco Office Sales Hit $2.6B Year to Date as Q3 Prices Split From $232 to $750 Per SQFT</a></p>
+  <ul class="flags"><li>quote has 6 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$641.8 million</span>
+    <span class="id">c19</span>
+  </div>
+  <p class="subject">Northern California hotel sales dollar volume (region-wide, not SF only; Atlas Hospitality per tags)</p>
+  <p class="period">H1 2026</p>
+  <blockquote>Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble/">The Registry (Aug 5, 2026): Northern California Hotel Sales Slide 16% to $642MM as San Francisco and Alameda Volumes Tumble</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li><li>covers a wider region than San Francisco</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">15.7%</span>
+    <span class="id">c20</span>
+  </div>
+  <p class="subject">Year-over-year decline in Northern California hotel sales dollar volume (region-wide)</p>
+  <p class="period">H1 2026 vs H1 2025</p>
+  <blockquote>Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.</blockquote>
+  <p class="source">Source: <a href="https://news.theregistrysf.com/northern-california-hotel-sales-slide-16-to-642mm-as-san-francisco-and-alameda-volumes-tumble/">The Registry (Aug 5, 2026): Northern California Hotel Sales Slide 16% to $642MM as San Francisco and Alameda Volumes Tumble</a></p>
+  <ul class="flags"><li>quote has 4 numbers; confirm the right one was taken</li><li>covers a wider region than San Francisco</li></ul>
+</article></div></section></section><section class="question-group"><h2>Financing environment</h2><section class="question" id="q15"><h3><span class="qn">Q15</span> What loan-to-value and loan-to-cost levels are lenders offering on San Francisco acquisitions by product type?</h3><p class="empty">No verified claims yet.</p></section><section class="question" id="q16"><h3><span class="qn">Q16</span> What interest rates or spreads are recent San Francisco acquisition and refinance loans carrying?</h3><p class="empty">No verified claims yet.</p></section></section>
+<section class="question-group" id="background">
+  <h2>Background <span class="qnums">not a direct answer to a question</span></h2>
+  <section class="question"><h3>JLL Office Market Dynamics Q3 2026: San Francisco</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">30.8%</span>
+    <span class="id">c1</span>
+  </div>
+  <p class="subject">San Francisco office total vacancy rate (citywide)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>Citywide, positive absorption is nearing 3 million s.f. year to date, bringing vacancy down to 30.8%.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">2.94 million square feet</span>
+    <span class="id">c2</span>
+  </div>
+  <p class="subject">San Francisco office net absorption, year to date (stats table row)</p>
+  <p class="period">YTD 2026 (through Q3 2026)</p>
+  <blockquote>YTD net absorption             2.94 million s.f.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$79.05 / SF</span>
+    <span class="id">c3</span>
+  </div>
+  <p class="subject">San Francisco Class A office direct asking rent (stats table row)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>Class A direct asking rent     $79.05 p.s.f.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$74.20 / SF</span>
+    <span class="id">c4</span>
+  </div>
+  <p class="subject">San Francisco overall office direct asking rent (stats table row)</p>
+  <p class="period">Q3 2026</p>
+  <blockquote>Overall direct asking rent     $74.20 p.s.f.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">3.3 million square feet</span>
+    <span class="id">c5</span>
+  </div>
+  <p class="subject">Office space leased by AI firms in San Francisco, year to date</p>
+  <p class="period">YTD 2026</p>
+  <blockquote>Year to date, AI firms have continued have leased 3.3 million s.f., exceeding last year&#x27;s total of 2.3 million s.f.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">30%</span>
+    <span class="id">c6</span>
+  </div>
+  <p class="subject">JLL forecast: San Francisco office vacancy at year-end (forecast ceiling)</p>
+  <p class="period">year-end 2026 (forecast)</p>
+  <blockquote>Citywide vacancy should decrease to under 30% by year-end, a 5.4-percentage-point drop from a year ago, supported by strong demand fundamentals and continued absorption across both CBD and non-CBD submarkets.</blockquote>
+  <p class="source">Source: <a href="https://www.jll.com/content/dam/jllcom/en/us/documents/reports/research-reports/market-dynamics-office/q3/26-insights-jll-us-office-market-dynamics-q3-2026-san-francisco.pdf">JLL Office Market Dynamics Q3 2026: San Francisco</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article></div></section><section class="question"><h3>SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</h3><div class="grid">
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$361.1 billion</span>
+    <span class="id">c21</span>
+  </div>
+  <p class="subject">San Francisco total local assessment roll, after exemptions (all property types, assessed not market value)</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 5 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">2.14%</span>
+    <span class="id">c22</span>
+  </div>
+  <p class="subject">Year-over-year growth of San Francisco assessment roll</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026) vs 2025-2026</p>
+  <blockquote>San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 5 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$1.85 billion</span>
+    <span class="id">c23</span>
+  </div>
+  <p class="subject">Assessed value added to SF secured roll by changes in ownership (sales &amp; transfers), before exemptions</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>Processed change in ownership items (sales &amp; transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$1.75 billion</span>
+    <span class="id">c24</span>
+  </div>
+  <p class="subject">Assessed value added to SF secured roll by new construction, before exemptions</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>Processed new construction accounts for an estimated 23% of secured roll growth, adding approximately $1.75 billion in assessed value before exemptions.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">8,600 properties (more than)</span>
+    <span class="id">c25</span>
+  </div>
+  <p class="subject">Number of SF properties with a Proposition 8 decline-in-value reduction (market value below assessed value)</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 7 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">$5.5 billion</span>
+    <span class="id">c26</span>
+  </div>
+  <p class="subject">Total temporary reduction in SF assessed value from Proposition 8 decline-in-value reductions</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 7 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">25%</span>
+    <span class="id">c27</span>
+  </div>
+  <p class="subject">Share of SF secured roll growth from changes in ownership (sales &amp; transfers)</p>
+  <p class="period">2026-2027 roll (lien date January 1, 2026)</p>
+  <blockquote>Processed change in ownership items (sales &amp; transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article>
+<article class="claim">
+  <div class="claim-head">
+    <span class="value">7,600 appeals (more than)</span>
+    <span class="id">c28</span>
+  </div>
+  <p class="subject">Number of SF assessment appeals resolved by the Assessor-Recorder (amid an &#x27;unprecedented rise&#x27; in appeals)</p>
+  <p class="period">2026-2027 roll close (period of appeals not stated)</p>
+  <blockquote>The Office achieved this while managing a sustained, unprecedented rise in assessment appeals with no meaningful decreases in other assessment work: resolving over 7,600 assessment appeals and 13,150 assessment items , such as valuing property during new construction and changes in ownership.</blockquote>
+  <p class="source">Source: <a href="https://www.sf.gov/news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll/">SF Assessor-Recorder press release (Jul 17, 2026): Assessor-Recorder Joaquín Torres Releases 2026-2027 Assessment Roll</a></p>
+  <ul class="flags"><li>quote has 2 numbers; confirm the right one was taken</li></ul>
+</article></div></section>
+</section><section class="question-group" id="held"><h2>Held claims <span class="qnums">0</span></h2><p class="empty">No held claims. Every claim passed the checker.</p></section>
+<footer>Built by build_index.py from claims.json, sources.json, questions.md and REPORT.md (checked October 14, 2026 23:26).
+Do not edit by hand.</footer>
+</main>
+</body>
+</html>

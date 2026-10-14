@@ -6,7 +6,8 @@
     "value": "30.8",
     "unit": "percent",
     "period": "Q3 2026",
-    "quote": "Citywide, positive absorption is nearing 3 million s.f. year to date, bringing vacancy down to 30.8%."
+    "quote": "Citywide, positive absorption is nearing 3 million s.f. year to date, bringing vacancy down to 30.8%.",
+    "questions": []
   },
   {
     "claim_id": "c2",
@@ -15,7 +16,8 @@
     "value": "2.94",
     "unit": "million square feet",
     "period": "YTD 2026 (through Q3 2026)",
-    "quote": "YTD net absorption             2.94 million s.f."
+    "quote": "YTD net absorption             2.94 million s.f.",
+    "questions": []
   },
   {
     "claim_id": "c3",
@@ -24,7 +26,8 @@
     "value": "79.05",
     "unit": "dollars per square foot (per year, basis per JLL)",
     "period": "Q3 2026",
-    "quote": "Class A direct asking rent     $79.05 p.s.f."
+    "quote": "Class A direct asking rent     $79.05 p.s.f.",
+    "questions": []
   },
   {
     "claim_id": "c4",
@@ -33,7 +36,8 @@
     "value": "74.20",
     "unit": "dollars per square foot (per year, basis per JLL)",
     "period": "Q3 2026",
-    "quote": "Overall direct asking rent     $74.20 p.s.f."
+    "quote": "Overall direct asking rent     $74.20 p.s.f.",
+    "questions": []
   },
   {
     "claim_id": "c5",
@@ -42,7 +46,8 @@
     "value": "3.3",
     "unit": "million square feet",
     "period": "YTD 2026",
-    "quote": "Year to date, AI firms have continued have leased 3.3 million s.f., exceeding last year's total of 2.3 million s.f."
+    "quote": "Year to date, AI firms have continued have leased 3.3 million s.f., exceeding last year's total of 2.3 million s.f.",
+    "questions": []
   },
   {
     "claim_id": "c6",
@@ -51,7 +56,8 @@
     "value": "30",
     "unit": "percent (forecast: under this level)",
     "period": "year-end 2026 (forecast)",
-    "quote": "Citywide vacancy should decrease to under 30% by year-end, a 5.4-percentage-point drop from a year ago, supported by strong demand fundamentals and continued absorption across both CBD and non-CBD submarkets."
+    "quote": "Citywide vacancy should decrease to under 30% by year-end, a 5.4-percentage-point drop from a year ago, supported by strong demand fundamentals and continued absorption across both CBD and non-CBD submarkets.",
+    "questions": []
   },
   {
     "claim_id": "c7",
@@ -60,7 +66,10 @@
     "value": "959",
     "unit": "million dollars",
     "period": "Q3 2026",
-    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.",
+    "questions": [
+      14
+    ]
   },
   {
     "claim_id": "c8",
@@ -69,7 +78,10 @@
     "value": "2.6",
     "unit": "billion dollars",
     "period": "YTD 2026 (through Q3)",
-    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.",
+    "questions": [
+      14
+    ]
   },
   {
     "claim_id": "c9",
@@ -78,7 +90,10 @@
     "value": "16",
     "unit": "transactions",
     "period": "Q3 2026",
-    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.",
+    "questions": [
+      14
+    ]
   },
   {
     "claim_id": "c10",
@@ -87,7 +102,10 @@
     "value": "232",
     "unit": "dollars per square foot (basis not stated)",
     "period": "Q3 2026",
-    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.",
+    "questions": [
+      11
+    ]
   },
   {
     "claim_id": "c11",
@@ -96,16 +114,24 @@
     "value": "750",
     "unit": "dollars per square foot (basis not stated)",
     "period": "Q3 2026",
-    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers."
+    "quote": "San Francisco office buyers spent $959 million across 16 transactions in the third quarter, bringing 2026 volume to $2.6 billion, but the six largest deals ranged from $232 to $750 per square foot, with occupied towers commanding top prices and distressed-debt plays clearing near the bottom, according to Colliers.",
+    "questions": [
+      11
+    ]
   },
   {
     "claim_id": "c12",
     "source_id": "19000-sqft-jackson-square-office-building-trades-for-5-24mm-half-of-2024-asking-price",
-    "subject": "924 Sansome St, Jackson Square (office, ~19,000 SF) - sale price per SF; buyer/seller not in free text",
+    "subject": "924 Sansome St, Jackson Square (office) - sale price per SF (~19,000 SF building; buyer/seller not in free text)",
     "value": "273",
     "unit": "dollars per square foot (basis not stated)",
     "period": "sale reported May 31, 2026",
-    "quote": "The 924 Sansome Street sale closes at $273 per square foot, signaling that distressed pricing persists for smaller San Francisco office assets even as leasing rebounds."
+    "quote": "The 924 Sansome Street sale closes at $273 per square foot, signaling that distressed pricing persists for smaller San Francisco office assets even as leasing rebounds.",
+    "questions": [
+      3,
+      4,
+      11
+    ]
   },
   {
     "claim_id": "c13",
@@ -114,7 +140,10 @@
     "value": "5.24",
     "unit": "million dollars",
     "period": "sale reported May 31, 2026",
-    "quote": "19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price"
+    "quote": "19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price",
+    "questions": [
+      2
+    ]
   },
   {
     "claim_id": "c14",
@@ -123,7 +152,11 @@
     "value": "441,250",
     "unit": "dollars per unit",
     "period": "sale reported May 8, 2026",
-    "quote": "The San Francisco multifamily operator paid roughly $441,250 per unit for 1690 Broadway, its latest play in a neighborhood where it has spent more than $80 million in barely a week as median one-bedroom rents climb nearly 20 percent year-over-year."
+    "quote": "The San Francisco multifamily operator paid roughly $441,250 per unit for 1690 Broadway, its latest play in a neighborhood where it has spent more than $80 million in barely a week as median one-bedroom rents climb nearly 20 percent year-over-year.",
+    "questions": [
+      5,
+      10
+    ]
   },
   {
     "claim_id": "c15",
@@ -132,7 +165,10 @@
     "value": "35.3",
     "unit": "million dollars",
     "period": "sale reported May 8, 2026",
-    "quote": "Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM, Doubling Down on San Francisco"
+    "quote": "Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM, Doubling Down on San Francisco",
+    "questions": [
+      2
+    ]
   },
   {
     "claim_id": "c16",
@@ -141,7 +177,10 @@
     "value": "37.8",
     "unit": "million dollars",
     "period": "sale reported July 29, 2025",
-    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times."
+    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.",
+    "questions": [
+      2
+    ]
   },
   {
     "claim_id": "c17",
@@ -150,7 +189,11 @@
     "value": "402,127",
     "unit": "dollars per unit",
     "period": "sale reported July 29, 2025",
-    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times."
+    "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.",
+    "questions": [
+      5,
+      10
+    ]
   },
   {
     "claim_id": "c18",
@@ -159,7 +202,11 @@
     "value": "7.3",
     "unit": "million dollars",
     "period": "June 3, 2026 (announcement date)",
-    "quote": "San Francisco – June 3, 2026 – CBRE has arranged the $7.3 million sale of Sutter Mansion, a 12‑room boutique hotel at 1409 Sutter Street in San Francisco’s Japantown/Pacific Heights area, to a confidential buyer."
+    "quote": "San Francisco – June 3, 2026 – CBRE has arranged the $7.3 million sale of Sutter Mansion, a 12‑room boutique hotel at 1409 Sutter Street in San Francisco’s Japantown/Pacific Heights area, to a confidential buyer.",
+    "questions": [
+      2,
+      13
+    ]
   },
   {
     "claim_id": "c19",
@@ -168,7 +215,11 @@
     "value": "641.8",
     "unit": "million dollars",
     "period": "H1 2026",
-    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento."
+    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.",
+    "questions": [
+      13,
+      14
+    ]
   },
   {
     "claim_id": "c20",
@@ -177,7 +228,11 @@
     "value": "15.7",
     "unit": "percent decline",
     "period": "H1 2026 vs H1 2025",
-    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento."
+    "quote": "Northern California recorded 68 hotel sales in the first half of 2026, but dollar volume fell 15.7 percent to $641.8 million as steep declines in San Francisco and Alameda counties overwhelmed gains in Sonoma and Sacramento.",
+    "questions": [
+      13,
+      14
+    ]
   },
   {
     "claim_id": "c21",
@@ -186,7 +241,8 @@
     "value": "361.1",
     "unit": "billion dollars",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%."
+    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%.",
+    "questions": []
   },
   {
     "claim_id": "c22",
@@ -195,7 +251,8 @@
     "value": "2.14",
     "unit": "percent",
     "period": "2026-2027 roll (lien date January 1, 2026) vs 2025-2026",
-    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%."
+    "quote": "San Francisco’s total local assessment roll grew to approximately $361.1 billion for 2026-2027, after exemptions—an increase of approximately $7.57 billion over the previous year, or 2.14%.",
+    "questions": []
   },
   {
     "claim_id": "c23",
@@ -204,7 +261,8 @@
     "value": "1.85",
     "unit": "billion dollars",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions."
+    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions.",
+    "questions": []
   },
   {
     "claim_id": "c24",
@@ -213,7 +271,8 @@
     "value": "1.75",
     "unit": "billion dollars",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "Processed new construction accounts for an estimated 23% of secured roll growth, adding approximately $1.75 billion in assessed value before exemptions."
+    "quote": "Processed new construction accounts for an estimated 23% of secured roll growth, adding approximately $1.75 billion in assessed value before exemptions.",
+    "questions": []
   },
   {
     "claim_id": "c25",
@@ -222,7 +281,8 @@
     "value": "8,600",
     "unit": "properties (more than)",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion."
+    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion.",
+    "questions": []
   },
   {
     "claim_id": "c26",
@@ -231,7 +291,8 @@
     "value": "5.5",
     "unit": "billion dollars",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion."
+    "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion.",
+    "questions": []
   },
   {
     "claim_id": "c27",
@@ -240,7 +301,8 @@
     "value": "25",
     "unit": "percent of secured roll growth",
     "period": "2026-2027 roll (lien date January 1, 2026)",
-    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions."
+    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions.",
+    "questions": []
   },
   {
     "claim_id": "c28",
@@ -249,6 +311,7 @@
     "value": "7,600",
     "unit": "appeals (more than)",
     "period": "2026-2027 roll close (period of appeals not stated)",
-    "quote": "The Office achieved this while managing a sustained, unprecedented rise in assessment appeals with no meaningful decreases in other assessment work: resolving over 7,600 assessment appeals and 13,150 assessment items , such as valuing property during new construction and changes in ownership."
+    "quote": "The Office achieved this while managing a sustained, unprecedented rise in assessment appeals with no meaningful decreases in other assessment work: resolving over 7,600 assessment appeals and 13,150 assessment items , such as valuing property during new construction and changes in ownership.",
+    "questions": []
   }
 ]
