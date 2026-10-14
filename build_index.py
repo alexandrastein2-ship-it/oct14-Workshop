@@ -218,17 +218,47 @@ def main():
             deals.setdefault(name, []).append(c)
     def deal_date(cs):
         text = party_info(cs)["date"] or cs[0]["period"]
-        m = re.search(r"([A-Z][a-z]+) (\d{1,2}), (\d{4})", text)
-        try:
-            return datetime.datetime.strptime(" ".join(m.groups()), "%B %d %Y") if m else datetime.datetime.min
-        except ValueError:
+        m = re.search(r"([A-Z][a-z]+)\.? (\d{1,2}), (\d{4})", text)
+        if not m:
             return datetime.datetime.min
+        for fmt in ("%B %d %Y", "%b %d %Y"):
+            try:
+                return datetime.datetime.strptime(" ".join(m.groups()), fmt)
+            except ValueError:
+                pass
+        return datetime.datetime.min
+
+    def date_html(text, d):
+        """Short date on top, with what the date means (reported, closed...) underneath."""
+        if d == datetime.datetime.min:
+            return esc(text)
+        rest = re.sub(r"\s+", " ", re.sub(r"([A-Z][a-z]+)\.? (\d{1,2}), (\d{4})", "", text, count=1)).strip(" ;,")
+        return f'<span class="d">{d:%b} {d.day}, {d.year}</span>' + (f'<span class="kind">{esc(rest)}</span>' if rest else "")
+
+    def quarter(d):
+        return f"Q{(d.month - 1) // 3 + 1} {d.year}" if d != datetime.datetime.min else "Date unknown"
+
     deals = dict(sorted(deals.items(), key=lambda kv: deal_date(kv[1]), reverse=True))
-    rows, deal_blocks = [], []
+    types_present = []
+    rows, deal_blocks, last_q = [], [], None
     for name, cs in deals.items():
         info = party_info(cs)
+        ptype = next((c["product_type"] for c in cs if c.get("product_type")), "Other")
+        kind = next((c["deal_kind"] for c in cs if c.get("deal_kind")), "")
+        if ptype not in types_present:
+            types_present.append(ptype)
+        slug_t = re.sub(r"[^a-z]+", "-", ptype.lower())
+        chip = f'<span class="chip t-{slug_t}">{esc(ptype)}</span>' + (f'<span class="kind">{esc(kind)}</span>' if kind else "")
+        d = deal_date(cs)
+        q = quarter(d)
+        if q != last_q:
+            rows.append(f'<tr class="period-row" data-period="{esc(q)}"><th colspan="10" scope="rowgroup">{esc(q)}</th></tr>')
+            last_q = q
         cells = [
-            f"<td class=\"nowrap-ish\">{esc(info['date'] or cs[0]['period'])}</td>",
+            f"<td class=\"date-cell\">{date_html(info['date'] or cs[0]['period'], d)}</td>",
+            f"<td class=\"type-cell\">{chip}</td>",
+            f"<th scope=\"row\">{esc(name)}"
+            + (f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else "") + "</th>",
             f"<td>{names_html(info['buyer'], cs, sources, info['missing'])}</td>",
             f"<td>{names_html(info['seller'], cs, sources, info['missing'])}</td>",
         ]
@@ -239,34 +269,44 @@ def main():
             if label == "Financing" and info["lender"]:
                 cell += ("<br>" if cell else "") + "Lender: " + names_html(info["lender"], cs, sources)
             cells.append(f"<td>{cell}</td>" if cell else '<td class="gap">—</td>')
-        note = f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else ""
-        rows.append(f"<tr><th scope=\"row\">{esc(name)}{note}</th>{''.join(cells)}</tr>")
+        rows.append(f'<tr data-type="{esc(ptype)}" data-period="{esc(q)}">{"".join(cells)}</tr>')
         facts = [("Date", esc(info["date"] or cs[0]["period"])),
+                 ("Type", chip),
                  ("Buyer", names_html(info["buyer"], cs, sources, info["missing"])),
                  ("Seller", names_html(info["seller"], cs, sources, info["missing"]))]
         if info["lender"]:
             facts.append(("Lender", names_html(info["lender"], cs, sources)))
         dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
         deal_blocks.append(
-            f'<section class="deal"><h3>{esc(name)}</h3><dl class="facts">{dl}</dl>'
+            f'<section class="deal" data-type="{esc(ptype)}"><h3>{esc(name)}</h3><dl class="facts">{dl}</dl>'
             + (f'<p class="note">{esc(info["deal_note"])}</p>' if info["deal_note"] else "")
             + '<div class="grid">' + "".join(claim_card(c, sources) for c in cs) + "</div></section>")
     deal_blocks = "".join(deal_blocks)
+    order = ["Office", "Multifamily", "Industrial", "Hotel"]
+    types_present.sort(key=lambda t: order.index(t) if t in order else len(order))
+    counts = {t: sum(1 for cs in deals.values() if next((c.get("product_type") for c in cs if c.get("product_type")), "Other") == t)
+              for t in types_present}
+    filters = '<button type="button" class="filter" aria-pressed="true" data-filter="All">All <span>{}</span></button>'.format(len(deals)) + "".join(
+        f'<button type="button" class="filter" aria-pressed="false" data-filter="{esc(t)}">{esc(t)} <span>{counts[t]}</span></button>'
+        for t in types_present)
     per_deal = next((s for s in sections if s[1] and s[1][0][0] == 1), None)
     if per_deal:
         qlist = "".join(f"<li value=\"{n}\">{esc_md(q)}</li>" for n, q in per_deal[1])
-        head = "".join(f"<th scope=\"col\">{esc(f)}</th>" for f in ["Date", "Buyer", "Seller"] + [f for f, _ in DEAL_FIELDS])
+        head = "".join(f"<th scope=\"col\">{esc(f)}</th>" for f in ["Date", "Type", "Deal", "Buyer", "Seller"] + [f for f, _ in DEAL_FIELDS])
         parts.append(f"""
 <section class="question-group" id="deals">
   <h2>{esc(per_deal[0])} <span class="qnums">Q1–Q{per_deal[1][-1][0]}</span></h2>
   <details><summary>The questions</summary><ol>{qlist}</ol></details>
-  <p class="note">Buyer, seller, lender and dates are not numbers, so verify.py cannot check them.
+  <p class="note">Newest first, grouped by quarter. Dates are the transaction date where the source gives one;
+  otherwise the date the deal was reported or announced, as labeled.
+  Buyer, seller, lender and dates are not numbers, so verify.py cannot check them.
   <span class="mark ok">✓</span> means the name appears word for word in the saved source text; it does not
   confirm the role (buyer or seller). <span class="mark warn">?</span> means the name was not found there.
   "Not in free text" means the free part of the article doesn't name the party.</p>
-  <div class="table-wrap"><table>
-    <thead><tr><th scope="col">Deal</th>{head}</tr></thead>
-    <tbody>{''.join(rows) or '<tr><td colspan="9">No verified deal claims yet.</td></tr>'}</tbody>
+  <div class="filters" role="group" aria-label="Filter deals by product type">{filters}</div>
+  <div class="table-wrap"><table class="deals">
+    <thead><tr>{head}</tr></thead>
+    <tbody>{''.join(rows) or '<tr><td colspan="10">No verified deal claims yet.</td></tr>'}</tbody>
   </table></div>
   {deal_blocks}
 </section>""")
@@ -320,26 +360,38 @@ def main():
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 :root {{
+  --office-fg: #1f4e79; --office-bg: #e6eef6; --office-line: #c3d4e6;
+  --multi-fg: #6b3f00; --multi-bg: #f8ecd9; --multi-line: #e8d2ad;
+  --ind-fg: #3f5d2a; --ind-bg: #e9f0e1; --ind-line: #cbdab8;
+  --hotel-fg: #6d2a52; --hotel-bg: #f5e6ee; --hotel-line: #e3c6d6;
   --bg: #f7f6f3; --surface: #ffffff; --text: #1d1d1b; --muted: #66645e;
   --line: #e2dfd8; --accent: #1f5f8b; --ok: #2e7d4f; --warn: #a15c07; --warn-bg: #fdf3e3;
   --quote: #f1efe9;
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
+    --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
+    --multi-fg: #f0c88a; --multi-bg: #33281a; --multi-line: #4d3c24;
+    --ind-fg: #b9d79c; --ind-bg: #232d1c; --ind-line: #374629;
+    --hotel-fg: #eab3d1; --hotel-bg: #351f2b; --hotel-line: #503040;
     --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
     --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
     --quote: #262623; color-scheme: dark;
   }}
 }}
 :root[data-theme="dark"] {{
-  --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
+  --office-fg: #a9c9ec; --office-bg: #1c2a38; --office-line: #2f4459;
+    --multi-fg: #f0c88a; --multi-bg: #33281a; --multi-line: #4d3c24;
+    --ind-fg: #b9d79c; --ind-bg: #232d1c; --ind-line: #374629;
+    --hotel-fg: #eab3d1; --hotel-bg: #351f2b; --hotel-line: #503040;
+    --bg: #161615; --surface: #1f1f1d; --text: #ecebe7; --muted: #a3a19a;
   --line: #34332f; --accent: #7cb4dc; --ok: #6cc28f; --warn: #f0b05a; --warn-bg: #2d2416;
   --quote: #262623; color-scheme: dark;
 }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; background: var(--bg); color: var(--text);
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }}
-main {{ max-width: 1100px; margin: 0 auto; padding-block: 24px 64px;
+main {{ max-width: 1320px; margin: 0 auto; padding-block: 24px 64px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
 .grid > * {{ min-width: 0; }}
 header h1 {{ margin: 0 0 4px; font-size: 26px; }}
@@ -380,7 +432,25 @@ td.gap, .muted {{ color: var(--muted); }}
 .facts {{ display: flex; flex-wrap: wrap; gap: 6px 28px; margin: -4px 0 12px; font-size: 14px; }}
 .facts div {{ display: flex; gap: 6px; }}
 .facts dt {{ color: var(--muted); }} .facts dd {{ margin: 0; }}
-td.nowrap-ish {{ min-width: 120px; }}
+td.date-cell {{ min-width: 104px; }} td.date-cell .d {{ white-space: nowrap; font-weight: 500; }}
+.chip {{ display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap;
+  color: var(--chip-fg, var(--text)); background: var(--chip-bg, var(--quote)); border: 1px solid var(--chip-line, var(--line)); }}
+.t-office {{ --chip-fg: var(--office-fg); --chip-bg: var(--office-bg); --chip-line: var(--office-line); }}
+.t-multifamily {{ --chip-fg: var(--multi-fg); --chip-bg: var(--multi-bg); --chip-line: var(--multi-line); }}
+.t-industrial {{ --chip-fg: var(--ind-fg); --chip-bg: var(--ind-bg); --chip-line: var(--ind-line); }}
+.t-hotel {{ --chip-fg: var(--hotel-fg); --chip-bg: var(--hotel-bg); --chip-line: var(--hotel-line); }}
+.kind {{ display: block; margin-top: 4px; font-size: 12px; color: var(--muted); }}
+td.type-cell {{ min-width: 110px; }}
+tr.period-row th {{ background: var(--quote); font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--muted); padding: 6px 10px; }}
+table.deals tbody th[scope="row"] {{ min-width: 190px; }}
+.filters {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }}
+.filter {{ font: inherit; font-size: 13.5px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  background: var(--surface); color: var(--text); border: 1px solid var(--line); }}
+.filter span {{ color: var(--muted); margin-left: 2px; }}
+.filter[aria-pressed="true"] {{ background: var(--text); color: var(--bg); border-color: var(--text); }}
+.filter[aria-pressed="true"] span {{ color: var(--bg); opacity: .75; }}
+.filter:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
 td {{ font-variant-numeric: tabular-nums; }}
 details {{ margin: 0 0 10px; font-size: 14px; }}
 summary {{ cursor: pointer; color: var(--accent); }}
@@ -401,6 +471,22 @@ footer {{ margin-top: 48px; color: var(--muted); font-size: 13px; }}
   <nav><a href="#deals">Deals</a>{''.join(f'<a href="#q{n}">Q{n}</a>' for s in sections for n, _ in s[1] if n > 9)}<a href="#background">Background</a><a href="#held">Held</a></nav>
 </header>
 {''.join(parts)}
+<script>
+(function () {{
+  var buttons = document.querySelectorAll(".filter");
+  function apply(type) {{
+    buttons.forEach(function (b) {{ b.setAttribute("aria-pressed", String(b.dataset.filter === type)); }});
+    document.querySelectorAll("[data-type]").forEach(function (el) {{
+      el.hidden = type !== "All" && el.dataset.type !== type;
+    }});
+    document.querySelectorAll("tr.period-row").forEach(function (r) {{
+      var p = r.dataset.period;
+      r.hidden = !document.querySelector('tr[data-type][data-period="' + p + '"]:not([hidden])');
+    }});
+  }}
+  buttons.forEach(function (b) {{ b.addEventListener("click", function () {{ apply(b.dataset.filter); }}); }});
+}})();
+</script>
 <footer>Built by build_index.py from claims.json, sources.json, questions.md and REPORT.md (checked {esc(checked)}).
 Do not edit by hand.</footer>
 </main>

@@ -135,7 +135,9 @@
     "buyer": [],
     "seller": [],
     "lender": [],
-    "date": "Reported May 31, 2026"
+    "date": "Reported May 31, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c13",
@@ -151,7 +153,9 @@
     "buyer": [],
     "seller": [],
     "lender": [],
-    "date": "Reported May 31, 2026"
+    "date": "Reported May 31, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c14",
@@ -174,7 +178,9 @@
     ],
     "lender": [],
     "date": "Reported May 8, 2026",
-    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c15",
@@ -196,7 +202,9 @@
     ],
     "lender": [],
     "date": "Reported May 8, 2026",
-    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c16",
@@ -214,7 +222,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Reported July 29, 2025"
+    "date": "Reported July 29, 2025",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c17",
@@ -233,7 +243,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Reported July 29, 2025"
+    "date": "Reported July 29, 2025",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c18",
@@ -253,7 +265,9 @@
     ],
     "lender": [],
     "date": "Announced June 3, 2026",
-    "deal_note": "Buyer confidential"
+    "deal_note": "Buyer confidential",
+    "product_type": "Hotel",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c19",
@@ -379,7 +393,9 @@
     "seller": [],
     "lender": [],
     "date": "Closing reported April 9, 2026",
-    "deal_note": "Debt-to-deed transfer; prior owner not in free text"
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Sale (debt-to-deed)"
   },
   {
     "claim_id": "c30",
@@ -401,7 +417,9 @@
     "seller": [],
     "lender": [],
     "date": "Closing reported April 9, 2026",
-    "deal_note": "Debt-to-deed transfer; prior owner not in free text"
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Sale (debt-to-deed)"
   },
   {
     "claim_id": "c31",
@@ -420,7 +438,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Closing reported April 9, 2026"
+    "date": "Closing reported April 9, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c32",
@@ -441,7 +461,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Closing reported April 9, 2026"
+    "date": "Closing reported April 9, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c33",
@@ -460,7 +482,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Closing reported April 9, 2026"
+    "date": "Closing reported April 9, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c34",
@@ -478,7 +502,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Reported September 24, 2026"
+    "date": "Reported September 24, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c35",
@@ -497,7 +523,9 @@
     "seller": [],
     "lender": [],
     "date": "Reported February 7, 2026",
-    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu"
   },
   {
     "claim_id": "c36",
@@ -518,7 +546,9 @@
     "seller": [],
     "lender": [],
     "date": "Reported February 7, 2026",
-    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu"
   },
   {
     "claim_id": "c37",
@@ -537,7 +567,9 @@
     "seller": [],
     "lender": [],
     "date": "Reported February 7, 2026",
-    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu"
   },
   {
     "claim_id": "c38",
@@ -555,7 +587,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Closed December 16, 2025"
+    "date": "Closed December 16, 2025",
+    "product_type": "Office",
+    "deal_kind": "Sale (medical office)"
   },
   {
     "claim_id": "c39",
@@ -575,7 +609,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Closed December 16, 2025"
+    "date": "Closed December 16, 2025",
+    "product_type": "Office",
+    "deal_kind": "Sale (medical office)"
   },
   {
     "claim_id": "c40",
@@ -593,7 +629,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Reported November 20, 2024"
+    "date": "Reported November 20, 2024",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c41",
@@ -613,7 +651,9 @@
     ],
     "seller": [],
     "lender": [],
-    "date": "Reported November 20, 2024"
+    "date": "Reported November 20, 2024",
+    "product_type": "Office",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c42",
@@ -637,7 +677,9 @@
       "Bluerock Private Real Estate Fund"
     ],
     "date": "Deed in lieu October 1, 2026",
-    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt"
+    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu + new loan"
   },
   {
     "claim_id": "c43",
@@ -660,7 +702,9 @@
       "Bluerock Private Real Estate Fund"
     ],
     "date": "Deed in lieu October 1, 2026",
-    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt"
+    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu + new loan"
   },
   {
     "claim_id": "c44",
@@ -681,7 +725,9 @@
     ],
     "date": "Refinance reported July 21, 2026",
     "deal_note": "Refinance, not a sale; owner The Swig Company",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "Refinance"
   },
   {
     "claim_id": "c45",
@@ -703,7 +749,9 @@
     ],
     "lender": [],
     "date": "Reported August 14, 2026",
-    "deal_note": "Buyer unnamed; described as a Burlingame investor"
+    "deal_note": "Buyer unnamed; described as a Burlingame investor",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c46",
@@ -724,7 +772,9 @@
     ],
     "lender": [],
     "date": "Reported August 14, 2026",
-    "deal_note": "Buyer unnamed; described as a Burlingame investor"
+    "deal_note": "Buyer unnamed; described as a Burlingame investor",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c47",
@@ -741,7 +791,9 @@
     "seller": [],
     "lender": [],
     "date": "Announced June 9, 2026",
-    "deal_note": "Broker Marcus & Millichap; parties not in free text"
+    "deal_note": "Broker Marcus & Millichap; parties not in free text",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c48",
@@ -759,7 +811,9 @@
     "seller": [],
     "lender": [],
     "date": "Announced June 9, 2026",
-    "deal_note": "Broker Marcus & Millichap; parties not in free text"
+    "deal_note": "Broker Marcus & Millichap; parties not in free text",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c49",
@@ -778,7 +832,9 @@
     "seller": [],
     "lender": [],
     "date": "Reported January 6, 2026",
-    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings"
+    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings",
+    "product_type": "Multifamily",
+    "deal_kind": "Loan purchase"
   },
   {
     "claim_id": "c50",
@@ -797,7 +853,9 @@
     "seller": [],
     "lender": [],
     "date": "Reported January 6, 2026",
-    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings"
+    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings",
+    "product_type": "Multifamily",
+    "deal_kind": "Loan purchase"
   },
   {
     "claim_id": "c51",
@@ -818,7 +876,9 @@
       "Lowenberg Corporation"
     ],
     "lender": [],
-    "date": "Reported August 24, 2026"
+    "date": "Reported August 24, 2026",
+    "product_type": "Industrial",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c52",
@@ -839,7 +899,9 @@
     ],
     "lender": [],
     "date": "Reported June 9, 2025",
-    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner"
+    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner",
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu"
   },
   {
     "claim_id": "c53",
@@ -862,7 +924,9 @@
     ],
     "lender": [],
     "date": "Reported June 9, 2025",
-    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner"
+    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner",
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu"
   },
   {
     "claim_id": "c54",
@@ -883,7 +947,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "product_type": "Hotel",
+    "deal_kind": "Sale (under contract)"
   },
   {
     "claim_id": "c55",
@@ -904,7 +970,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "product_type": "Hotel",
+    "deal_kind": "Sale (under contract)"
   },
   {
     "claim_id": "c56",
@@ -925,7 +993,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "product_type": "Hotel",
+    "deal_kind": "Sale (under contract)"
   },
   {
     "claim_id": "c57",
@@ -945,7 +1015,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "product_type": "Hotel",
+    "deal_kind": "Sale (under contract)"
   },
   {
     "claim_id": "c58",
@@ -965,7 +1037,9 @@
       "Hudson Pacific Properties"
     ],
     "lender": [],
-    "date": "Reported September 29, 2026"
+    "date": "Reported September 29, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale (office + retail)"
   },
   {
     "claim_id": "c59",
@@ -987,7 +1061,9 @@
       "Hudson Pacific Properties"
     ],
     "lender": [],
-    "date": "Reported September 29, 2026"
+    "date": "Reported September 29, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale (office + retail)"
   },
   {
     "claim_id": "c60",
@@ -1007,7 +1083,9 @@
       "Hudson Pacific Properties"
     ],
     "lender": [],
-    "date": "Reported September 29, 2026"
+    "date": "Reported September 29, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale (office + retail)"
   },
   {
     "claim_id": "c61",
@@ -1065,7 +1143,9 @@
     ],
     "lender": [],
     "date": "Reported May 8, 2026",
-    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group",
+    "product_type": "Multifamily",
+    "deal_kind": "Sale"
   },
   {
     "claim_id": "c65",
@@ -1138,7 +1218,9 @@
     "quote": "San Francisco's 42,000 SQFT Office Building at 1680 Mission Seeks Buyer at $9.5MM as Market Repricing Continues",
     "questions": [
       17
-    ]
+    ],
+    "product_type": "Office",
+    "deal_kind": "Listing"
   },
   {
     "claim_id": "c71",
@@ -1150,7 +1232,9 @@
     "quote": "1680 Mission Street listed at $228 per square foot, reflecting broader reset in city's commercial real estate sector",
     "questions": [
       17
-    ]
+    ],
+    "product_type": "Office",
+    "deal_kind": "Listing"
   },
   {
     "claim_id": "c72",
@@ -1170,7 +1254,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c73",
@@ -1191,7 +1277,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c74",
@@ -1212,7 +1300,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c75",
@@ -1232,7 +1322,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c76",
@@ -1252,7 +1344,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c77",
@@ -1272,7 +1366,9 @@
     ],
     "date": "Loan term sheet Feb 3, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Multifamily",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c78",
@@ -1292,7 +1388,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c79",
@@ -1313,7 +1411,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c80",
@@ -1334,7 +1434,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c81",
@@ -1354,7 +1456,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c82",
@@ -1374,7 +1478,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c83",
@@ -1394,7 +1500,9 @@
     ],
     "date": "Loan note September 5, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c84",
@@ -1414,7 +1522,9 @@
     ],
     "date": "Loan note August 29, 2024",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c85",
@@ -1435,7 +1545,9 @@
     ],
     "date": "Loan note August 29, 2024",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c86",
@@ -1456,7 +1568,9 @@
     ],
     "date": "Loan note August 29, 2024",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c87",
@@ -1476,7 +1590,9 @@
     ],
     "date": "Loan note August 29, 2024",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c88",
@@ -1496,7 +1612,9 @@
     ],
     "date": "Loan note August 29, 2024",
     "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c89",
@@ -1516,7 +1634,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c90",
@@ -1537,7 +1657,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c91",
@@ -1558,7 +1680,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c92",
@@ -1579,7 +1703,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c93",
@@ -1600,7 +1726,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c94",
@@ -1620,7 +1748,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c95",
@@ -1640,7 +1770,9 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   },
   {
     "claim_id": "c96",
@@ -1660,6 +1792,8 @@
     ],
     "date": "Loan note February 10, 2025",
     "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
-    "refinance": true
+    "refinance": true,
+    "product_type": "Office",
+    "deal_kind": "CMBS refinance"
   }
 ]
