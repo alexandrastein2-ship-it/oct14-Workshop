@@ -680,7 +680,8 @@
       "Invesco Real Estate"
     ],
     "date": "Refinance reported July 21, 2026",
-    "deal_note": "Refinance, not a sale; owner The Swig Company"
+    "deal_note": "Refinance, not a sale; owner The Swig Company",
+    "refinance": true
   },
   {
     "claim_id": "c45",
@@ -1150,5 +1151,515 @@
     "questions": [
       17
     ]
+  },
+  {
+    "claim_id": "c72",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - mortgage loan amount (refinance); lender WFB; sponsor Presidio Bay Ventures",
+    "value": "73,500,000",
+    "unit": "dollars (loan)",
+    "period": "CMBS term sheet Feb 3, 2025; matures 2/11/2035",
+    "quote": "Original Balance: $73,500,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c73",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - mortgage interest rate (fixed)",
+    "value": "6.1660",
+    "unit": "percent (interest rate)",
+    "period": "CMBS term sheet Feb 3, 2025; matures 2/11/2035",
+    "quote": "Mortgage Rate: 6.1660%",
+    "questions": [
+      9,
+      16
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c74",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - cut-off date LTV (mortgage only, excludes mezzanine)",
+    "value": "65.6",
+    "unit": "percent LTV",
+    "period": "CMBS term sheet Feb 3, 2025; matures 2/11/2035",
+    "quote": "Cut-off Date LTV Ratio: 65.6%",
+    "questions": [
+      9,
+      15
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c75",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - appraised value",
+    "value": "112,000,000",
+    "unit": "dollars (appraised value)",
+    "period": "appraisal 10/28/2024",
+    "quote": "Appraised Value (as of): $112,000,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c76",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - mezzanine loan amount (in addition to mortgage)",
+    "value": "34,750,000",
+    "unit": "dollars (mezzanine loan)",
+    "period": "CMBS term sheet Feb 3, 2025; matures 2/11/2035",
+    "quote": "Mezzanine Loan Amount: $34,750,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c77",
+    "source_id": "n4801-x6-ts",
+    "subject": "Ventana Residences (multifamily, 193 units, built 2023) - underwritten NCF debt service coverage",
+    "value": "1.25",
+    "unit": "times (DSCR)",
+    "period": "CMBS term sheet Feb 3, 2025; matures 2/11/2035",
+    "quote": "UW NCF DSCR: 1.25x Additional",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "WFB"
+    ],
+    "date": "Loan term sheet Feb 3, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor Presidio Bay Ventures, LLC",
+    "refinance": true
+  },
+  {
+    "claim_id": "c78",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - mortgage loan amount (refinance); lender JPMCB; sponsor W5 - Brannan L.P.",
+    "value": "25,000,000",
+    "unit": "dollars (loan)",
+    "period": "Note date 9/5/2025",
+    "quote": "Original Balance: $25,000,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c79",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - mortgage interest rate (fixed)",
+    "value": "5.8350",
+    "unit": "percent (interest rate)",
+    "period": "Note date 9/5/2025",
+    "quote": "Mortgage Rate: 5.8350%",
+    "questions": [
+      9,
+      16
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c80",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - cut-off date LTV",
+    "value": "28.0",
+    "unit": "percent LTV",
+    "period": "Note date 9/5/2025",
+    "quote": "Cut-off Date LTV Ratio (3) : 28.0%",
+    "questions": [
+      9,
+      15
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c81",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - appraised value",
+    "value": "89,100,000",
+    "unit": "dollars (appraised value)",
+    "period": "appraisal 6/4/2025",
+    "quote": "Appraised Value (as of) (3) : $89,100,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c82",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - appraised value per SF",
+    "value": "649",
+    "unit": "dollars per square foot (appraised, not a sale price)",
+    "period": "appraisal 6/4/2025",
+    "quote": "Appraised Value PSF: $649",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c83",
+    "source_id": "n5416-x3-ts",
+    "subject": "651 Brannan St, SoMa (office, 137,326 SF) - underwritten NCF debt service coverage",
+    "value": "4.76",
+    "unit": "times (DSCR)",
+    "period": "Note date 9/5/2025",
+    "quote": "UW NCF DSCR: 4.76x Additional",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "JPMCB"
+    ],
+    "date": "Loan note September 5, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor W5 - Brannan L.P.",
+    "refinance": true
+  },
+  {
+    "claim_id": "c84",
+    "source_id": "n4935-x6-ts",
+    "subject": "VISA Global HQ, Mission Rock (office, 320,658 SF, leasehold) - whole loan amount (refinance); lender BANA; sponsor TSCE 2007 Holding (Tishman Speyer) and partners",
+    "value": "223,000,000",
+    "unit": "dollars (whole loan)",
+    "period": "Note date 8/29/2024; matures 3/6/2038",
+    "quote": "Whole Loan Amount (1) : $223,000,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "BANA"
+    ],
+    "date": "Loan note August 29, 2024",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
+    "refinance": true
+  },
+  {
+    "claim_id": "c85",
+    "source_id": "n4935-x6-ts",
+    "subject": "VISA Global HQ, Mission Rock (office, 320,658 SF, leasehold) - mortgage interest rate",
+    "value": "5.5060",
+    "unit": "percent (interest rate)",
+    "period": "Note date 8/29/2024; matures 3/6/2038",
+    "quote": "Mortgage Rate (2) : 5.5060%",
+    "questions": [
+      9,
+      16
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "BANA"
+    ],
+    "date": "Loan note August 29, 2024",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
+    "refinance": true
+  },
+  {
+    "claim_id": "c86",
+    "source_id": "n4935-x6-ts",
+    "subject": "VISA Global HQ, Mission Rock (office, 320,658 SF, leasehold) - cut-off date LTV",
+    "value": "50.0",
+    "unit": "percent LTV",
+    "period": "Note date 8/29/2024; matures 3/6/2038",
+    "quote": "Cut-off Date LTV Ratio (1)(7) : 50.0%",
+    "questions": [
+      9,
+      15
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "BANA"
+    ],
+    "date": "Loan note August 29, 2024",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
+    "refinance": true
+  },
+  {
+    "claim_id": "c87",
+    "source_id": "n4935-x6-ts",
+    "subject": "VISA Global HQ, Mission Rock (office, 320,658 SF, leasehold) - appraised value",
+    "value": "446,000,000",
+    "unit": "dollars (appraised value)",
+    "period": "appraisal 7/11/2024",
+    "quote": "Appraised Value (as of) (7) : $446,000,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "BANA"
+    ],
+    "date": "Loan note August 29, 2024",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
+    "refinance": true
+  },
+  {
+    "claim_id": "c88",
+    "source_id": "n4935-x6-ts",
+    "subject": "VISA Global HQ, Mission Rock (office, 320,658 SF, leasehold) - underwritten NCF debt service coverage",
+    "value": "2.19",
+    "unit": "times (DSCR)",
+    "period": "Note date 8/29/2024; matures 3/6/2038",
+    "quote": "UW NCF DSCR (1) : 2.19x",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "BANA"
+    ],
+    "date": "Loan note August 29, 2024",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsor TSCE 2007 Holding, L.L.C. and partners",
+    "refinance": true
+  },
+  {
+    "claim_id": "c89",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - whole loan amount, senior + junior notes (refinance); lender Barclays et al.; sponsors GSW ECOP / ARE-San Francisco No. 55",
+    "value": "500,000,000",
+    "unit": "dollars (whole loan)",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "The Uber Headquarters mortgage loan (the “ Uber Headquarters Mortgage Loan ”) is part of a whole loan (the “ Uber Headquarters Whole Loan ”), which is evidenced by six senior pari passu promissory notes and two junior pari passu promissory notes with an aggregate principal balance as of the Cut-off Date of $500,000,000.",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c90",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - weighted average interest rate on senior loan",
+    "value": "5.87479028853782",
+    "unit": "percent (interest rate)",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "Interest Rate (3) : 5.87479028853782%",
+    "questions": [
+      9,
+      16
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c91",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - interest rate on junior B-note",
+    "value": "7.95007131200079",
+    "unit": "percent (interest rate)",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "The interest rate of the B-Note of the Uber Headquarters Whole Loan is 7.95007131200079%.",
+    "questions": [
+      9,
+      16
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c92",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - cut-off date LTV, senior loan (first figure in row)",
+    "value": "50.7",
+    "unit": "percent LTV",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "Cut-off Date LTV: 50.7%",
+    "questions": [
+      9,
+      15
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c93",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - cut-off date LTV, whole loan incl. subordinate (second figure in row)",
+    "value": "66.4",
+    "unit": "percent LTV",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "Cut-off Date LTV: 50.7% 66.4%",
+    "questions": [
+      9,
+      15
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c94",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - appraised value",
+    "value": "753,000,000",
+    "unit": "dollars (appraised value)",
+    "period": "appraisal 12/6/2024",
+    "quote": "Appraised Value / Per SF: $753,000,000",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c95",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - appraised value per SF",
+    "value": "1,285",
+    "unit": "dollars per square foot (appraised, not a sale price)",
+    "period": "appraisal 12/6/2024",
+    "quote": "Appraised Value / Per SF: $753,000,000 / $1,285",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
+  },
+  {
+    "claim_id": "c96",
+    "source_id": "n4921-x4ts",
+    "subject": "Uber Headquarters, Mission Bay (office, 586,208 SF, two towers) - underwritten NCF DSCR, senior loan (first figure in row)",
+    "value": "2.47",
+    "unit": "times (DSCR)",
+    "period": "Note date 2/10/2025; ARD 2/10/2030",
+    "quote": "UW NCF DSCR: 2.47x",
+    "questions": [
+      9
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Barclays"
+    ],
+    "date": "Loan note February 10, 2025",
+    "deal_note": "CMBS refinance, not a sale; borrower sponsors GSW ECOP LLC and partners; sole tenant Uber",
+    "refinance": true
   }
 ]

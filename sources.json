@@ -284,5 +284,49 @@
     "sha256": "8a2c3c28fe6805f02e4f829e9c37b89c043df21bcd837fb44375191c5f475df7",
     "capture_sha256": "cfc64cbc1e280344a7d30a46dc3399299f852f95ed97b5d6aef4d6ee7530a735",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "n4801-x6-ts",
+    "title": "SEC EDGAR: Wells Fargo Commercial Mortgage Trust 2025-C64 term sheet (FWP, Feb 3, 2025) - incl. Ventana Residences loan",
+    "url": "https://www.sec.gov/Archives/edgar/data/2053102/000153949725000289/n4801_x6-ts.htm",
+    "original": "sources/n4801-x6-ts.html",
+    "capture": "captures/n4801-x6-ts.txt",
+    "extractor": "html tags removed",
+    "sha256": "78ef07b7f2043307d1769d0b305deed3048fc27c86c2afcb28042eff7ac91210",
+    "capture_sha256": "d66e2db3032a10bee4791037f28fdf28b08f54cda14f9b8309cde2bb92d442cf",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "n5416-x3-ts",
+    "title": "SEC EDGAR: BANK5 2025-5YR18 term sheet (FWP, Nov 13, 2025) - incl. 651 Brannan Street loan",
+    "url": "https://www.sec.gov/Archives/edgar/data/2096187/000153949725002924/n5416_x3-ts.htm",
+    "original": "sources/n5416-x3-ts.html",
+    "capture": "captures/n5416-x3-ts.txt",
+    "extractor": "html tags removed",
+    "sha256": "991d80755df8dc11e0bca4c4556f4d7d7346d97cb081a2eb4ede95470fcb04e3",
+    "capture_sha256": "9c6379b7ed2bc17444fcf238f0d2619b2ac1e845a2afbd1d7e238a90f06fd361",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "n4935-x6-ts",
+    "title": "SEC EDGAR: BANK 2025-BNK50 term sheet (FWP, May 22, 2025) - incl. VISA Global HQ loan",
+    "url": "https://www.sec.gov/Archives/edgar/data/2062966/000153949725001501/n4935_x6-ts.htm",
+    "original": "sources/n4935-x6-ts.html",
+    "capture": "captures/n4935-x6-ts.txt",
+    "extractor": "html tags removed",
+    "sha256": "e002cb4cf6841482913d746fccec38d3b79210f5f0c033f3060b8b5a801c23fd",
+    "capture_sha256": "73a16fd1dccaa8f76ca48ce377757a0487db60ff074806bde0009a98fd8439ee",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "n4921-x4ts",
+    "title": "SEC EDGAR: BBCMS Mortgage Trust 2025-5C34 term sheet (FWP, Apr 22, 2025) - incl. Uber Headquarters loan",
+    "url": "https://www.sec.gov/Archives/edgar/data/2061325/000153949725001191/n4921-x4ts.htm",
+    "original": "sources/n4921-x4ts.html",
+    "capture": "captures/n4921-x4ts.txt",
+    "extractor": "html tags removed",
+    "sha256": "01b0245995304700e642d36140f0885a31712562446509336ffd552799b1b392",
+    "capture_sha256": "4eb9d3d1ffd06cf3c717f74024658c22481e67906fa2f369b1002bdb1c50b4b9",
+    "added_on": "2026-10-14"
   }
 ]

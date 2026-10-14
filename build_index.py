@@ -98,6 +98,8 @@ def money(value, unit):
         return f"${value} / SF{asking}"
     if u.startswith("percent"):
         return f"{value}%"
+    if u.startswith("times"):
+        return f"{value}x"
     if u.startswith("dollars"):
         return f"${value}"
     return f"{value} {unit}"
@@ -130,7 +132,18 @@ def party_info(cs):
     info = {}
     for key in ("buyer", "seller", "lender", "date", "deal_note"):
         info[key] = next((c[key] for c in cs if c.get(key)), None)
+    info["missing"] = "n/a (refinance)" if any(c.get("refinance") for c in cs) else "Not in free text"
     return info
+
+
+def fin_label(unit):
+    """Short label for a financing figure, from its unit."""
+    u = unit.lower()
+    for key, label in (("interest rate", "Rate"), ("ltv", "LTV"), ("dscr", "DSCR"), ("appraised", "Appraised"),
+                       ("mezzanine", "Mezz loan"), ("whole loan", "Whole loan"), ("loan", "Loan")):
+        if key in u:
+            return label + " "
+    return ""
 
 
 def found_in_sources(name, cs, sources):
@@ -216,20 +229,21 @@ def main():
         info = party_info(cs)
         cells = [
             f"<td class=\"nowrap-ish\">{esc(info['date'] or cs[0]['period'])}</td>",
-            f"<td>{names_html(info['buyer'], cs, sources)}</td>",
-            f"<td>{names_html(info['seller'], cs, sources)}</td>",
+            f"<td>{names_html(info['buyer'], cs, sources, info['missing'])}</td>",
+            f"<td>{names_html(info['seller'], cs, sources, info['missing'])}</td>",
         ]
         for label, qs in DEAL_FIELDS:
-            hits = [money(c["value"], c["unit"]) for c in cs if qs & set(c["questions"])]
-            cell = esc("; ".join(hits))
+            hits = [(fin_label(c["unit"]) if label == "Financing" else "") + money(c["value"], c["unit"])
+                    for c in cs if qs & set(c["questions"])]
+            cell = ("<br>" if label == "Financing" else "; ").join(esc(h) for h in hits)
             if label == "Financing" and info["lender"]:
                 cell += ("<br>" if cell else "") + "Lender: " + names_html(info["lender"], cs, sources)
             cells.append(f"<td>{cell}</td>" if cell else '<td class="gap">—</td>')
         note = f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else ""
         rows.append(f"<tr><th scope=\"row\">{esc(name)}{note}</th>{''.join(cells)}</tr>")
         facts = [("Date", esc(info["date"] or cs[0]["period"])),
-                 ("Buyer", names_html(info["buyer"], cs, sources)),
-                 ("Seller", names_html(info["seller"], cs, sources))]
+                 ("Buyer", names_html(info["buyer"], cs, sources, info["missing"])),
+                 ("Seller", names_html(info["seller"], cs, sources, info["missing"]))]
         if info["lender"]:
             facts.append(("Lender", names_html(info["lender"], cs, sources)))
         dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
