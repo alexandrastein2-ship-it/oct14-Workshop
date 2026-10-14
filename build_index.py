@@ -79,16 +79,25 @@ def read_questions():
 
 def money(value, unit):
     u = unit.lower()
+    asking = " asking" if "asking" in u else ""
     if u.startswith("million dollars"):
-        return f"${value} million"
+        return f"${value} million{asking}"
     if u.startswith("billion dollars"):
         return f"${value} billion"
+    if u.startswith("thousand dollars per unit"):
+        return f"${value}K / unit"
+    if u.startswith("dollars per unit per month"):
+        return f"${value} / unit / mo{asking}"
     if u.startswith("dollars per unit"):
         return f"${value} / unit"
+    if u.startswith("dollars per key"):
+        return f"${value} / key"
     if u.startswith("dollars per square foot"):
-        return f"${value} / SF"
+        return f"${value} / SF{asking}"
     if u.startswith("percent"):
         return f"{value}%"
+    if u.startswith("dollars"):
+        return f"${value}"
     return f"{value} {unit}"
 
 

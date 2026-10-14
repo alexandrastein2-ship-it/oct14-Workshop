@@ -35,6 +35,7 @@ import datetime
 import hashlib
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -48,6 +49,11 @@ SOURCES = HERE / "sources.json"
 CLAIMS = HERE / "claims.json"
 CAPTURES = HERE / "captures"
 REPORT = HERE / "REPORT.md"
+
+# Some sites (SEC EDGAR) refuse downloads unless the script names a contact.
+# Set RESEARCH_CONTACT to your own address to replace the placeholder.
+CONTACT = os.environ.get("RESEARCH_CONTACT", "research-starter@example.com")
+USER_AGENT = f"Mozilla/5.0 (research-starter; contact: {CONTACT})"
 
 
 # ------------------------------------------------------------ helpers
@@ -183,7 +189,7 @@ def fetch_source(args):
         sys.exit('usage: python3 verify.py fetch <address> --title "..."')
     url = args[0]
     opts = dict(zip(args[1::2], args[2::2]))
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (research-starter)"})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = resp.read()

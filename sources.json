@@ -229,5 +229,60 @@
     "sha256": "9f7d11aa8d20b724a5e99839dc7d1ba7d594bdbbe15105aec2a8f8b494f6357b",
     "capture_sha256": "e480aca9443a3f212707fd3bdaa5c3bfc928d02249b6b6617d987afebe7f5712",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "title": "hotel-online (Jun 23, 2026): Sunstone Hotel Investors Enters Into an Agreement To Sell Hyatt Regency San Francisco (company press release)",
+    "url": "https://www.hotel-online.com/news/sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "original": "sources/sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco.html",
+    "capture": "captures/sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco.txt",
+    "extractor": "html tags removed",
+    "sha256": "5c20acde8d2aeae01268faaa745a4f48441cbfc932e615a562f306489b9391c1",
+    "capture_sha256": "100419f3f3f701a24f1f159c6bd3f8322bc04bde27db3a95fd5f6df68326f77c",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "hudson-pacific-divests-additional-bay-area-assets",
+    "title": "Bisnow: Hudson Pacific Sells San Francisco Office Buildings",
+    "url": "https://www.bisnow.com/news/san-francisco/office/hudson-pacific-divests-additional-bay-area-assets",
+    "original": "sources/hudson-pacific-divests-additional-bay-area-assets.html",
+    "capture": "captures/hudson-pacific-divests-additional-bay-area-assets.txt",
+    "extractor": "html tags removed",
+    "sha256": "123fc86617d83e998ae923975a041d232dca7eae2ff36099b0f5ae61e5fb22c9",
+    "capture_sha256": "99c5ef224d23cccf945fa7f3ea546568a3f3d4cd129aed38dd00615412ebbcad",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "multifamily-market-research-san-francisco-2026-2q",
+    "title": "Kidder Mathews Multifamily Market Research, San Francisco, 2Q 2026",
+    "url": "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-san-francisco-2026-2q.pdf",
+    "original": "sources/multifamily-market-research-san-francisco-2026-2q.pdf",
+    "capture": "captures/multifamily-market-research-san-francisco-2026-2q.txt",
+    "extractor": "pdftotext -layout",
+    "sha256": "dec45cba48fe397c1ee724187b2164163ff4f0ae93753c06c30bc6daa7c5311e",
+    "capture_sha256": "d074b5e663f04de2574c524ab35d3b1baf72fdbd866cae9c689f807bb61adcfd",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "san-francisco-multifamily-q2-2026",
+    "title": "Matthews: San Francisco Multifamily Q2 2026",
+    "url": "https://www.matthews.com/insights/san-francisco-multifamily-q2-2026",
+    "original": "sources/san-francisco-multifamily-q2-2026.html",
+    "capture": "captures/san-francisco-multifamily-q2-2026.txt",
+    "extractor": "html tags removed",
+    "sha256": "143e9e8dc1677c2b74903afe22e3e814b4c10bfb346215c2fd74610e0b0481fc",
+    "capture_sha256": "e222a20917baac5992e3068b97d4b45bcd1ab38d394326a92d13447500a1ad78",
+    "added_on": "2026-10-14"
+  },
+  {
+    "id": "san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues",
+    "title": "The Registry: San Francisco's 42,000 SQFT Office Building at 1680 Mission Seeks Buyer at $9.5MM as Market Repricing Continues",
+    "url": "https://news.theregistrysf.com/san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues/",
+    "original": "sources/san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues.html",
+    "capture": "captures/san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues.txt",
+    "extractor": "html tags removed",
+    "sha256": "8a2c3c28fe6805f02e4f829e9c37b89c043df21bcd837fb44375191c5f475df7",
+    "capture_sha256": "cfc64cbc1e280344a7d30a46dc3399299f852f95ed97b5d6aef4d6ee7530a735",
+    "added_on": "2026-10-14"
   }
 ]

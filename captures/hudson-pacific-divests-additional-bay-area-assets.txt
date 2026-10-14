@@ -1,0 +1,1311 @@
+ 
+ 
+ 
+     
+     
+
+
+ 
+     
+
+ 
+ 
+
+
+ 
+
+
+ Hudson Pacific Sells San Francisco Office Buildings 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+     
+     
+
+    
+     
+
+
+ 
+
+ 
+ 
+
+
+ 
+     
+ 
+
+    
+ 
+
+
+ 
+ 
+  
+ 
+ 
+    
+     
+     
+          
+     
+
+    
+      
+
+ 
+     
+        
+         
+             
+                 
+                      
+                 
+             
+         
+
+        
+         
+             
+         
+
+        
+         
+     
+        
+         
+             
+                Cities
+             
+             
+                 
+                     
+                                                     
+                                 Atlanta 
+                             
+                                                     
+                                 Austin - San-Antonio 
+                             
+                                                     
+                                 Boston 
+                             
+                                                     
+                                 Charlotte 
+                             
+                                                     
+                                 Chicago 
+                             
+                                                     
+                                 Dallas-Fort Worth 
+                             
+                                                     
+                                 Data Center 
+                             
+                                                     
+                                 Denver 
+                             
+                                                     
+                                 Dublin 
+                             
+                                                     
+                                 Houston 
+                             
+                                                     
+                                 London 
+                             
+                                                     
+                                 Los Angeles 
+                             
+                                                     
+                                 National 
+                             
+                                                     
+                                 New York 
+                             
+                                                     
+                                 Philadelphia 
+                             
+                                                     
+                                 Phoenix 
+                             
+                                                     
+                                 Raleigh/Durham 
+                             
+                                                     
+                                 San Francisco 
+                             
+                                                     
+                                 South Florida 
+                             
+                                                     
+                                 The Netherlands 
+                             
+                                                     
+                                 Washington, D.C. 
+                             
+                                             
+                 
+             
+         
+
+        
+         
+             
+                Events
+             
+             
+                 
+                     
+                         
+                             Calendar 
+                         
+                         
+                             Educational Workshops 
+                         
+                         
+                             First Draft Live 
+                         
+                         
+                             Elevate 
+                         
+                         
+                             Ascent 
+                         
+                         
+                             Escape 
+                         
+                         
+                             Apply to Speak 
+                         
+                         
+                             Sponsor an Event 
+                         
+                     
+                 
+             
+         
+
+        
+         
+             
+                Careers
+             
+             
+                 
+                     
+                         
+                             Top Talent 
+                         
+                         
+                             Employer 
+                         
+                         
+                             SelectLeaders 
+                         
+                         
+                             Bisnow Careers 
+                         
+                     
+                 
+             
+         
+
+        
+         
+             
+                Press Releases
+             
+         
+
+        
+         
+             
+                Subscriptions
+             
+             
+                 
+                     
+                         
+                             Newsletters 
+                         
+                         
+                             Newsletter Archive 
+                         
+                     
+                 
+             
+         
+
+        
+         
+             
+                About
+             
+             
+                 
+                     
+                         
+                             Contact Us 
+                         
+                         
+                             Advertise with Us 
+                         
+                         
+                             Careers 
+                         
+                     
+                 
+             
+         
+     
+ 
+
+
+  
+
+
+ 
+     
+        
+         
+             
+                 Home 
+             
+             
+                 
+                     Cities 
+                     
+                         Choose your city 
+                                                     Atlanta 
+                                                     Austin - San-Antonio 
+                                                     Boston 
+                                                     Charlotte 
+                                                     Chicago 
+                                                     Dallas-Fort Worth 
+                                                     Data Center 
+                                                     Denver 
+                                                     Dublin 
+                                                     Houston 
+                                                     London 
+                                                     Los Angeles 
+                                                     National 
+                                                     New York 
+                                                     Philadelphia 
+                                                     Phoenix 
+                                                     Raleigh/Durham 
+                                                     San Francisco 
+                                                     South Florida 
+                                                     The Netherlands 
+                                                     Washington, D.C. 
+                                             
+                 
+             
+            
+             
+                 
+                    Events
+                     
+                          
+                     
+                 
+                 
+                     
+                         Calendar 
+                     
+                     
+                         Educational Workshops 
+                     
+                     
+                         First Draft Live 
+                     
+                     
+                         Elevate 
+                     
+                     
+                         Ascent 
+                     
+                     
+                         Escape 
+                     
+                     
+                         Apply to Speak 
+                     
+                     
+                         Sponsor an Event 
+                     
+                 
+             
+
+            
+             
+                 
+                    Careers
+                     
+                          
+                     
+                 
+                 
+                     
+                         Top Talent 
+                     
+                     
+                         Employer 
+                     
+                     
+                         SelectLeaders 
+                     
+                     
+                         Bisnow Careers 
+                     
+                 
+             
+
+             
+                 Press Releases 
+             
+
+            
+             
+                 
+                    Subscriptions
+                     
+                          
+                     
+                 
+                 
+                     
+                         Newsletters 
+                     
+                     
+                         Newsletter Archive 
+                     
+                 
+             
+
+            
+             
+                 
+                    About
+                     
+                          
+                     
+                 
+                 
+                     
+                         Contact Us 
+                     
+                     
+                         Advertise with Us 
+                     
+                     
+                         Careers 
+                     
+                 
+             
+         
+
+        
+         
+                             
+                     Login 
+                 
+                 
+                     Sign Up 
+                 
+                                 
+
+        
+         
+             
+                 
+             
+             
+                Go
+             
+         
+     
+ 
+
+
+ 
+
+        
+         
+            
+             
+                  open && $refs.searchInput.focus());
+                    "
+                    :class="open ? 'bg-neutral-800' : ''"
+                    class="flex cursor-pointer items-center px-5 text-white transition-colors duration-200 hover:bg-neutral-800"
+                    aria-label="Search"
+                >
+                     
+                          
+                     
+                 
+                 
+                     
+                         
+                             
+                         
+                         
+                            Search
+                         
+                     
+                 
+             
+                            
+                 
+                    Sign Up
+                 
+                 
+                    Login
+                 
+                                 
+
+        
+                     
+                Subscribe
+             
+             
+ 
+
+    
+             
+     
+        
+         
+                             Atlanta 
+                 Atlanta 
+                             Austin - San-Antonio 
+                 Austin - San-Antonio 
+                             Boston 
+                 Boston 
+                             Charlotte 
+                 Charlotte 
+                             Chicago 
+                 Chicago 
+                             Dallas-Fort Worth  
+                 Dallas 
+                             Data Center 
+                 Data Center 
+                             Denver 
+                 Denver 
+                             Dublin 
+                 Dublin 
+                             Houston 
+                 Houston 
+                             London 
+                 London 
+                             Los Angeles 
+                 LA 
+                             National 
+                 National 
+                             New York 
+                 NY 
+                             Philadelphia 
+                 Philadelphia 
+                             Phoenix 
+                 Phoenix 
+                             Raleigh/Durham 
+                 Raleigh/Durham 
+                             San Francisco 
+                 San Francisco 
+                             South Florida 
+                 Florida 
+                             The Netherlands 
+                 Netherlands 
+                             Washington, D.C. 
+                 D.C. 
+                     
+     
+ 
+    
+    
+                
+     
+    
+     
+             
+                             
+  
+     
+         
+            
+            
+            
+             
+                 
+                                             News 
+                                     
+                 
+                                             San Francisco 
+                                                                 Office 
+                                                         
+             
+
+             
+             
+                 
+    
+     Hudson Pacific Sells San Francisco Office Buildings 
+
+    
+     
+     September 29, 2026 | 4:16 pm ET 
+
+    
+    
+                     
+                                             
+                                             Rob Sabo, San Francisco Bay Area 
+                                                                 
+                            
+                             
+                                 
+                                 
+                             
+                         
+                                                         
+                     
+     
+ 
+
+                 
+  
+
+                 
+     
+           
+                     
+                     
+                                 Google Maps 
+                                 Hudson Pacific Properties  sold a two-building campus totaling 284K SF in San Francisco’s SoMa neighborhood to raise cash.  Seven Equity Group of New York City paid $65.5M, or $234 per SF, for the buildings,  The Real Deal reported . HPP acquired the buildings in 2007 from the Reliant Group for $46M, or $160 per SF.  The 188K SF, six-story office building at 875 Howard St. was approximately 36% occupied at closing, with the primary tenant’s lease due to expire next year, HPP said in a  press release . The other property, a 96K SF retail building at 899 Howard St., was completely vacant. HPP secured entitlements that will allow a future owner to develop two floors of the building for office use.  “The sale of 875 and 899 Howard reflects our disciplined approach to recycling capital out of non-core assets,” HPP Chairman and CEO Victor Coleman said in the release. “Our team's deep understanding of San Francisco's growing  office demand  guided the repositioning of 899 Howard, and the sale eliminates significant capital and re-leasing risk while enhancing our financial flexibility.”  Combined with the sale of 2001 Gateway Place, a seven-story, Class-A office building totaling 161K SF in north San Jose, HPP has sold three Bay Area assets for $90.5M in the third quarter of 2026.  “We will continue executing our disposition program and driving lease-up across our portfolio,” Coleman said.  The  company has struggled  after purchasing Quixote Studios in 2022. The filmmaking business slumped around the same time and has continued to operate at a below-average pace, leaving studio space across Southern California empty. With both the studio and office markets resetting, HPP has dealt with low occupancy and  faces maturing loans .  In April,  HPP announced that it would close  its operations in New Mexico and Georgia, shedding leases it took on in the Quixote acquisition.  Seven Equity, meanwhile, continues an extended buying spree across San Francisco. In early September, it purchased a five-story, 1907-built building at 818 Mission St., as well as an adjacent six-story property at 814 Mission that formerly housed the San Francisco Evening Bulletin. The office and ground-floor retail buildings span 101K SF and were purchased for $15.5M. Former San Francisco Centre owner Westfield acquired the assets nearly two decades ago for $42M.   In July, Seven Equity Group acquired the former WeWork office building at 25 Taylor St. out of receivership for $6.75M, the San Francisco Business Times  reported .   San Francisco’s office market continues its extended recovery, though demand remains focused on higher-quality office buildings, Kidder Matthews  reported . Leases at Class-A office properties accounted for 55% of activity and 66% of total net absorption in Q2.  Overall vacancy stood at 27.2% at the end of Q2, down from a high of 32% in 2024. Sublease vacancy, meanwhile, declined to 14.3%, a sharp reduction from its peak of 44% in 2020.      
+                   
+
+                        
+               
+
+              
+         
+             
+                Continue reading this story with a free account
+             
+             
+                Log in or register
+             
+         
+       
+
+                 
+                    
+                    
+                     
+                     
+                     
+                Contact
+                                     Rob Sabo 
+                                                    at
+                     rob.sabo@bisnow.com 
+                             
+             
+
+                     
+  
+
+                     
+                     
+     
+        Related Topics:
+                     Hudson Pacific 
+             ,                      Seven Equity Group 
+                         
+ 
+                 
+             
+
+            
+            
+            
+             
+         
+             Sign up for more articles like this 
+             Subscribe to Bisnow's San Francisco Newsletters 
+         
+
+         
+             
+             
+                 
+                     
+                 
+                 
+                     
+                        Submit
+                     
+                 
+             
+         
+     
+
+             
+         
+             Related Stories 
+         
+         
+             
+                                     
+                          
+
+                               
+
+                         Foreclosure Suit Filed At Stalled Penn Plaza Life Sciences Project 
+                     
+                                     
+                          
+
+                               
+
+                         Chicago Office Tower Sells For $550M To Zara Founder In Blockbuster Deal 
+                     
+                                     
+                          
+
+                               
+
+                         Wonderful Real Estate Inks Major Land Deals, Sells 1M SF Facility Near Bakersfield 
+                     
+                                     
+                          
+
+                               
+
+                         Paramount Pictures To Reopen Bay Theater In Palisades Village 
+                     
+                                     
+                          
+
+                               
+
+                         JPMorgan Relocating, Expanding Philly Office 
+                     
+                                     
+                          
+
+                               
+
+                         JLL Nabs Brokerage Team With Over 75 Years Combined At Rival CBRE 
+                     
+                                     
+                          
+
+                               
+
+                         WeWork's UK and Ireland General Manager On How Hospitality Is Raising The Bar For The Modern Office 
+                     
+                                     
+                          
+
+                               
+
+                         Microsoft Sues JLL For Protection Against Lawsuit At NYC Office Project 
+                     
+                                     
+                          
+
+                               
+
+                         Brandywine Lands Full-Floor Tenant At Cira Centre 
+                     
+                                     
+                          
+
+                               
+
+                         As Healthcare REITs Shift To Senior Housing, New Entrants Move Into Medical Office Space 
+                     
+                                     
+                          
+
+                               
+
+                         Developer Inks Deal To Move HQ To Lerner's Tysons Tower 
+                     
+                                     
+                          
+
+                               
+
+                         Where Occupier Fit-Outs Are Going Wrong And Why The Answer Is 70% 
+                     
+                             
+         
+     
+         
+
+         
+         
+             
+             
+        
+         
+             
+                Bisnow San Francisco Newsletters
+             
+         
+        
+         
+             
+                 
+                 
+                 
+                    Submit
+                 
+             
+         
+     
+
+             
+             
+     
+         Top Stories 
+     
+             
+                             
+                     
+                         Wonderful Real Estate Inks Major Land Deals, Sells 1M SF Facility Near Bakersfield 
+                                                     
+                                                                     
+                                        San Francisco
+                                     
+                                                                     
+                                        Industrial
+                                     
+                                                             
+                                                                             
+                                October 13, 2026
+                             
+                                             
+                 
+                             
+                     
+                         SFF Realty Partners Extends Spending Spree With $82M Acquisition In Downtown San Jose 
+                                                     
+                                                                     
+                                        San Francisco
+                                     
+                                                                     
+                                        Office
+                                     
+                                                             
+                                                                             
+                                October 9, 2026
+                             
+                                             
+                 
+                             
+                     
+                         San Francisco Office Market Climbs, Fueling Demand For Large Blocks, Luxury Space 
+                                                     
+                                                                     
+                                        San Francisco
+                                     
+                                                                     
+                                        Office
+                                     
+                                                             
+                                                                             
+                                October 6, 2026
+                             
+                                             
+                 
+                             
+                     
+                         Drawbridge Realty Acquires 180K SF Office Building In Sunnyvale For $219M 
+                                                     
+                                                                     
+                                        San Francisco
+                                     
+                                                                     
+                                        Office
+                                     
+                                                             
+                                                                             
+                                October 8, 2026
+                             
+                                             
+                 
+                             
+                     
+                         Morgan Stanley Fund Buys 189K SF Milpitas Industrial Building 
+                                                     
+                                                                     
+                                        San Francisco
+                                     
+                                                                     
+                                        Industrial
+                                     
+                                                             
+                                                                             
+                                October 1, 2026
+                             
+                                             
+                 
+                     
+                 
+            More Top Stories
+         
+     
+
+             
+  
+
+             
+               
+             SelectLeaders Jobs 
+         
+         
+                               
+                     
+                         Executive Director, Capital Market 
+                                                       Gemdale USA Corporation 
+                                                                                 
+                                  Pasadena  
+                             
+                                                                                 Posted September 3, 2026 
+                                               
+                 
+                             
+                     
+                         Property Manager- Commercial And Residential 
+                                                       Steaven Jones and Co, Inc. 
+                                                                                 
+                                  Los Angeles  
+                             
+                                                                                 Posted September 3, 2026 
+                                               
+                 
+                             
+                     
+                         Director Of Planning And Design 
+                                                       Loyola Marymount University 
+                                                                                 
+                                  Los Angeles  
+                             
+                                                                                 Posted September 8, 2026 
+                                               
+                 
+                       
+                       
+                More Job Opportunities
+             
+                          
+     
+         
+    
+    
+     
+     
+        
+         
+            
+             
+                 Company Info 
+                 
+                     About 
+                     Media Kit 
+                     Submit a Press Release 
+                     Careers 
+                     Contact Us 
+                 
+             
+
+            
+             
+                 Newsletters 
+                 
+                     Archives 
+                     Manage Subscriptions 
+                     Subscribe 
+                     Top Stories 
+                 
+             
+
+            
+             
+                 Other Stuff 
+                 
+                     Privacy Policy 
+                     Terms of Use 
+                     Sitemap 
+                                             Login 
+                                                             Manage cookie preferences 
+                 
+             
+         
+
+        
+         
+             
+                
+                 
+                     
+                         
+                             f 
+                         
+                         
+                             X 
+                         
+                         
+                             in 
+                         
+                         
+                             
+                                 
+                             
+                         
+                         
+                             
+                                  
+                             
+                         
+                     
+                     (202) 684-2034 
+                 
+
+                
+                 
+                     
+                        © Copyright 2026 Bisnow. All Rights Reserved
+                     
+                 
+             
+         
+     
+ 
+
+    
+            
+         
+    
+      
+
+    
+     
+         
+            
+                             
+    
+     
+         
+                              Login to Your Account
+                       
+         
+             
+                  
+             
+         
+     
+
+    
+     
+        We're not asking for your money. This is not a step towards a paywall. Our news is free and we intend to keep it
+        that way.
+     
+
+    
+               
+             Login or register 
+             
+                 
+                 
+                    Login
+                 
+             
+             
+                 
+                 
+                    Register
+                 
+             
+         
+      
+    
+     
+        
+         
+                              Sign in
+                       
+
+            
+
+    
+                                         
+     
+         
+            Email:
+         
+         
+                 
+
+     
+         
+            Password:
+         
+         
+                 
+
+    
+     
+                       
+                Forgot your password?
+             
+                   We can help! 
+     
+
+    
+     
+         
+             Login 
+             Signing in… 
+         
+
+        
+         
+             
+                 
+             
+            Continue with LinkedIn
+         
+     
+ 
+                             
+                      
+     
+ 
+    
+    
+    
+         
+    
+     
+         
+                                                 
+                         
+                             
+     
+ 
+                         
+                         
+                            Share
+                         
+                     
+                                                                 
+                         
+                             
+     
+ 
+                         
+                         
+                            Post
+                         
+                     
+                                                                 
+                         
+                             
+     
+ 
+                         
+                         
+                            Share
+                         
+                     
+                                                                 
+                         
+                             
+     
+ 
+                         
+                         
+                            Share
+                         
+                     
+                                                                 
+                         
+                             
+     
+ 
+                         
+                         
+                            Email
+                         
+                     
+                                                                 
+                         
+                             
+     
+     
+ 
+                         
+                         Copy link 
+                     
+                                     
+         
+             
+                 
+                 
+             
+         
+     
+
+    
+     
+                                     
+                     
+                         
+     
+ 
+                     
+                 
+                                                 
+                     
+                         
+     
+ 
+                     
+                 
+                                                 
+                     
+                         
+     
+ 
+                     
+                 
+                                                 
+                     
+                         
+     
+ 
+                     
+                 
+                                                 
+                     
+                         
+     
+ 
+                     
+                 
+                                                
+                 
+                     
+                         
+     
+     
+ 
+                     
+                      
+                 
+                         
+
+    
+      
+ 
+
+    
+    
+    
+    
+    
+    
+     
+     
+         
+             
+                 
+                     
+                        
+                         
+                             
+                         
+
+                        
+                         
+                             
+                         
+
+                        
+                         
+                             
+                         
+
+                        
+                         
+                             
+                         
+
+                         
+                            
+                                
+
+                            
+                                
+
+                            
+                             
+                                    
+                             
+                         
+                     
+
+                    
+                     
+                         
+                             
+                                 
+                                      
+                                 
+                             
+                         
+                     
+                 
+             
+         
+     
+ 
+
+    
+     
+     
+             
+        
+     
+
+    
+     
+
+ 
+ 

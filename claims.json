@@ -630,5 +630,227 @@
       4,
       11
     ]
+  },
+  {
+    "claim_id": "c54",
+    "source_id": "sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "subject": "Hyatt Regency San Francisco (hotel, 821 rooms) - total sale price; seller Sunstone Hotel Investors, buyer Blackstone Real Estate funds",
+    "value": "279",
+    "unit": "million dollars",
+    "period": "agreement June 23, 2026 (close expected late July/early Aug 2026)",
+    "quote": "ALISO VIEJO, Calif., June 23, 2026 -- Sunstone Hotel Investors , Inc. (the \"Company\" or \"Sunstone\") (NYSE: SHO) today announced that it has entered into a definitive agreement to sell the 821-room Hyatt Regency San Francisco (the \"Hotel\") to funds affiliated with Blackstone Real Estate for a gross sale price of $279 million, or approximately $340,000 per key.",
+    "questions": [
+      2,
+      13
+    ]
+  },
+  {
+    "claim_id": "c55",
+    "source_id": "sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "subject": "Hyatt Regency San Francisco (hotel, 821 rooms) - price per key; seller Sunstone, buyer Blackstone",
+    "value": "340,000",
+    "unit": "dollars per key (approximately)",
+    "period": "agreement June 23, 2026",
+    "quote": "ALISO VIEJO, Calif., June 23, 2026 -- Sunstone Hotel Investors , Inc. (the \"Company\" or \"Sunstone\") (NYSE: SHO) today announced that it has entered into a definitive agreement to sell the 821-room Hyatt Regency San Francisco (the \"Hotel\") to funds affiliated with Blackstone Real Estate for a gross sale price of $279 million, or approximately $340,000 per key.",
+    "questions": [
+      5,
+      13
+    ]
+  },
+  {
+    "claim_id": "c56",
+    "source_id": "sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "subject": "Hyatt Regency San Francisco (hotel, 821 rooms) - cap rate on trailing-12-month hotel NOI (seller-reported)",
+    "value": "3.5",
+    "unit": "percent (TTM, in-place)",
+    "period": "TTM ending May 31, 2026",
+    "quote": "The sale price represents a 21.4x multiple on Hotel Adjusted EBITDA re and a 3.5% cap rate on Hotel Net Operating Income for the trailing twelve-month period ending May 31, 2026.",
+    "questions": [
+      6,
+      13
+    ]
+  },
+  {
+    "claim_id": "c57",
+    "source_id": "sunstone-hotel-investors-enters-into-an-agreement-to-sell-hyatt-regency-san-francisco",
+    "subject": "Hyatt Regency San Francisco (hotel, 821 rooms) - multiple of trailing-12-month Hotel Adjusted EBITDAre (seller-reported)",
+    "value": "21.4",
+    "unit": "times EBITDA",
+    "period": "TTM ending May 31, 2026",
+    "quote": "The sale price represents a 21.4x multiple on Hotel Adjusted EBITDA re and a 3.5% cap rate on Hotel Net Operating Income for the trailing twelve-month period ending May 31, 2026.",
+    "questions": [
+      13
+    ]
+  },
+  {
+    "claim_id": "c58",
+    "source_id": "hudson-pacific-divests-additional-bay-area-assets",
+    "subject": "875 & 899 Howard St, SoMa (office + retail, 284,000 SF) - total sale price; seller Hudson Pacific Properties, buyer Seven Equity Group (Bisnow citing The Real Deal)",
+    "value": "65.5",
+    "unit": "million dollars",
+    "period": "sale reported September 29, 2026",
+    "quote": "Seven Equity Group of New York City paid $65.5M, or $234 per SF, for the buildings, The Real Deal reported .",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c59",
+    "source_id": "hudson-pacific-divests-additional-bay-area-assets",
+    "subject": "875 & 899 Howard St, SoMa (office + retail, 284,000 SF) - price per SF; buyer Seven Equity Group",
+    "value": "234",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "sale reported September 29, 2026",
+    "quote": "Seven Equity Group of New York City paid $65.5M, or $234 per SF, for the buildings, The Real Deal reported .",
+    "questions": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "claim_id": "c60",
+    "source_id": "hudson-pacific-divests-additional-bay-area-assets",
+    "subject": "875 & 899 Howard St, SoMa (office + retail, 284,000 SF) - prior purchase price paid by Hudson Pacific in 2007 (from Reliant Group)",
+    "value": "46",
+    "unit": "million dollars",
+    "period": "2007 purchase",
+    "quote": "HPP acquired the buildings in 2007 from the Reliant Group for $46M, or $160 per SF.",
+    "questions": [
+      11
+    ]
+  },
+  {
+    "claim_id": "c61",
+    "source_id": "multifamily-market-research-san-francisco-2026-2q",
+    "subject": "Average multifamily cap rate, Bay Area (Kidder Mathews table row; not SF-only)",
+    "value": "5.7",
+    "unit": "percent",
+    "period": "2Q 2026 (Bay Area-wide; CoStar data via Kidder Mathews)",
+    "quote": "Average Cap Rate 5.7% 5.8% 5.8% -10 bps",
+    "questions": [
+      10
+    ]
+  },
+  {
+    "claim_id": "c62",
+    "source_id": "multifamily-market-research-san-francisco-2026-2q",
+    "subject": "Average multifamily sale price per unit, Bay Area (Kidder Mathews table row; not SF-only)",
+    "value": "313,445",
+    "unit": "dollars per unit",
+    "period": "2Q 2026 (Bay Area-wide; CoStar data via Kidder Mathews)",
+    "quote": "Average Sales Price (Unit) $313,445 $379,554 $349,618 -10.35%",
+    "questions": [
+      10
+    ]
+  },
+  {
+    "claim_id": "c63",
+    "source_id": "multifamily-market-research-san-francisco-2026-2q",
+    "subject": "Average multifamily asking rent, Bay Area (Kidder Mathews table row; not SF-only)",
+    "value": "2,843",
+    "unit": "dollars per unit per month (asking)",
+    "period": "2Q 2026 (Bay Area-wide; CoStar data via Kidder Mathews)",
+    "quote": "Average Asking Rents/Unit/Mo $2,843 $2,755 $2,688 5.77% 1 Bedroom $2,592",
+    "questions": [
+      19
+    ]
+  },
+  {
+    "claim_id": "c64",
+    "source_id": "multifamily-market-research-san-francisco-2026-2q",
+    "subject": "1690 Broadway / Grosvenor Atrium, Pacific Heights (multifamily, 80 units) - total sale price (Kidder Mathews sale table); buyer listed as The Carlyle Group, seller Grosvenor Properties Ltd.",
+    "value": "35,300,000",
+    "unit": "dollars",
+    "period": "2Q 2026",
+    "quote": "Grosvenor Atrium Pacific Heights 80 $35,300,000 $441,250 The Carlyle Group Grosvenor Properties Ltd.",
+    "questions": [
+      2
+    ]
+  },
+  {
+    "claim_id": "c65",
+    "source_id": "san-francisco-multifamily-q2-2026",
+    "subject": "San Francisco multifamily cap rate (Matthews)",
+    "value": "4.82",
+    "unit": "percent",
+    "period": "Q2 2026 (published Aug 13, 2026; geography 'San Francisco', market definition not stated)",
+    "quote": "Cap rates have inched up to 4.82%, reportedly the highest level for San Francisco since 2011, a real shift after years of compression.",
+    "questions": [
+      10
+    ]
+  },
+  {
+    "claim_id": "c66",
+    "source_id": "san-francisco-multifamily-q2-2026",
+    "subject": "San Francisco multifamily sales volume in Q2 2026 (Matthews)",
+    "value": "1.5",
+    "unit": "billion dollars",
+    "period": "Q2 2026 (published Aug 13, 2026; geography 'San Francisco', market definition not stated)",
+    "quote": "The TTM volume climbed 8.0% to $3.6B, and Q2’s $1.5B was up 74.7% YoY, the strongest single quarter in this stretch of data.",
+    "questions": [
+      10,
+      14
+    ]
+  },
+  {
+    "claim_id": "c67",
+    "source_id": "san-francisco-multifamily-q2-2026",
+    "subject": "San Francisco multifamily sales volume, trailing 12 months (Matthews)",
+    "value": "3.6",
+    "unit": "billion dollars",
+    "period": "TTM through Q2 2026",
+    "quote": "The TTM volume climbed 8.0% to $3.6B, and Q2’s $1.5B was up 74.7% YoY, the strongest single quarter in this stretch of data.",
+    "questions": [
+      14
+    ]
+  },
+  {
+    "claim_id": "c68",
+    "source_id": "san-francisco-multifamily-q2-2026",
+    "subject": "San Francisco multifamily average rent (Matthews; per unit per month implied, not stated; asking vs effective not stated)",
+    "value": "3,562",
+    "unit": "dollars (rent)",
+    "period": "Q2 2026 (published Aug 13, 2026; geography 'San Francisco', market definition not stated)",
+    "quote": "Rent surged to $3,562 in Q2, up 11.76% YoY.",
+    "questions": [
+      19
+    ]
+  },
+  {
+    "claim_id": "c69",
+    "source_id": "san-francisco-multifamily-q2-2026",
+    "subject": "San Francisco multifamily average price per unit (Matthews stat block)",
+    "value": "444",
+    "unit": "thousand dollars per unit",
+    "period": "Q2 2026 (published Aug 13, 2026; geography 'San Francisco', market definition not stated)",
+    "quote": "Pricing Cap rate 4.82% Price per unit $444k",
+    "questions": [
+      10
+    ]
+  },
+  {
+    "claim_id": "c70",
+    "source_id": "san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues",
+    "subject": "1680 Mission St (office, 41,715 SF) - LISTING - asking price (from headline); listing broker Newmark",
+    "value": "9.5",
+    "unit": "million dollars (asking)",
+    "period": "listed February 3, 2026 (current status not checked)",
+    "quote": "San Francisco's 42,000 SQFT Office Building at 1680 Mission Seeks Buyer at $9.5MM as Market Repricing Continues",
+    "questions": [
+      17
+    ]
+  },
+  {
+    "claim_id": "c71",
+    "source_id": "san-franciscos-42000-sqft-office-building-at-1680-mission-seeks-buyer-at-9-5mm-as-market-repricing-continues",
+    "subject": "1680 Mission St (office, 41,715 SF) - LISTING - asking price per SF; listing broker Newmark",
+    "value": "228",
+    "unit": "dollars per square foot (asking; basis not stated)",
+    "period": "listed February 3, 2026",
+    "quote": "1680 Mission Street listed at $228 per square foot, reflecting broader reset in city's commercial real estate sector",
+    "questions": [
+      17
+    ]
   }
 ]
