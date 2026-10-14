@@ -131,7 +131,11 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [],
+    "date": "Reported May 31, 2026"
   },
   {
     "claim_id": "c13",
@@ -143,7 +147,11 @@
     "quote": "19,000 SQFT Jackson Square Office Building Trades for $5.24MM, Half of 2024 Asking Price",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [],
+    "date": "Reported May 31, 2026"
   },
   {
     "claim_id": "c14",
@@ -156,7 +164,17 @@
     "questions": [
       5,
       10
-    ]
+    ],
+    "buyer": [
+      "Ballast",
+      "The Carlyle Group"
+    ],
+    "seller": [
+      "Grosvenor Properties Ltd."
+    ],
+    "lender": [],
+    "date": "Reported May 8, 2026",
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
   },
   {
     "claim_id": "c15",
@@ -168,7 +186,17 @@
     "quote": "Ballast Lands 80-Unit Grosvenor Atrium in Pacific Heights for $35.3MM, Doubling Down on San Francisco",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Ballast",
+      "The Carlyle Group"
+    ],
+    "seller": [
+      "Grosvenor Properties Ltd."
+    ],
+    "lender": [],
+    "date": "Reported May 8, 2026",
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
   },
   {
     "claim_id": "c16",
@@ -180,7 +208,13 @@
     "quote": "The firm purchased the Arc Light apartments for $37.8 million, or about $402,127 per unit, according to a report from the San Francisco Business Times.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Tidewater Capital"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported July 29, 2025"
   },
   {
     "claim_id": "c17",
@@ -193,7 +227,13 @@
     "questions": [
       5,
       10
-    ]
+    ],
+    "buyer": [
+      "Tidewater Capital"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported July 29, 2025"
   },
   {
     "claim_id": "c18",
@@ -206,7 +246,14 @@
     "questions": [
       2,
       13
-    ]
+    ],
+    "buyer": [],
+    "seller": [
+      "Neighbourgood"
+    ],
+    "lender": [],
+    "date": "Announced June 3, 2026",
+    "deal_note": "Buyer confidential"
   },
   {
     "claim_id": "c19",
@@ -324,7 +371,15 @@
     "quote": "Meridian Group & Fenway Capital Close $200MM Acquisition of 667,000 SQFT Office Tower at 415 Natoma in San Francisco's SoMa",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "The Meridian Group",
+      "Fenway Capital Advisors"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text"
   },
   {
     "claim_id": "c30",
@@ -338,7 +393,15 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "The Meridian Group",
+      "Fenway Capital Advisors"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text"
   },
   {
     "claim_id": "c31",
@@ -350,7 +413,14 @@
     "quote": "Madison Capital & PGIM Close $95MM Acquisition of 360,000 SQFT 123 Mission in San Francisco, Completing Turnaround of Former Juul Tower",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Madison Capital",
+      "PGIM"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026"
   },
   {
     "claim_id": "c32",
@@ -364,7 +434,14 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Madison Capital",
+      "PGIM"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026"
   },
   {
     "claim_id": "c33",
@@ -376,7 +453,14 @@
     "quote": "The deal prices the 29-story South Financial District office tower at roughly $264 per square foot — a 76 percent discount from Juul Labs' $397 million purchase in 2019 — as the new owners prepare a hospitality-driven repositioning amid record AI-fueled leasing",
     "questions": [
       11
-    ]
+    ],
+    "buyer": [
+      "Madison Capital",
+      "PGIM"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026"
   },
   {
     "claim_id": "c34",
@@ -388,7 +472,13 @@
     "quote": "Zurich Alternative Asset Management pays $47.4 million for 410 Townsend, more than double its 2024 sale price.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Zurich Alternative Asset Management"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported September 24, 2026"
   },
   {
     "claim_id": "c35",
@@ -400,7 +490,14 @@
     "quote": "Presidio Bay Ventures Acquires 55,700 SQFT Office at 333 Valencia in San Francisco for $27.5MM via Deed in Lieu of Foreclosure",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported February 7, 2026",
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
   },
   {
     "claim_id": "c36",
@@ -414,7 +511,14 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported February 7, 2026",
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
   },
   {
     "claim_id": "c37",
@@ -426,7 +530,14 @@
     "quote": "The Mission District office property traded at approximately $494 per square foot, representing a 54 percent discount from its 2021 asking price of $60 million as San Francisco's office market continues to reset amid growing investor interest.",
     "questions": [
       11
-    ]
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported February 7, 2026",
+    "deal_note": "Deed in lieu of foreclosure; prior owner not in free text"
   },
   {
     "claim_id": "c38",
@@ -438,7 +549,13 @@
     "quote": "One Daniel Burnham Court, a 108,362-square-foot medical office building in San Francisco's Cathedral Hill neighborhood, has sold to Sutter Bay Medical Foundation for $47 million, closing on December 16, 2025, according to public documents reviewed by The Registry.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Sutter Bay Medical Foundation"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closed December 16, 2025"
   },
   {
     "claim_id": "c39",
@@ -452,7 +569,13 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Sutter Bay Medical Foundation"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closed December 16, 2025"
   },
   {
     "claim_id": "c40",
@@ -464,7 +587,13 @@
     "quote": "San Francisco-based real estate investment firm Redco has acquired 400 Montgomery St., a historic office building, for $25.75 million, or roughly $300 per square foot, according to a report from the San Francisco Business Times.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Redco"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported November 20, 2024"
   },
   {
     "claim_id": "c41",
@@ -478,7 +607,13 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Redco"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported November 20, 2024"
   },
   {
     "claim_id": "c42",
@@ -491,7 +626,18 @@
     "questions": [
       9,
       16
-    ]
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [
+      "RFR Holding"
+    ],
+    "lender": [
+      "Bluerock Private Real Estate Fund"
+    ],
+    "date": "Deed in lieu October 1, 2026",
+    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt"
   },
   {
     "claim_id": "c43",
@@ -503,7 +649,18 @@
     "quote": "Recorded documents show RFR Holding surrendered the former Federal Reserve Bank building at 301 Battery Street to a Presidio Bay Ventures entity on Oct. 1 to settle $130.2 million in debt, and the new owner immediately financed the landmark with a loan of up to $85.6 million from an affiliate of the Bluerock Private Real Estate Fund.",
     "questions": [
       8
-    ]
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [
+      "RFR Holding"
+    ],
+    "lender": [
+      "Bluerock Private Real Estate Fund"
+    ],
+    "date": "Deed in lieu October 1, 2026",
+    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt"
   },
   {
     "claim_id": "c44",
@@ -516,7 +673,14 @@
     "questions": [
       9,
       16
-    ]
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [
+      "Invesco Real Estate"
+    ],
+    "date": "Refinance reported July 21, 2026",
+    "deal_note": "Refinance, not a sale; owner The Swig Company"
   },
   {
     "claim_id": "c45",
@@ -529,7 +693,16 @@
     "questions": [
       2,
       10
-    ]
+    ],
+    "buyer": [
+      "Burlingame investor"
+    ],
+    "seller": [
+      "Fortress Investment Group"
+    ],
+    "lender": [],
+    "date": "Reported August 14, 2026",
+    "deal_note": "Buyer unnamed; described as a Burlingame investor"
   },
   {
     "claim_id": "c46",
@@ -541,7 +714,16 @@
     "quote": "An entity tied to Fortress Investment Group has sold the 91-unit apartment building at 520 Geary Street near San Francisco's Union Square to a Burlingame investor for $18.475 million, marking a roughly 50 percent markdown from what the property fetched at the market's 2018 peak.",
     "questions": [
       10
-    ]
+    ],
+    "buyer": [
+      "Burlingame investor"
+    ],
+    "seller": [
+      "Fortress Investment Group"
+    ],
+    "lender": [],
+    "date": "Reported August 14, 2026",
+    "deal_note": "Buyer unnamed; described as a Burlingame investor"
   },
   {
     "claim_id": "c47",
@@ -553,7 +735,12 @@
     "quote": "The property sold for $6.65 million, or $237,500 per unit.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [],
+    "date": "Announced June 9, 2026",
+    "deal_note": "Broker Marcus & Millichap; parties not in free text"
   },
   {
     "claim_id": "c48",
@@ -566,7 +753,12 @@
     "questions": [
       5,
       10
-    ]
+    ],
+    "buyer": [],
+    "seller": [],
+    "lender": [],
+    "date": "Announced June 9, 2026",
+    "deal_note": "Broker Marcus & Millichap; parties not in free text"
   },
   {
     "claim_id": "c49",
@@ -578,7 +770,14 @@
     "quote": "Fortress Acquires $348MM Loan Backed by 890 San Francisco Apartments for $220MM",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Fortress Investment Group"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported January 6, 2026",
+    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings"
   },
   {
     "claim_id": "c50",
@@ -590,7 +789,14 @@
     "quote": "Fortress Acquires $348MM Loan Backed by 890 San Francisco Apartments for $220MM",
     "questions": [
       9
-    ]
+    ],
+    "buyer": [
+      "Fortress Investment Group"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Reported January 6, 2026",
+    "deal_note": "Loan purchase; Fortress bought the loan, not the buildings"
   },
   {
     "claim_id": "c51",
@@ -603,7 +809,15 @@
     "questions": [
       2,
       12
-    ]
+    ],
+    "buyer": [
+      "Terreno Realty Corporation"
+    ],
+    "seller": [
+      "Lowenberg Corporation"
+    ],
+    "lender": [],
+    "date": "Reported August 24, 2026"
   },
   {
     "claim_id": "c52",
@@ -615,7 +829,16 @@
     "quote": "According to a report from the San Francisco Business Times, Redco has purchased a $25 million loan tied to an office building previously owned by Shorenstein for $15.1 million, or approximately $190 per square foot, through a deed-in-lieu-of-foreclosure.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Redco"
+    ],
+    "seller": [
+      "Shorenstein"
+    ],
+    "lender": [],
+    "date": "Reported June 9, 2025",
+    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner"
   },
   {
     "claim_id": "c53",
@@ -629,7 +852,16 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Redco"
+    ],
+    "seller": [
+      "Shorenstein"
+    ],
+    "lender": [],
+    "date": "Reported June 9, 2025",
+    "deal_note": "Redco bought the loan and took title by deed in lieu; Shorenstein was the prior owner"
   },
   {
     "claim_id": "c54",
@@ -642,7 +874,15 @@
     "questions": [
       2,
       13
-    ]
+    ],
+    "buyer": [
+      "Blackstone Real Estate"
+    ],
+    "seller": [
+      "Sunstone Hotel Investors"
+    ],
+    "lender": [],
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
   },
   {
     "claim_id": "c55",
@@ -655,7 +895,15 @@
     "questions": [
       5,
       13
-    ]
+    ],
+    "buyer": [
+      "Blackstone Real Estate"
+    ],
+    "seller": [
+      "Sunstone Hotel Investors"
+    ],
+    "lender": [],
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
   },
   {
     "claim_id": "c56",
@@ -668,7 +916,15 @@
     "questions": [
       6,
       13
-    ]
+    ],
+    "buyer": [
+      "Blackstone Real Estate"
+    ],
+    "seller": [
+      "Sunstone Hotel Investors"
+    ],
+    "lender": [],
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
   },
   {
     "claim_id": "c57",
@@ -680,7 +936,15 @@
     "quote": "The sale price represents a 21.4x multiple on Hotel Adjusted EBITDA re and a 3.5% cap rate on Hotel Net Operating Income for the trailing twelve-month period ending May 31, 2026.",
     "questions": [
       13
-    ]
+    ],
+    "buyer": [
+      "Blackstone Real Estate"
+    ],
+    "seller": [
+      "Sunstone Hotel Investors"
+    ],
+    "lender": [],
+    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)"
   },
   {
     "claim_id": "c58",
@@ -692,7 +956,15 @@
     "quote": "Seven Equity Group of New York City paid $65.5M, or $234 per SF, for the buildings, The Real Deal reported .",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Seven Equity Group"
+    ],
+    "seller": [
+      "Hudson Pacific Properties"
+    ],
+    "lender": [],
+    "date": "Reported September 29, 2026"
   },
   {
     "claim_id": "c59",
@@ -706,7 +978,15 @@
       3,
       4,
       11
-    ]
+    ],
+    "buyer": [
+      "Seven Equity Group"
+    ],
+    "seller": [
+      "Hudson Pacific Properties"
+    ],
+    "lender": [],
+    "date": "Reported September 29, 2026"
   },
   {
     "claim_id": "c60",
@@ -718,7 +998,15 @@
     "quote": "HPP acquired the buildings in 2007 from the Reliant Group for $46M, or $160 per SF.",
     "questions": [
       11
-    ]
+    ],
+    "buyer": [
+      "Seven Equity Group"
+    ],
+    "seller": [
+      "Hudson Pacific Properties"
+    ],
+    "lender": [],
+    "date": "Reported September 29, 2026"
   },
   {
     "claim_id": "c61",
@@ -766,7 +1054,17 @@
     "quote": "Grosvenor Atrium Pacific Heights 80 $35,300,000 $441,250 The Carlyle Group Grosvenor Properties Ltd.",
     "questions": [
       2
-    ]
+    ],
+    "buyer": [
+      "Ballast",
+      "The Carlyle Group"
+    ],
+    "seller": [
+      "Grosvenor Properties Ltd."
+    ],
+    "lender": [],
+    "date": "Reported May 8, 2026",
+    "deal_note": "Registry names Ballast as buyer; Kidder Mathews table names The Carlyle Group"
   },
   {
     "claim_id": "c65",

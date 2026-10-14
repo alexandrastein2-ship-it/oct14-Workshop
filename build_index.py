@@ -21,6 +21,8 @@ import re
 import sys
 from pathlib import Path
 
+from verify import normalize
+
 HERE = Path(__file__).parent
 OUT = HERE / "index.html"
 
@@ -123,6 +125,35 @@ def deal_name(claim):
     return None
 
 
+def party_info(cs):
+    """Buyer/seller/lender/date for a deal, merged from its claims (first non-empty wins)."""
+    info = {}
+    for key in ("buyer", "seller", "lender", "date", "deal_note"):
+        info[key] = next((c[key] for c in cs if c.get(key)), None)
+    return info
+
+
+def found_in_sources(name, cs, sources):
+    """True if the name appears word for word in the text of any of the deal's sources."""
+    for sid in {c["source_id"] for c in cs}:
+        path = HERE / sources.get(sid, {}).get("capture", "")
+        if path.is_file() and normalize(name) in normalize(path.read_text(encoding="utf-8")):
+            return True
+    return False
+
+
+def names_html(names, cs, sources, missing="Not in free text"):
+    if not names:
+        return f'<span class="muted">{esc(missing)}</span>'
+    out = []
+    for n in names:
+        ok = found_in_sources(n, cs, sources)
+        mark = ('<span class="mark ok" title="Name appears word for word in the source text">✓</span>' if ok
+                else '<span class="mark warn" title="Name not found in the source text">?</span>')
+        out.append(f"{esc(n)} {mark}")
+    return "<br>".join(out)
+
+
 def esc(text):
     return html.escape(str(text))
 
@@ -172,30 +203,56 @@ def main():
         name = deal_name(c)
         if name:
             deals.setdefault(name, []).append(c)
-    rows = []
+    def deal_date(cs):
+        text = party_info(cs)["date"] or cs[0]["period"]
+        m = re.search(r"([A-Z][a-z]+) (\d{1,2}), (\d{4})", text)
+        try:
+            return datetime.datetime.strptime(" ".join(m.groups()), "%B %d %Y") if m else datetime.datetime.min
+        except ValueError:
+            return datetime.datetime.min
+    deals = dict(sorted(deals.items(), key=lambda kv: deal_date(kv[1]), reverse=True))
+    rows, deal_blocks = [], []
     for name, cs in deals.items():
-        cells = []
-        for _, qs in DEAL_FIELDS:
+        info = party_info(cs)
+        cells = [
+            f"<td class=\"nowrap-ish\">{esc(info['date'] or cs[0]['period'])}</td>",
+            f"<td>{names_html(info['buyer'], cs, sources)}</td>",
+            f"<td>{names_html(info['seller'], cs, sources)}</td>",
+        ]
+        for label, qs in DEAL_FIELDS:
             hits = [money(c["value"], c["unit"]) for c in cs if qs & set(c["questions"])]
-            cells.append(f"<td>{esc('; '.join(hits))}</td>" if hits else '<td class="gap">—</td>')
-        rows.append(f"<tr><th scope=\"row\">{esc(name)}<span class=\"when\">{esc(cs[0]['period'])}</span></th>{''.join(cells)}</tr>")
-    deal_blocks = "".join(
-        f'<section class="deal"><h3>{esc(name)}</h3><div class="grid">'
-        + "".join(claim_card(c, sources) for c in cs) + "</div></section>"
-        for name, cs in deals.items())
+            cell = esc("; ".join(hits))
+            if label == "Financing" and info["lender"]:
+                cell += ("<br>" if cell else "") + "Lender: " + names_html(info["lender"], cs, sources)
+            cells.append(f"<td>{cell}</td>" if cell else '<td class="gap">—</td>')
+        note = f'<span class="when">{esc(info["deal_note"])}</span>' if info["deal_note"] else ""
+        rows.append(f"<tr><th scope=\"row\">{esc(name)}{note}</th>{''.join(cells)}</tr>")
+        facts = [("Date", esc(info["date"] or cs[0]["period"])),
+                 ("Buyer", names_html(info["buyer"], cs, sources)),
+                 ("Seller", names_html(info["seller"], cs, sources))]
+        if info["lender"]:
+            facts.append(("Lender", names_html(info["lender"], cs, sources)))
+        dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
+        deal_blocks.append(
+            f'<section class="deal"><h3>{esc(name)}</h3><dl class="facts">{dl}</dl>'
+            + (f'<p class="note">{esc(info["deal_note"])}</p>' if info["deal_note"] else "")
+            + '<div class="grid">' + "".join(claim_card(c, sources) for c in cs) + "</div></section>")
+    deal_blocks = "".join(deal_blocks)
     per_deal = next((s for s in sections if s[1] and s[1][0][0] == 1), None)
     if per_deal:
         qlist = "".join(f"<li value=\"{n}\">{esc_md(q)}</li>" for n, q in per_deal[1])
-        head = "".join(f"<th scope=\"col\">{esc(f)}</th>" for f, _ in DEAL_FIELDS)
+        head = "".join(f"<th scope=\"col\">{esc(f)}</th>" for f in ["Date", "Buyer", "Seller"] + [f for f, _ in DEAL_FIELDS])
         parts.append(f"""
 <section class="question-group" id="deals">
   <h2>{esc(per_deal[0])} <span class="qnums">Q1–Q{per_deal[1][-1][0]}</span></h2>
   <details><summary>The questions</summary><ol>{qlist}</ol></details>
   <p class="note">Buyer, seller, lender and dates are not numbers, so verify.py cannot check them.
-  Where known they appear in each claim's description and its quote; read the quote to confirm.</p>
+  <span class="mark ok">✓</span> means the name appears word for word in the saved source text; it does not
+  confirm the role (buyer or seller). <span class="mark warn">?</span> means the name was not found there.
+  "Not in free text" means the free part of the article doesn't name the party.</p>
   <div class="table-wrap"><table>
     <thead><tr><th scope="col">Deal</th>{head}</tr></thead>
-    <tbody>{''.join(rows) or '<tr><td colspan="6">No verified deal claims yet.</td></tr>'}</tbody>
+    <tbody>{''.join(rows) or '<tr><td colspan="9">No verified deal claims yet.</td></tr>'}</tbody>
   </table></div>
   {deal_blocks}
 </section>""")
@@ -303,7 +360,14 @@ th, td {{ text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--li
 thead th {{ font-size: 12.5px; color: var(--muted); font-weight: 600; white-space: nowrap; }}
 tbody tr:last-child th, tbody tr:last-child td {{ border-bottom: 0; }}
 .when {{ display: block; font-weight: 400; font-size: 12.5px; color: var(--muted); }}
-td.gap {{ color: var(--muted); }}
+td.gap, .muted {{ color: var(--muted); }}
+.mark {{ font-size: 12px; font-weight: 700; }}
+.mark.ok {{ color: var(--ok); }} .mark.warn {{ color: var(--warn); }}
+.facts {{ display: flex; flex-wrap: wrap; gap: 6px 28px; margin: -4px 0 12px; font-size: 14px; }}
+.facts div {{ display: flex; gap: 6px; }}
+.facts dt {{ color: var(--muted); }} .facts dd {{ margin: 0; }}
+td.nowrap-ish {{ min-width: 120px; }}
+td {{ font-variant-numeric: tabular-nums; }}
 details {{ margin: 0 0 10px; font-size: 14px; }}
 summary {{ cursor: pointer; color: var(--accent); }}
 footer {{ margin-top: 48px; color: var(--muted); font-size: 13px; }}
