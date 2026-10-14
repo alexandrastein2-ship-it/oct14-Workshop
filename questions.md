@@ -25,6 +25,10 @@ source states it (`$412 million`, `$1,050 per square foot`, `5.25%`). Do not
 convert units or compute figures the source doesn't print; if only one is
 given (e.g. price but not $/SF), leave the other out.
 
+Listings are recorded the same way, with "asking" in the `subject` and `unit`
+(e.g. `"1680 Mission St (office) - asking price"`), so asking figures are never
+mixed up with closed-sale figures.
+
 Seller, buyer, lender and closing date are not numbers, so the checker cannot
 verify them on their own. Put them in the `subject` of the price claim, and
 make sure the quoted sentence names them so a person can confirm by reading.
@@ -85,3 +89,16 @@ make sure the quoted sentence names them so a person can confirm by reading.
     Francisco acquisitions by product type?
 16. What interest rates or spreads are recent San Francisco acquisition and
     refinance loans carrying?
+
+## Listings (properties for sale or lease)
+
+17. What San Francisco properties are currently listed for sale, by product
+    type, and at what asking price, asking price per square foot, per unit or
+    per key, and asking (in-place or pro forma) cap rate?
+18. Who is the seller and listing broker, how occupied is the property, and
+    has the asking price been cut or the property relisted?
+19. What are asking rents: office and industrial in dollars per square foot
+    per year (noting full service or NNN), multifamily in dollars per unit per
+    month, and hotel average daily rate where given?
+20. How do asking prices and asking cap rates compare with recent closed
+    sales of the same product type?
