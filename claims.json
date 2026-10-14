@@ -232,5 +232,23 @@
     "unit": "billion dollars",
     "period": "2026-2027 roll (lien date January 1, 2026)",
     "quote": "The 2026-2027 assessment roll includes over 8,600 properties that qualified for a Proposition 8 reduction as of the January 1, 2026, lien date, resulting in a temporary reduction in total assessed value of approximately $5.5 billion."
+  },
+  {
+    "claim_id": "c27",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Share of SF secured roll growth from changes in ownership (sales & transfers)",
+    "value": "25",
+    "unit": "percent of secured roll growth",
+    "period": "2026-2027 roll (lien date January 1, 2026)",
+    "quote": "Processed change in ownership items (sales & transfers) account for an estimated 25% of secured roll growth, adding approximately $1.85 billion in assessed value before exemptions."
+  },
+  {
+    "claim_id": "c28",
+    "source_id": "news-assessor-recorder-joaquin-torres-releases-2026-2027-assessment-roll",
+    "subject": "Number of SF assessment appeals resolved by the Assessor-Recorder (amid an 'unprecedented rise' in appeals)",
+    "value": "7,600",
+    "unit": "appeals (more than)",
+    "period": "2026-2027 roll close (period of appeals not stated)",
+    "quote": "The Office achieved this while managing a sustained, unprecedented rise in assessment appeals with no meaningful decreases in other assessment work: resolving over 7,600 assessment appeals and 13,150 assessment items , such as valuing property during new construction and changes in ownership."
   }
 ]
