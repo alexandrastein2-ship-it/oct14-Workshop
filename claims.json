@@ -1017,9 +1017,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "date": "Closed July 30, 2026",
     "product_type": "Hotel",
-    "deal_kind": "Sale (under contract)",
+    "deal_kind": "Sale (closed)",
     "size": "821 rooms",
     "size_match": "821-room"
   },
@@ -1042,9 +1042,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "date": "Closed July 30, 2026",
     "product_type": "Hotel",
-    "deal_kind": "Sale (under contract)",
+    "deal_kind": "Sale (closed)",
     "size": "821 rooms",
     "size_match": "821-room"
   },
@@ -1067,9 +1067,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "date": "Closed July 30, 2026",
     "product_type": "Hotel",
-    "deal_kind": "Sale (under contract)",
+    "deal_kind": "Sale (closed)",
     "size": "821 rooms",
     "size_match": "821-room"
   },
@@ -1091,9 +1091,9 @@
       "Sunstone Hotel Investors"
     ],
     "lender": [],
-    "date": "Agreement June 23, 2026 (close expected late Jul/early Aug 2026)",
+    "date": "Closed July 30, 2026",
     "product_type": "Hotel",
-    "deal_kind": "Sale (under contract)",
+    "deal_kind": "Sale (closed)",
     "size": "821 rooms",
     "size_match": "821-room"
   },
@@ -2154,5 +2154,1062 @@
     "tenants": [],
     "size": "284K SF",
     "size_match": "284K SF"
+  },
+  {
+    "claim_id": "c101",
+    "source_id": "sho-20260806xex99d1",
+    "subject": "Hyatt Regency San Francisco (hotel, 821 rooms) - total sale price at closing (Sunstone 8-K); seller Sunstone, buyer Blackstone Real Estate funds",
+    "value": "279",
+    "unit": "million dollars",
+    "period": "closed July 30, 2026",
+    "quote": "On July 30, 2026, the Company sold the 821-room Hyatt Regency San Francisco to funds affiliated with Blackstone Real Estate for a gross sale price of $279 million, or approximately $340,000 per key.",
+    "questions": [
+      2,
+      13
+    ],
+    "buyer": [
+      "Blackstone Real Estate"
+    ],
+    "seller": [
+      "Sunstone Hotel Investors"
+    ],
+    "lender": [],
+    "date": "Closed July 30, 2026",
+    "product_type": "Hotel",
+    "deal_kind": "Sale (closed)",
+    "size": "821 rooms",
+    "size_match": "821-room"
+  },
+  {
+    "claim_id": "c102",
+    "source_id": "fp0100661-1-nportex",
+    "subject": "301 Battery St, Financial District (office, 209,000 SF) - fair value of '301 Battery Note' held by Bluerock Private Real Estate Fund (before the Oct 1 deed in lieu)",
+    "value": "48,066,794",
+    "unit": "dollars (fair value of note held)",
+    "period": "June 30, 2026",
+    "quote": "301 Battery Note (c) 48,066,794 48,066,794",
+    "questions": [
+      9
+    ],
+    "buyer": [
+      "Presidio Bay Ventures"
+    ],
+    "seller": [
+      "RFR Holding"
+    ],
+    "lender": [
+      "Bluerock Private Real Estate Fund"
+    ],
+    "date": "Deed in lieu October 1, 2026",
+    "deal_note": "Deed in lieu; RFR Holding surrendered the building to settle debt",
+    "product_type": "Office",
+    "deal_kind": "Deed in lieu + new loan",
+    "size": "209,000 SF",
+    "size_match": "209,000",
+    "fin": "loan",
+    "fin_note": "Bluerock-held note, fair value 6/30/2026"
+  },
+  {
+    "claim_id": "c103",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "123 Mission St, South Financial District (office, 360,000 SF) - total price per Bisnow ($100M; CONFLICTS with Registry $95MM)",
+    "value": "100",
+    "unit": "million dollars",
+    "period": "March 2026 (per Bisnow)",
+    "quote": "In March, Madison and Prudential purchased a 362K SF tower at 123 Mission St. for $100M, or $276 per SF.",
+    "questions": [
+      2
+    ],
+    "buyer": [
+      "Madison Capital",
+      "PGIM"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "360,000 SF",
+    "size_match": "360,000"
+  },
+  {
+    "claim_id": "c104",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "123 Mission St, South Financial District (office, 360,000 SF) - price per SF per Bisnow (362K SF basis; CONFLICTS with Registry $264)",
+    "value": "276",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "March 2026 (per Bisnow)",
+    "quote": "In March, Madison and Prudential purchased a 362K SF tower at 123 Mission St. for $100M, or $276 per SF.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "buyer": [
+      "Madison Capital",
+      "PGIM"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "360,000 SF",
+    "size_match": "360,000"
+  },
+  {
+    "claim_id": "c105",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "415 Natoma St, SoMa (office, 667,000 SF) - total price per Bisnow citing Avison Young ($393M; CONFLICTS with Registry $200MM)",
+    "value": "393",
+    "unit": "million dollars",
+    "period": "March 2026 (per Bisnow)",
+    "quote": "Also in March, Meridian Group acquired a 25-story, 649K SF building at 415 Natoma St. for $393M, or $605 per SF, Avison Young reported .",
+    "questions": [
+      2
+    ],
+    "buyer": [
+      "The Meridian Group",
+      "Fenway Capital Advisors"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Sale (debt-to-deed)",
+    "size": "667,000 SF",
+    "size_match": "667,000"
+  },
+  {
+    "claim_id": "c106",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "415 Natoma St, SoMa (office, 667,000 SF) - price per SF per Bisnow citing Avison Young (CONFLICTS with Registry ~$300)",
+    "value": "605",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "March 2026 (per Bisnow)",
+    "quote": "Also in March, Meridian Group acquired a 25-story, 649K SF building at 415 Natoma St. for $393M, or $605 per SF, Avison Young reported .",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "buyer": [
+      "The Meridian Group",
+      "Fenway Capital Advisors"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Closing reported April 9, 2026",
+    "deal_note": "Debt-to-deed transfer; prior owner not in free text",
+    "product_type": "Office",
+    "deal_kind": "Sale (debt-to-deed)",
+    "size": "667,000 SF",
+    "size_match": "667,000"
+  },
+  {
+    "claim_id": "c107",
+    "source_id": "san-francisco-hotel-sales-parc55-hilton",
+    "subject": "Hilton SF Union Square + Parc 55 (two hotels) - combined sale price; buyers Newbond Holdings & Conversant Capital",
+    "value": "408",
+    "unit": "million dollars",
+    "period": "closed November 21, 2025",
+    "quote": "Newbond Holdings and Conversant Capital teamed up to buy Parc 55 and Hilton Union Square for a combined $408 million.",
+    "questions": [
+      2,
+      13
+    ],
+    "product_type": "Hotel",
+    "deal_kind": "Receiver sale; buyer assumed CMBS loan",
+    "size": "2,945 rooms (1,921 + 1,024)",
+    "size_match": "1,921-room",
+    "buyer": [
+      "Newbond Holdings",
+      "Conversant Capital"
+    ],
+    "seller": [
+      "court-appointed receiver"
+    ],
+    "lender": [],
+    "date": "Closed November 21, 2025",
+    "deal_note": "Court-appointed receiver sold; buyer assumed the $725M CMBS loan. Former owner Park Hotels & Resorts"
+  },
+  {
+    "claim_id": "c108",
+    "source_id": "11-24-2025-113016228",
+    "subject": "Hilton SF Union Square + Parc 55 (two hotels) - CMBS loan secured by the hotels (assumed by buyer)",
+    "value": "725",
+    "unit": "million dollars (loan)",
+    "period": "November 21, 2025",
+    "quote": "today announced that on November 21, 2025 the court-appointed receiver completed the sale of the 1,921-room Hilton San Francisco Union Square and the 1,024-room Parc 55 San Francisco – a Hilton Hotel (collectively, the “Hilton San Francisco Hotels”), which secured a $725 million non-recourse CMBS Loan (“SF Mortgage Loan”).",
+    "questions": [
+      9
+    ],
+    "product_type": "Hotel",
+    "deal_kind": "Receiver sale; buyer assumed CMBS loan",
+    "size": "2,945 rooms (1,921 + 1,024)",
+    "size_match": "1,921-room",
+    "buyer": [
+      "Newbond Holdings",
+      "Conversant Capital"
+    ],
+    "seller": [
+      "court-appointed receiver"
+    ],
+    "lender": [],
+    "date": "Closed November 21, 2025",
+    "deal_note": "Court-appointed receiver sold; buyer assumed the $725M CMBS loan. Former owner Park Hotels & Resorts",
+    "fin": "loan",
+    "fin_note": "CMBS loan, assumed by buyer"
+  },
+  {
+    "claim_id": "c109",
+    "source_id": "11-24-2025-113016228",
+    "subject": "Hilton SF Union Square + Parc 55 (two hotels) - loan plus accrued interest and fees owed",
+    "value": "874",
+    "unit": "million dollars (debt incl. accrued interest)",
+    "period": "as of October 31, 2025",
+    "quote": "During the receivership, interest, default interest and fees related to the SF Mortgage Loan were reflected on the Company’s statement of operations, and the SF Mortgage Loan plus accrued interest and fees (which totaled $874 million as of October 31, 2025) were reflected on the Company’s balance sheet.",
+    "questions": [
+      8
+    ],
+    "product_type": "Hotel",
+    "deal_kind": "Receiver sale; buyer assumed CMBS loan",
+    "size": "2,945 rooms (1,921 + 1,024)",
+    "size_match": "1,921-room",
+    "buyer": [
+      "Newbond Holdings",
+      "Conversant Capital"
+    ],
+    "seller": [
+      "court-appointed receiver"
+    ],
+    "lender": [],
+    "date": "Closed November 21, 2025",
+    "deal_note": "Court-appointed receiver sold; buyer assumed the $725M CMBS loan. Former owner Park Hotels & Resorts"
+  },
+  {
+    "claim_id": "c110",
+    "source_id": "pgre-ex99-1",
+    "subject": "One Front St, Financial District (office, 649,000 SF) - gross asset valuation of the whole building in the 25% interest sale",
+    "value": "255",
+    "unit": "million dollars (gross asset valuation, 100%)",
+    "period": "announced May 7, 2025",
+    "quote": "Paramount Group, Inc. (NYSE: PGRE) (“Paramount” or the “Company”) announced today that it has sold a 25% interest in One Front Street, a 649,000 square foot Class A office building located on the corner of Front and Market Streets in San Francisco, at a gross asset valuation of $255 million.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale of 25% interest + seller financing",
+    "size": "649,000 SF",
+    "size_match": "649,000",
+    "buyer": [],
+    "seller": [
+      "Paramount Group"
+    ],
+    "lender": [
+      "Paramount Group"
+    ],
+    "date": "Announced May 7, 2025 (sale completed)",
+    "deal_note": "Paramount sold a 25% interest and keeps 75%; buyer not named; Paramount provided seller financing"
+  },
+  {
+    "claim_id": "c111",
+    "source_id": "pgre-ex99-1",
+    "subject": "One Front St, Financial District (office, 649,000 SF) - seller financing provided by Paramount (2-year term)",
+    "value": "40.5",
+    "unit": "million dollars (seller financing loan)",
+    "period": "May 2025",
+    "quote": "As part of the transaction, Paramount has provided $40.5 million of seller financing for a two-year term at a fixed rate of 5.50%.",
+    "questions": [
+      9
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale of 25% interest + seller financing",
+    "size": "649,000 SF",
+    "size_match": "649,000",
+    "buyer": [],
+    "seller": [
+      "Paramount Group"
+    ],
+    "lender": [
+      "Paramount Group"
+    ],
+    "date": "Announced May 7, 2025 (sale completed)",
+    "deal_note": "Paramount sold a 25% interest and keeps 75%; buyer not named; Paramount provided seller financing",
+    "fin": "loan",
+    "fin_note": "seller financing, 2-yr"
+  },
+  {
+    "claim_id": "c112",
+    "source_id": "pgre-ex99-1",
+    "subject": "One Front St, Financial District (office, 649,000 SF) - fixed interest rate on seller financing",
+    "value": "5.50",
+    "unit": "percent (interest rate)",
+    "period": "May 2025",
+    "quote": "As part of the transaction, Paramount has provided $40.5 million of seller financing for a two-year term at a fixed rate of 5.50%.",
+    "questions": [
+      9,
+      16
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale of 25% interest + seller financing",
+    "size": "649,000 SF",
+    "size_match": "649,000",
+    "buyer": [],
+    "seller": [
+      "Paramount Group"
+    ],
+    "lender": [
+      "Paramount Group"
+    ],
+    "date": "Announced May 7, 2025 (sale completed)",
+    "deal_note": "Paramount sold a 25% interest and keeps 75%; buyer not named; Paramount provided seller financing",
+    "fin": "rate",
+    "fin_note": "fixed, seller financing"
+  },
+  {
+    "claim_id": "c113",
+    "source_id": "greg-flynn-san-francisco-market-center-sale",
+    "subject": "Market Center, 555-575 Market St (office, 770,000 SF) - price paid ('sources say'); buyers Flynn & DRA Advisors",
+    "value": "177",
+    "unit": "million dollars",
+    "period": "reported May 30, 2025",
+    "quote": "Sources say Flynn’s group is paying around $177 million, or $238 per square foot, for the buildings, the highest sale price for a San Francisco office property since 2022, when DivcoWest purchased 550 Terry A.",
+    "questions": [
+      2,
+      8
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu",
+    "size": "770,000 SF",
+    "size_match": "770,000",
+    "buyer": [
+      "Flynn",
+      "DRA Advisors"
+    ],
+    "seller": [
+      "ING"
+    ],
+    "lender": [],
+    "date": "Reported May 30, 2025",
+    "deal_note": "Flynn group buys ING's $416M loan and takes title by deed in lieu; former owner Paramount Group (paid $722M in 2019)",
+    "tenants": [
+      "Waymo"
+    ]
+  },
+  {
+    "claim_id": "c114",
+    "source_id": "greg-flynn-san-francisco-market-center-sale",
+    "subject": "Market Center, 555-575 Market St (office, 770,000 SF) - price per SF ('sources say')",
+    "value": "238",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "reported May 30, 2025",
+    "quote": "Sources say Flynn’s group is paying around $177 million, or $238 per square foot, for the buildings, the highest sale price for a San Francisco office property since 2022, when DivcoWest purchased 550 Terry A.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu",
+    "size": "770,000 SF",
+    "size_match": "770,000",
+    "buyer": [
+      "Flynn",
+      "DRA Advisors"
+    ],
+    "seller": [
+      "ING"
+    ],
+    "lender": [],
+    "date": "Reported May 30, 2025",
+    "deal_note": "Flynn group buys ING's $416M loan and takes title by deed in lieu; former owner Paramount Group (paid $722M in 2019)",
+    "tenants": [
+      "Waymo"
+    ]
+  },
+  {
+    "claim_id": "c115",
+    "source_id": "greg-flynn-san-francisco-market-center-sale",
+    "subject": "Market Center, 555-575 Market St (office, 770,000 SF) - existing ING loan being purchased",
+    "value": "416",
+    "unit": "million dollars (loan face)",
+    "period": "reported May 30, 2025",
+    "quote": "The two skyscrapers, once known as the Standard Oil Buildings or Chevron Towers, will trade hands in a “deed in lieu of foreclosure,” in which Flynn will purchase what’s left of the existing $416 million loan on the property from lender ING.",
+    "questions": [
+      9
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu",
+    "size": "770,000 SF",
+    "size_match": "770,000",
+    "buyer": [
+      "Flynn",
+      "DRA Advisors"
+    ],
+    "seller": [
+      "ING"
+    ],
+    "lender": [],
+    "date": "Reported May 30, 2025",
+    "deal_note": "Flynn group buys ING's $416M loan and takes title by deed in lieu; former owner Paramount Group (paid $722M in 2019)",
+    "tenants": [
+      "Waymo"
+    ],
+    "fin": "loan",
+    "fin_note": "existing ING loan, bought"
+  },
+  {
+    "claim_id": "c116",
+    "source_id": "greg-flynn-san-francisco-market-center-sale",
+    "subject": "Market Center, 555-575 Market St (office, 770,000 SF) - discount to 2019 purchase price ($722M)",
+    "value": "76",
+    "unit": "percent discount",
+    "period": "2025 vs 2019",
+    "quote": "Flynn and his primary investment partner on the deal, DRA Advisors, got a 76% discount on the last purchase price.",
+    "questions": [
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu",
+    "size": "770,000 SF",
+    "size_match": "770,000",
+    "buyer": [
+      "Flynn",
+      "DRA Advisors"
+    ],
+    "seller": [
+      "ING"
+    ],
+    "lender": [],
+    "date": "Reported May 30, 2025",
+    "deal_note": "Flynn group buys ING's $416M loan and takes title by deed in lieu; former owner Paramount Group (paid $722M in 2019)",
+    "tenants": [
+      "Waymo"
+    ]
+  },
+  {
+    "claim_id": "c117",
+    "source_id": "greg-flynn-san-francisco-market-center-sale",
+    "subject": "Market Center, 555-575 Market St (office, 770,000 SF) - space leased by Waymo at 555 Market",
+    "value": "78,000",
+    "unit": "square feet leased (Waymo)",
+    "period": "reported May 30, 2025",
+    "quote": "One of the major tenants at Market Center is Waymo, which leases 78,000 square feet at 555 Market St.",
+    "questions": [
+      1
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase → deed in lieu",
+    "size": "770,000 SF",
+    "size_match": "770,000",
+    "buyer": [
+      "Flynn",
+      "DRA Advisors"
+    ],
+    "seller": [
+      "ING"
+    ],
+    "lender": [],
+    "date": "Reported May 30, 2025",
+    "deal_note": "Flynn group buys ING's $416M loan and takes title by deed in lieu; former owner Paramount Group (paid $722M in 2019)",
+    "tenants": [
+      "Waymo"
+    ]
+  },
+  {
+    "claim_id": "c118",
+    "source_id": "divcowest-trophy-office-stake-california-street",
+    "subject": "101 California St, Financial District (office, 1.2M SF) - agreed price for nearly-50% stake; buyer DivcoWest",
+    "value": "450",
+    "unit": "million dollars (stake price)",
+    "period": "agreed, reported January 16, 2026",
+    "quote": "The deal has not closed, but the developer has agreed to a sale price of roughly $450 million, which would value the 48-story tower at nearly $1 billion.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Stake purchase (nearly 50%) — agreed, not closed per source",
+    "size": "1.2 million SF",
+    "size_match": "1.2 million square foot",
+    "buyer": [
+      "DivcoWest"
+    ],
+    "seller": [
+      "GIC"
+    ],
+    "lender": [],
+    "date": "Agreed, reported January 16, 2026",
+    "deal_note": "DivcoWest agreed to buy a nearly 50% stake; owners primarily GIC with HKMA and others; Hines keeps a minority stake; not closed as of article"
+  },
+  {
+    "claim_id": "c119",
+    "source_id": "yoda-closes-transmerica-pyramid-analysis",
+    "subject": "Transamerica Pyramid complex, 600 Montgomery St (office) - total price, four parcels; buyer Yoda PLC",
+    "value": "691",
+    "unit": "million dollars (roughly)",
+    "period": "closed ≈ March 27, 2026",
+    "quote": "Cyprus-based Yoda PLC on Friday closed its purchase of the skyscraper in four parts, totaling roughly $691 million, according to public records.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "763K SF (per Bisnow)",
+    "size_match": "763K SF",
+    "buyer": [
+      "Yoda PLC"
+    ],
+    "seller": [
+      "Bayerische Versorgungskammer (BVK)",
+      "Deutsche Finance"
+    ],
+    "lender": [],
+    "date": "Closed ≈ March 27, 2026 (the Friday before the Mar 31 article)",
+    "deal_note": "Bought in four parts; sellers were Shvo's investors BVK and Deutsche Finance (paid $650M in 2020)"
+  },
+  {
+    "claim_id": "c120",
+    "source_id": "yoda-closes-transmerica-pyramid-analysis",
+    "subject": "Transamerica Pyramid complex, 600 Montgomery St (office) - price per SF, Pyramid alone ($600M; SF Standard)",
+    "value": "1,170",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "closed ≈ March 27, 2026",
+    "quote": "The pyramid alone cost Yoda $600 million, or $1,170 per square foot.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "763K SF (per Bisnow)",
+    "size_match": "763K SF",
+    "buyer": [
+      "Yoda PLC"
+    ],
+    "seller": [
+      "Bayerische Versorgungskammer (BVK)",
+      "Deutsche Finance"
+    ],
+    "lender": [],
+    "date": "Closed ≈ March 27, 2026 (the Friday before the Mar 31 article)",
+    "deal_note": "Bought in four parts; sellers were Shvo's investors BVK and Deutsche Finance (paid $650M in 2020)"
+  },
+  {
+    "claim_id": "c121",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "Transamerica Pyramid complex, 600 Montgomery St (office) - price per SF per Bisnow ($600M / 763K SF; CONFLICTS with SF Standard $1,170)",
+    "value": "786",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "2026 (per Bisnow)",
+    "quote": "The highest price achieved per square foot recorded in 2026 is Yoda PLC’s acquisition of the 763K SF Transamerica Pyramid at 600 Montgomery St. for $600M, or $786 per SF.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "763K SF (per Bisnow)",
+    "size_match": "763K SF",
+    "buyer": [
+      "Yoda PLC"
+    ],
+    "seller": [
+      "Bayerische Versorgungskammer (BVK)",
+      "Deutsche Finance"
+    ],
+    "lender": [],
+    "date": "Closed ≈ March 27, 2026 (the Friday before the Mar 31 article)",
+    "deal_note": "Bought in four parts; sellers were Shvo's investors BVK and Deutsche Finance (paid $650M in 2020)"
+  },
+  {
+    "claim_id": "c122",
+    "source_id": "yoda-closes-transmerica-pyramid-analysis",
+    "subject": "Transamerica Pyramid complex, 600 Montgomery St (office) - share leased",
+    "value": "85",
+    "unit": "percent leased",
+    "period": "2026",
+    "quote": "With the tower already 85% leased this year, Shvo had limited avenues to increase the property’s earning potential moving forward.",
+    "questions": [
+      1
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "763K SF (per Bisnow)",
+    "size_match": "763K SF",
+    "buyer": [
+      "Yoda PLC"
+    ],
+    "seller": [
+      "Bayerische Versorgungskammer (BVK)",
+      "Deutsche Finance"
+    ],
+    "lender": [],
+    "date": "Closed ≈ March 27, 2026 (the Friday before the Mar 31 article)",
+    "deal_note": "Bought in four parts; sellers were Shvo's investors BVK and Deutsche Finance (paid $650M in 2020)"
+  },
+  {
+    "claim_id": "c123",
+    "source_id": "sf-anthropic-lease-downtown-building-21198953",
+    "subject": "300 Howard St (office, 420,000 SF) - purchase price; buyers DivcoWest & Blackstone",
+    "value": "111",
+    "unit": "million dollars",
+    "period": "April 2025",
+    "quote": "DivcoWest, which purchased 300 Howard with private equity giant Blackstone in April for $111 million, declined comment.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "420,000 SF",
+    "size_match": "420,000-square-foot",
+    "buyer": [
+      "DivcoWest",
+      "Blackstone"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Purchased April 2025",
+    "deal_note": "Bought empty; Anthropic in talks to lease the whole building (Chronicle)",
+    "tenants": [
+      "Anthropic"
+    ]
+  },
+  {
+    "claim_id": "c124",
+    "source_id": "yoda-closes-transmerica-pyramid-analysis",
+    "subject": "300 Howard St (office, 420,000 SF) - price per SF (SF Standard)",
+    "value": "265",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "2025",
+    "quote": "For example, 300 Howard St., the soon-to-be headquarters of Anthropic , was purchased last year by DivcoWest for $111 million, or $265 per square foot.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "420,000 SF",
+    "size_match": "420,000-square-foot",
+    "buyer": [
+      "DivcoWest",
+      "Blackstone"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Purchased April 2025",
+    "deal_note": "Bought empty; Anthropic in talks to lease the whole building (Chronicle)",
+    "tenants": [
+      "Anthropic"
+    ]
+  },
+  {
+    "claim_id": "c125",
+    "source_id": "dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note",
+    "subject": "600 California St, Financial District (office, 359,883 SF) - price paid for distressed CMBS note; buyer Lone Star Funds",
+    "value": "130",
+    "unit": "million dollars (note purchase price)",
+    "period": "reported January 20, 2026",
+    "quote": "According to CoStar , Lone Star acquired the distressed CMBS note on the 359,883-square-foot tower at 600 California St. for about $130 million.",
+    "questions": [
+      2,
+      8
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase (distressed CMBS note)",
+    "size": "359,883 SF",
+    "size_match": "359,883",
+    "buyer": [
+      "Lone Star Funds"
+    ],
+    "seller": [
+      "WeWork Capital Advisors",
+      "Rhône Group"
+    ],
+    "lender": [],
+    "date": "Reported January 20, 2026",
+    "deal_note": "Lone Star bought the defaulted CMBS note (per CoStar via Hoodline), positioning to take the building"
+  },
+  {
+    "claim_id": "c126",
+    "source_id": "dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note",
+    "subject": "600 California St, Financial District (office, 359,883 SF) - original loan amount",
+    "value": "240",
+    "unit": "million dollars (loan)",
+    "period": "reported January 20, 2026",
+    "quote": "The loan behind the property originally totaled about $240 million, and lenders sued to foreclose after WeWork stopped paying rent, according to court filings cited by Bisnow .",
+    "questions": [
+      9
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase (distressed CMBS note)",
+    "size": "359,883 SF",
+    "size_match": "359,883",
+    "buyer": [
+      "Lone Star Funds"
+    ],
+    "seller": [
+      "WeWork Capital Advisors",
+      "Rhône Group"
+    ],
+    "lender": [],
+    "date": "Reported January 20, 2026",
+    "deal_note": "Lone Star bought the defaulted CMBS note (per CoStar via Hoodline), positioning to take the building",
+    "fin": "loan",
+    "fin_note": "original CMBS loan, bought"
+  },
+  {
+    "claim_id": "c127",
+    "source_id": "dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note",
+    "subject": "600 California St, Financial District (office, 359,883 SF) - discount at which note was bought",
+    "value": "46",
+    "unit": "percent discount",
+    "period": "reported January 20, 2026",
+    "quote": "The outlet reports that the debt was purchased from WeWork Capital Advisors and Rhône Group at roughly a 46% discount.",
+    "questions": [
+      8
+    ],
+    "product_type": "Office",
+    "deal_kind": "Loan purchase (distressed CMBS note)",
+    "size": "359,883 SF",
+    "size_match": "359,883",
+    "buyer": [
+      "Lone Star Funds"
+    ],
+    "seller": [
+      "WeWork Capital Advisors",
+      "Rhône Group"
+    ],
+    "lender": [],
+    "date": "Reported January 20, 2026",
+    "deal_note": "Lone Star bought the defaulted CMBS note (per CoStar via Hoodline), positioning to take the building"
+  },
+  {
+    "claim_id": "c128",
+    "source_id": "exhibit991propertyacquisit",
+    "subject": "88 Kearny St, Financial District (office, 233,887 SF) - purchase price; buyer LendingClub (all cash)",
+    "value": "74.5",
+    "unit": "million dollars",
+    "period": "agreement April 17, 2025",
+    "quote": "today announced it has entered into a definitive agreement to acquire a 233,887 square foot property located at 88 Kearny Street in San Francisco for $74.5 million.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale (owner-user, all cash)",
+    "size": "233,887 SF",
+    "size_match": "233,887",
+    "buyer": [
+      "LendingClub"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Agreement April 17, 2025 (expected close Q2 2025)",
+    "deal_note": "All-cash, owner-user purchase; LendingClub to occupy 100,000 SF from spring 2026",
+    "tenants": [
+      "LendingClub"
+    ]
+  },
+  {
+    "claim_id": "c129",
+    "source_id": "exhibit991propertyacquisit",
+    "subject": "88 Kearny St, Financial District (office, 233,887 SF) - space LendingClub plans to occupy",
+    "value": "100,000",
+    "unit": "square feet to be occupied (LendingClub)",
+    "period": "from spring 2026",
+    "quote": "The bank plans to occupy 100,000 square feet of the Kearny Street property starting in Spring 2026 following the expiration of its current lease at 595 Market Street.",
+    "questions": [
+      1
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale (owner-user, all cash)",
+    "size": "233,887 SF",
+    "size_match": "233,887",
+    "buyer": [
+      "LendingClub"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "Agreement April 17, 2025 (expected close Q2 2025)",
+    "deal_note": "All-cash, owner-user purchase; LendingClub to occupy 100,000 SF from spring 2026",
+    "tenants": [
+      "LendingClub"
+    ]
+  },
+  {
+    "claim_id": "c130",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "1 De Haro St, Showplace Square (office + light industrial, 133K SF) - purchase price; buyer Strada, seller SKS Partners (Bisnow citing SF Business Times)",
+    "value": "103",
+    "unit": "million dollars",
+    "period": "closed, reported June 5, 2026",
+    "quote": "Strada paid $103M, or $771 per SF, for 1 De Haro, the San Francisco Business Times reported .",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "133K SF",
+    "size_match": "133K SF",
+    "buyer": [
+      "Strada Investment Group"
+    ],
+    "seller": [
+      "SKS Partners"
+    ],
+    "lender": [],
+    "date": "Closed, reported June 5, 2026",
+    "deal_note": "Fully leased; Samsara HQ (86K SF office) + 43K SF light industrial",
+    "tenants": [
+      "Samsara"
+    ]
+  },
+  {
+    "claim_id": "c131",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "1 De Haro St, Showplace Square (office + light industrial, 133K SF) - price per SF",
+    "value": "771",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "closed, reported June 5, 2026",
+    "quote": "Strada paid $103M, or $771 per SF, for 1 De Haro, the San Francisco Business Times reported .",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "133K SF",
+    "size_match": "133K SF",
+    "buyer": [
+      "Strada Investment Group"
+    ],
+    "seller": [
+      "SKS Partners"
+    ],
+    "lender": [],
+    "date": "Closed, reported June 5, 2026",
+    "deal_note": "Fully leased; Samsara HQ (86K SF office) + 43K SF light industrial",
+    "tenants": [
+      "Samsara"
+    ]
+  },
+  {
+    "claim_id": "c132",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "1 De Haro St, Showplace Square (office + light industrial, 133K SF) - seller SKS's prior construction financing ($56M senior + $37M mezz, via Northmarq)",
+    "value": "93",
+    "unit": "million dollars (construction loan, prior owner)",
+    "period": "before sale",
+    "quote": "Northmarq arranged $93M in construction financing for SKS Partners through a life insurance company, which included a $56M senior loan and $37M in mezzanine debt.",
+    "questions": [
+      9
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "133K SF",
+    "size_match": "133K SF",
+    "buyer": [
+      "Strada Investment Group"
+    ],
+    "seller": [
+      "SKS Partners"
+    ],
+    "lender": [],
+    "date": "Closed, reported June 5, 2026",
+    "deal_note": "Fully leased; Samsara HQ (86K SF office) + 43K SF light industrial",
+    "tenants": [
+      "Samsara"
+    ],
+    "fin": "loan",
+    "fin_note": "seller's construction loan"
+  },
+  {
+    "claim_id": "c133",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "1 De Haro St, Showplace Square (office + light industrial, 133K SF) - office space preleased to Samsara",
+    "value": "86K",
+    "unit": "square feet leased (Samsara)",
+    "period": "2026",
+    "quote": "Samsara preleased the entirety of the building’s 86K SF of office space for its global headquarters.",
+    "questions": [
+      1
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "133K SF",
+    "size_match": "133K SF",
+    "buyer": [
+      "Strada Investment Group"
+    ],
+    "seller": [
+      "SKS Partners"
+    ],
+    "lender": [],
+    "date": "Closed, reported June 5, 2026",
+    "deal_note": "Fully leased; Samsara HQ (86K SF office) + 43K SF light industrial",
+    "tenants": [
+      "Samsara"
+    ]
+  },
+  {
+    "claim_id": "c134",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "45 Fremont St, Financial District (office) - purchase price per Bisnow; buyer Madison Capital (CONFLICTS with Registry $265MM)",
+    "value": "237.6",
+    "unit": "million dollars",
+    "period": "February 2026",
+    "quote": "Madison Capital in February purchased a 692K SF, 34-story office tower at 45 Fremont St. for $237.6M, or $343 per SF.",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "692K SF (Bisnow) / 594,000 SF (Registry)",
+    "size_match": "692K SF",
+    "buyer": [
+      "Madison Capital"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "February 2026 (per Bisnow)",
+    "deal_note": "Bisnow ($237.6M, 692K SF) and The Registry ($265MM, 594,000 SF) disagree"
+  },
+  {
+    "claim_id": "c135",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "45 Fremont St, Financial District (office) - price per SF per Bisnow",
+    "value": "343",
+    "unit": "dollars per square foot (basis not stated)",
+    "period": "February 2026",
+    "quote": "Madison Capital in February purchased a 692K SF, 34-story office tower at 45 Fremont St. for $237.6M, or $343 per SF.",
+    "questions": [
+      3,
+      4,
+      11
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "692K SF (Bisnow) / 594,000 SF (Registry)",
+    "size_match": "692K SF",
+    "buyer": [
+      "Madison Capital"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "February 2026 (per Bisnow)",
+    "deal_note": "Bisnow ($237.6M, 692K SF) and The Registry ($265MM, 594,000 SF) disagree"
+  },
+  {
+    "claim_id": "c136",
+    "source_id": "madison-capital-pgim-close-95mm-acquisition-of-360000-sqft-123-mission-in-san-francisco-completing-turnaround-of-former-juul-tower",
+    "subject": "45 Fremont St, Financial District (office) - purchase price per Registry headline (related-post link; CONFLICTS with Bisnow $237.6M)",
+    "value": "265",
+    "unit": "million dollars",
+    "period": "2026",
+    "quote": "Madison Capital Closes $265MM Acquisition of 594,000 SQFT Office Tower at 45 Fremont in San Francisco's Financial District",
+    "questions": [
+      2
+    ],
+    "product_type": "Office",
+    "deal_kind": "Sale",
+    "size": "692K SF (Bisnow) / 594,000 SF (Registry)",
+    "size_match": "692K SF",
+    "buyer": [
+      "Madison Capital"
+    ],
+    "seller": [],
+    "lender": [],
+    "date": "February 2026 (per Bisnow)",
+    "deal_note": "Bisnow ($237.6M, 692K SF) and The Registry ($265MM, 594,000 SF) disagree"
+  },
+  {
+    "claim_id": "c137",
+    "source_id": "san-franciscos-tilden-hotel-sells-for-9-3-million",
+    "subject": "Tilden Hotel, 345 Taylor St (hotel, 118 rooms) - sale price; seller AllianceBernstein, buyer Oceanic Enterprises affiliate",
+    "value": "9.3",
+    "unit": "million dollars",
+    "period": "reported July 3, 2025",
+    "quote": "AllianceBernstein offloaded the 345 Taylor Street property for $9.3 million.",
+    "questions": [
+      2,
+      13
+    ],
+    "product_type": "Hotel",
+    "deal_kind": "Sale with acquisition loan",
+    "size": "118 rooms",
+    "size_match": "118-room",
+    "buyer": [
+      "Oceanic Enterprises"
+    ],
+    "seller": [
+      "AllianceBernstein"
+    ],
+    "lender": [
+      "Hankey Capital"
+    ],
+    "date": "Reported July 3, 2025",
+    "deal_note": "Seller AllianceBernstein took the hotel by deed in lieu in 2022; prior owner paid $48.5M in 2015"
+  },
+  {
+    "claim_id": "c138",
+    "source_id": "san-franciscos-tilden-hotel-sells-for-9-3-million",
+    "subject": "Tilden Hotel, 345 Taylor St (hotel, 118 rooms) - acquisition loan from Hankey Capital (per SF Business Times)",
+    "value": "8",
+    "unit": "million dollars (acquisition loan)",
+    "period": "reported July 3, 2025",
+    "quote": "Hankey, headquartered in Hancock Park , provided an $8 million loan for an affiliate of San Diego-based Oceanic Enterprises to buy the 118-room Tilden Hotel near Union Square, the San Francisco Business Times reported.",
+    "questions": [
+      9
+    ],
+    "product_type": "Hotel",
+    "deal_kind": "Sale with acquisition loan",
+    "size": "118 rooms",
+    "size_match": "118-room",
+    "buyer": [
+      "Oceanic Enterprises"
+    ],
+    "seller": [
+      "AllianceBernstein"
+    ],
+    "lender": [
+      "Hankey Capital"
+    ],
+    "date": "Reported July 3, 2025",
+    "deal_note": "Seller AllianceBernstein took the hotel by deed in lieu in 2022; prior owner paid $48.5M in 2015",
+    "fin": "loan",
+    "fin_note": "acquisition loan"
+  },
+  {
+    "claim_id": "c139",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "455 Market St (office, 347K SF) - LISTING - asking price per SF; seller UBS Realty Investors (relisted)",
+    "value": "400",
+    "unit": "dollars per square foot (asking; basis not stated)",
+    "period": "2026",
+    "quote": "UBS Realty Investors is currently seeking about $400 per SF for its recently relisted 23-story office tower at 455 Market St.",
+    "questions": [
+      17
+    ],
+    "product_type": "Office",
+    "deal_kind": "Listing"
+  },
+  {
+    "claim_id": "c140",
+    "source_id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "subject": "455 Market St (office, 347K SF) - LISTING - share leased",
+    "value": "70",
+    "unit": "percent leased (about)",
+    "period": "2026",
+    "quote": "The 347K SF property is about 70% leased.",
+    "questions": [
+      18
+    ],
+    "product_type": "Office",
+    "deal_kind": "Listing"
   }
 ]

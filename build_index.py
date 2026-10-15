@@ -132,6 +132,8 @@ def checks(claim):
         notes.append(f"quote has {len(nums) + 1} numbers; confirm the right one was taken")
     if "basis not stated" in claim.get("unit", ""):
         notes.append("per-SF basis (gross or rentable) not stated")
+    if "CONFLICT" in claim.get("subject", ""):
+        notes.append("sources disagree on this figure; see the other claims for this deal")
     if "region" in claim.get("subject", "").lower() or "northern california" in claim.get("subject", "").lower():
         notes.append("covers a wider region than San Francisco")
     return notes
@@ -230,6 +232,12 @@ def main():
         text = party_info(cs)["date"] or cs[0]["period"]
         m = re.search(r"([A-Z][a-z]+)\.? (\d{1,2}), (\d{4})", text)
         if not m:
+            m2 = re.search(r"([A-Z][a-z]+) (\d{4})", text)
+            for fmt in ("%B %Y", "%b %Y"):
+                try:
+                    return datetime.datetime.strptime(" ".join(m2.groups()), fmt) if m2 else datetime.datetime.min
+                except ValueError:
+                    pass
             return datetime.datetime.min
         for fmt in ("%B %d %Y", "%b %d %Y"):
             try:
@@ -275,7 +283,8 @@ def main():
         else:
             size_html = ""
         tenants = next((c["tenants"] for c in cs if "tenants" in c), None)
-        occ = [f"{c['value']}% " + c["unit"].replace("percent", "").strip() for c in cs if 1 in c["questions"]]
+        occ = [(f"{c['value']}% " + c["unit"].replace("percent", "").strip()) if c["unit"].startswith("percent")
+               else f"{c['value']} {c['unit']}" for c in cs if 1 in c["questions"]]
         if ptype == "Office":
             if tenants:
                 t_html = names_html(tenants, cs, sources)
@@ -298,7 +307,7 @@ def main():
             f"<td class=\"tenants\">{t_html}</td>" if t_html else '<td class="gap">—</td>',
         ]
         for label, qs in DEAL_FIELDS:
-            hits = [money(c["value"], c["unit"]) for c in cs if qs & set(c["questions"]) and not c.get("fin")]
+            hits = list(dict.fromkeys(money(c["value"], c["unit"]) for c in cs if qs & set(c["questions"]) and not c.get("fin")))
             cell = "<br>".join(esc(h) for h in hits)
             cells.append(f"<td class=\"num\">{cell}</td>" if cell else '<td class="gap">—</td>')
         for label, key in FIN_COLUMNS:

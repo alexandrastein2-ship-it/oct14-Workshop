@@ -328,5 +328,148 @@
     "sha256": "01b0245995304700e642d36140f0885a31712562446509336ffd552799b1b392",
     "capture_sha256": "4eb9d3d1ffd06cf3c717f74024658c22481e67906fa2f369b1002bdb1c50b4b9",
     "added_on": "2026-10-14"
+  },
+  {
+    "id": "sho-20260806xex99d1",
+    "title": "SEC EDGAR: Sunstone Hotel Investors 8-K Ex. 99.1, Q2 2026 results (Aug 6, 2026) - Hyatt Regency San Francisco sale closed",
+    "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926091645/sho-20260806xex99d1.htm",
+    "original": "sources/sho-20260806xex99d1.html",
+    "capture": "captures/sho-20260806xex99d1.txt",
+    "extractor": "html tags removed",
+    "sha256": "712ea443bf765a0777fc9392ad447438fd4870de7e76aaf9d0d6b5786eea2b0e",
+    "capture_sha256": "521303aec5a65f4a24167d9ea21199f7688ff10fa93681ae8a37acad56427110",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "fp0100661-1-nportex",
+    "title": "SEC EDGAR: Bluerock Private Real Estate Fund N-PORT portfolio of investments, June 30, 2026 (filed Aug 28, 2026)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551047/000104916926002153/fp0100661-1_nportex.htm",
+    "original": "sources/fp0100661-1-nportex.html",
+    "capture": "captures/fp0100661-1-nportex.txt",
+    "extractor": "html tags removed",
+    "sha256": "29b3eb435c3c28f48b3260baa3d5a8863266595829f2ae6495dd5a77a0e84143",
+    "capture_sha256": "10a947cc640cfa014fafe800323f614e8cf69c5bd3da70eea7e15f7970244962",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "san-francisco-hotel-sales-parc55-hilton",
+    "title": "SF Standard (Nov 21, 2025): Hilton Union Square and Parc 55 hotel sales",
+    "url": "https://sfstandard.com/2025/11/21/san-francisco-hotel-sales-parc55-hilton/",
+    "original": "sources/san-francisco-hotel-sales-parc55-hilton.html",
+    "capture": "captures/san-francisco-hotel-sales-parc55-hilton.txt",
+    "extractor": "html tags removed",
+    "sha256": "ca8b913b9057c489d46aa55241f75d367f5712427f9729e7e32b35eac33b6d09",
+    "capture_sha256": "09717be2164e214d1f9dcc4e954faee542e363880938a991410156312235713b",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "11-24-2025-113016228",
+    "title": "Park Hotels & Resorts press release (Nov 24, 2025): Hilton San Francisco Union Square and Parc 55 receiver sale",
+    "url": "https://www.pkhotelsandresorts.com/investors/news-and-events/press-releases/2025/11-24-2025-113016228",
+    "original": "sources/11-24-2025-113016228.html",
+    "capture": "captures/11-24-2025-113016228.txt",
+    "extractor": "html tags removed",
+    "sha256": "a90c952ad41d7d8d992f8c1a2080ed327927d519efd54579b958bb1e1e0451d1",
+    "capture_sha256": "57ec09c7ddeb24c4c1b3c851542389954118004b61be9732361ab53e80a7fcfa",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "pgre-ex99-1",
+    "title": "SEC EDGAR: Paramount Group 8-K Ex. 99.1 (May 7, 2025) - sale of 25% interest in One Front Street",
+    "url": "https://www.sec.gov/Archives/edgar/data/1605607/000095017025065787/pgre-ex99_1.htm",
+    "original": "sources/pgre-ex99-1.html",
+    "capture": "captures/pgre-ex99-1.txt",
+    "extractor": "html tags removed",
+    "sha256": "bbcc1f4526f0d3c674be267e49eff90d19276b87a71170f9ef5e595e9784364a",
+    "capture_sha256": "24bc29e7432c046b818f4f0f228da0f3ffc5838eaca04c29cce89b90f8db540f",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "greg-flynn-san-francisco-market-center-sale",
+    "title": "SF Standard (May 30, 2025): Flynn Properties buys Market Center",
+    "url": "https://sfstandard.com/2025/05/30/greg-flynn-san-francisco-market-center-sale/",
+    "original": "sources/greg-flynn-san-francisco-market-center-sale.html",
+    "capture": "captures/greg-flynn-san-francisco-market-center-sale.txt",
+    "extractor": "html tags removed",
+    "sha256": "b62ab1b7b242db067ef275e2d69e7c4e6db89cae583279a48b34f75f647bfb25",
+    "capture_sha256": "37b2a5f2cbc267ee622135274132e4d893c4e3fe2ba08c3e95add7d8e543f901",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "divcowest-trophy-office-stake-california-street",
+    "title": "SF Standard (Jan 16, 2026): DivcoWest buys stake in 101 California St",
+    "url": "https://sfstandard.com/2026/01/16/divcowest-trophy-office-stake-california-street/",
+    "original": "sources/divcowest-trophy-office-stake-california-street.html",
+    "capture": "captures/divcowest-trophy-office-stake-california-street.txt",
+    "extractor": "html tags removed",
+    "sha256": "0af6cd98180831ede67c488319239bdbd43f65afc485b76bf853f3d3afc15baf",
+    "capture_sha256": "f5ab83a6a33f5e844340cbdfeefbab01626225cf3edcde54f9396c312538c78a",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "yoda-closes-transmerica-pyramid-analysis",
+    "title": "SF Standard (Mar 31, 2026): Yoda closes Transamerica Pyramid purchase",
+    "url": "https://sfstandard.com/2026/03/31/-yoda-closes-transmerica-pyramid-analysis/",
+    "original": "sources/yoda-closes-transmerica-pyramid-analysis.html",
+    "capture": "captures/yoda-closes-transmerica-pyramid-analysis.txt",
+    "extractor": "html tags removed",
+    "sha256": "d591a036eba5fb7c67d076a3666ebda4a354935e858320bb9b071b27e3eddd5b",
+    "capture_sha256": "69c965fee0c55e5584aa46b9fa172754563bb53bceb3c11497efa1205432a82f",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note",
+    "title": "Hoodline (Jan 20, 2026): Lone Star buys 600 California St note",
+    "url": "https://hoodline.com/2026/01/dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note/",
+    "original": "sources/dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note.html",
+    "capture": "captures/dallas-debt-shark-grabs-wework-s-troubled-fidi-tower-note.txt",
+    "extractor": "html tags removed",
+    "sha256": "1783272f2e38d5a008864765a0d93222977f60dc6c118e61b785127582014c34",
+    "capture_sha256": "013cbd51542d562cf4e6c08718392c6683528dae3273087faf14096b33c07326",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "exhibit991propertyacquisit",
+    "title": "SEC EDGAR: LendingClub 8-K Ex. 99.1 (Apr 17, 2025) - purchase of 88 Kearny Street",
+    "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997025000012/exhibit991propertyacquisit.htm",
+    "original": "sources/exhibit991propertyacquisit.html",
+    "capture": "captures/exhibit991propertyacquisit.txt",
+    "extractor": "html tags removed",
+    "sha256": "031d00844e134a1357ee1e29ceb8a2da400feb310295f32704abea691fdfa494",
+    "capture_sha256": "7c041b1a65ac8cfbd3b302e2d458dd97a1aa14ae570acaf5c9879659a7f3f880",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "title": "Bisnow (Jun 5, 2026): Strada closes on acquisition of Samsara's Showplace Square HQ (1 De Haro St)",
+    "url": "https://www.bisnow.com/news/san-francisco/office/strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879",
+    "original": "sources/strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879.html",
+    "capture": "captures/strada-closes-on-acquisition-of-samsaras-showplace-square-hq-134879.txt",
+    "extractor": "html tags removed",
+    "sha256": "0ad41f80097d90c67c58ca1bd0765c580e5713c6617dc5e206094f4d722e6ad4",
+    "capture_sha256": "438115d45b103a103bef6b17beea2ce5455026786944ecd1fb5fc8bd0747a457",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "san-franciscos-tilden-hotel-sells-for-9-3-million",
+    "title": "The Real Deal (Jul 3, 2025): San Francisco's Tilden Hotel sells for $9.3 million",
+    "url": "https://therealdeal.com/la/2025/07/03/san-franciscos-tilden-hotel-sells-for-9-3-million",
+    "original": "sources/san-franciscos-tilden-hotel-sells-for-9-3-million.html",
+    "capture": "captures/san-franciscos-tilden-hotel-sells-for-9-3-million.txt",
+    "extractor": "html tags removed",
+    "sha256": "accda56d066c8df2bd08b78f0678684e0991500fa81c6fac8df35b885ada9d89",
+    "capture_sha256": "c6e26e556119e20b5c0df0a92a31b91604444cf5ee8972b4495238a4fa799df8",
+    "added_on": "2026-10-15"
+  },
+  {
+    "id": "sf-anthropic-lease-downtown-building-21198953",
+    "title": "San Francisco Chronicle (Feb 2026): Anthropic lease at 300 Howard St",
+    "url": "https://preview-prod.w.sfchronicle.com/realestate/article/sf-anthropic-lease-downtown-building-21198953.php",
+    "original": "sources/sf-anthropic-lease-downtown-building-21198953.html",
+    "capture": "captures/sf-anthropic-lease-downtown-building-21198953.txt",
+    "extractor": "html tags removed",
+    "sha256": "4ff70dfaf6a032e9abec5c66d01efc40ae31e74a58e342ca1182ce00ebfc0263",
+    "capture_sha256": "00d42afc6dda4cc70cc57c8491222d46bd7dab351803ca44b151aa1dbdd5f28f",
+    "added_on": "2026-10-15"
   }
 ]
